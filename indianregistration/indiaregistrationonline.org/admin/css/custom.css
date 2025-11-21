@@ -1,0 +1,412 @@
+/* here you can put your own css to customize and override the theme */
+/*      LOGO        */
+.page-header.navbar .page-logo .logo-default {
+    margin: 10px 0 0 0;
+    max-height: 40px;
+}
+
+.dropdown-menu {
+    min-width: 160px;
+}
+
+.dropdown-menu {
+    box-shadow: 0px 0px rgba(102, 102, 102, 0.1);
+}
+.page-footer .page-footer-inner a {
+    color: #fff;
+}
+
+/*      SIDEBAR     */
+
+.page-sidebar .sidebar-toggler {
+    padding: 8px 12px;
+    margin: 0;
+    float: none;
+    text-align: center;
+    background: #212832;
+}
+
+/*     PROFILE SIDEBAR     */
+.profile-sidebar{
+    width:260px;
+}
+
+.profile-usertitle-name {
+    font-size: 16px;    
+}
+
+/*      FORM LAYOUT     */
+
+.form-control {
+    font-size: inherit;
+    color: #1d2129;
+    height: 32px;
+    padding: 5px 10px;
+}
+
+.btn {
+    font-size: 13px;
+}
+
+.mt-radio, .mt-checkbox {
+    font-size: inherit;
+}
+
+
+/*    Page Title    */
+.page-header.page-header-default {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    padding: 0px;
+    margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.page-content-white .page-title {
+    margin: 0px 0;
+    font-size: 20px;
+}
+
+/*  FORM CSS    */
+.tagline{ height:0; border-top:1px solid #eee; text-align:center;  }
+.tagline span { 
+    /*text-transform: uppercase;*/
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    padding: 0 14px;
+    background: #fff;
+    font-weight: 400;    
+    letter-spacing: 0.5px;
+    font-size: 15px;  
+}
+label {
+    /*font-weight: 500;*/
+}
+.control-label {
+    /*font-weight: 500;*/
+}
+
+/*      Top Bar       */
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-menu {
+    margin-top: 0px;
+}
+
+/*      TABLE       */
+.table thead tr th,
+.table td, .table th {
+    font-size: inherit;
+}
+table.table .table-vertical-middle {
+    /*    display: table-cell;
+        text-align: center;*/
+    vertical-align: middle;
+}
+th {
+    font-weight: 500;
+}
+
+.table-borderless>tbody>tr>td,
+.table-borderless>tbody>tr>th {
+    border: 0;
+}
+
+/*      Tables - Sizing     */
+
+.table-xlg > thead > tr > th,
+.table-xlg > tbody > tr > th,
+.table-xlg > tfoot > tr > th,
+.table-xlg > thead > tr > td,
+.table-xlg > tbody > tr > td,
+.table-xlg > tfoot > tr > td {
+    padding: 20px;
+}
+.table-lg > thead > tr > th,
+.table-lg > tbody > tr > th,
+.table-lg > tfoot > tr > th,
+.table-lg > thead > tr > td,
+.table-lg > tbody > tr > td,
+.table-lg > tfoot > tr > td {
+    padding: 15px 20px;
+}
+.table-sm > thead > tr > th,
+.table-sm > tbody > tr > th,
+.table-sm > tfoot > tr > th,
+.table-sm > thead > tr > td,
+.table-sm > tbody > tr > td,
+.table-sm > tfoot > tr > td {
+    padding: 10px 15px;
+}
+.table-xs > thead > tr > th,
+.table-xs > tbody > tr > th,
+.table-xs > tfoot > tr > th,
+.table-xs > thead > tr > td,
+.table-xs > tbody > tr > td,
+.table-xs > tfoot > tr > td {
+    padding: 8px 12px;
+}
+.table-xxs > thead > tr > th,
+.table-xxs > tbody > tr > th,
+.table-xxs > tfoot > tr > th,
+.table-xxs > thead > tr > td,
+.table-xxs > tbody > tr > td,
+.table-xxs > tfoot > tr > td {
+    padding: 6px 10px;
+}
+
+.align-middle > thead > tr > th,
+.align-middle > tbody > tr > td {
+    vertical-align: middle;
+}
+
+/*      Table Condensed     */
+
+.table-condensed>tbody>tr>td,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>td,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>thead>tr>th {
+    padding: 5px 10px;
+}
+
+table.dataTable.table-condensed>thead>tr>th {
+    padding-right: 20px;
+}
+
+/*      DATATABLE       */ 
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #eee; 
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    /*padding: 8px 10px;*/
+    /*border-bottom: 1px solid #111;*/
+}
+
+/*th, td { white-space: nowrap; }*/
+th input {
+    width: 90%;
+}
+
+.table-scrollable {
+    border: 0px solid #e7ecf1; 
+}
+/******************************************************************************        
+            PROJECTS LIST               
+******************************************************************************/
+table.projects-list {
+    /*border-collapse: collapse;*/
+    background-attachment: local
+}
+
+table.projects-list.table tfoot tr th,
+table.projects-list.table thead tr th {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+table.projects-list.table select,
+table.projects-list.table input[type=text],
+table.projects-list.table input[type=email],
+table.projects-list.table input[type=date],
+table.projects-list.table input[type=time] {
+    font-size: 12px;   
+    padding: 3px 6px;
+    width: 100%;
+    border: 1px solid #bebebe;
+    margin: 0;
+    -webkit-transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -ms-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+    outline: 0;
+}
+
+table.projects-list.table input[type=text]:focus,
+table.projects-list.table input[type=email]:focus,
+table.projects-list.table input[type=date]:focus,
+table.projects-list.table input[type=time]:focus {
+    -moz-box-shadow: 0 0 0px #eee;
+    -webkit-box-shadow: 0 0 0px #eee;
+    box-shadow: 0 0 0px #eee;
+    border: 1px solid #bebebe;
+}
+
+
+table.projects-list.table ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12px;
+    font-weight: 200;
+    opacity: 0.3;
+    transition: opacity 250ms ease-in-out;
+}
+table.projects-list.table ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12px;
+    font-weight: 200;
+    opacity: 0.3;
+    transition: opacity 250ms ease-in-out;
+}
+table.projects-list.table :-ms-input-placeholder { /* IE 10+ */
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 200;
+    transition: opacity 250ms ease-in-out;
+}
+table.projects-list.table :-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 200;
+    transition: opacity 250ms ease-in-out;
+}
+
+
+table.projects-list.table tfoot tr th,
+table.projects-list.table tbody tr th,
+table.projects-list.table thead tr td {
+    text-transform: capitalize;
+/*  min-width: 102px;
+    width: 102px; */
+}
+
+table.projects-list.table .txtLong {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/*      PROFILE CSS     */
+
+.profile-usermenu ul li a {
+    color: inherit;
+    font-size: inherit;
+}
+
+/*      Chat Style      */
+
+.chat-stacked {
+
+}
+
+.chat-stacked .comment-list {
+    min-height: 52px;
+    padding: 0 10px 20px 50px;
+    list-style: none !important;
+    position: relative;
+    display: list-item;
+}
+
+.comment-list .meta-header .avatar {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border: 2px solid #f5f6fa;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    border-radius: 50%!important;
+    overflow: hidden;
+}
+
+.comment-list .author {
+    font-weight: 600;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.comment-list .meta-footer {
+    font-size: 11px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.comment-list .meta-footer span {
+    font-size: 11px;
+    line-height: 16px;
+    color: #999999;
+    clear: both;
+}
+
+.comment-list .meta-footer .seperator {
+    padding: 0 5px;
+}
+
+.comment-list .message {
+    margin-bottom: 10px;
+    letter-spacing: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+}
+
+/*          PORTLETS            */
+
+.portlet.light > .portlet-title > .actions {
+    padding: 6px 0px 14px;
+}
+
+/* REMINDER LIST */
+.reminder-list-item {    
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EFF2F6;    
+    overflow: hidden; }
+.reminder-list-item:last-child {
+    border-bottom: 0;
+    margin-bottom: 0; }
+
+div .reminder-list-item:hover {
+
+}
+
+.reminder-list-item-title {
+    font-size: 13px;
+    color: #2b4a5c;
+    font-weight: 600;
+    padding-top: 3px;
+    padding-bottom: 10px; }
+
+.reminder-list-item-text {
+    font-size: 13px;   
+    padding-bottom: 5px; }
+
+.reminder-list-item ul {
+    margin: 5px 0 0 0px; }
+
+.reminder-list-item li {
+    color: #577688;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 0 !important; }
+
+.reminder-list-controls {
+    margin-top: 5px; }
+
+.reminder-list-date {
+    color: #999 !important;
+    margin-right: 12px; }
+
+.reminder-list-date i {
+    color: #abbfca !important;
+    margin-right: 5px; }
+
+/* END TASKS LIST */
+
+.mt-step-number {
+	margin-top: 10px;
+    text-align: center;
+}
+.mt-step-content {
+   margin-bottom: 20px;
+    text-align: center;	
+}

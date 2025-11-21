@@ -1,0 +1,326 @@
+
+/** collection-section **/
+
+.collection-section{
+  position: relative;
+}
+
+.collection-section .sec-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collection-section .sec-title a{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.collection-section .sec-title a:hover{
+  color: var(--title-color);
+  border-color: var(--secondary-color) !important;
+}
+
+.collection-section .tabs-box{
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  border: dashed;
+  border-width: 1px;
+  padding-left: 305px;
+  overflow: hidden;
+}
+
+.collection-section .tab-btn-box{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 305px;
+}
+
+.collection-section .tab-btns li{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--title-color);
+  background: #FFF6F8;
+  padding: 20px 50px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.collection-section .tab-btns li.active-btn{
+  background: #fff;
+}
+
+.collection-block-one .inner-box{
+  position: relative;
+  display: block;
+  padding: 20px 0px 32px 0px;
+}
+
+.collection-block-one .inner-box .image-box{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.collection-block-one .inner-box .image-box .image{
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.collection-block-one .inner-box .image-box .image img{
+  width: 100%;
+  transition: all 500ms ease;
+}
+
+.collection-block-one .inner-box:hover .image-box .image img{
+  transform: scale(1.05);
+}
+
+.collection-block-one .inner-box .image-box .reaction-btn{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.collection-block-one .inner-box .image-box .reaction-btn button{
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  background: #FFF6F8;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.collection-block-one .inner-box .image-box .reaction-btn button:hover,
+.collection-block-one .inner-box .image-box .reaction-btn button:focus,
+.collection-block-one .inner-box .image-box .reaction-btn button:active{
+  color: #fff;
+}
+
+.collection-block-one .inner-box .lower-content{
+  position: relative;
+  display: block;
+  padding-top: 8px;
+}
+
+.collection-block-one .inner-box .lower-content .text{
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.collection-block-one .inner-box .lower-content h4{
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.collection-block-one .inner-box .lower-content h4 a{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.collection-block-one .inner-box .lower-content h4 a:hover{
+
+}
+
+.collection-block-one .inner-box .lower-content h5{
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  color: #E92530;
+}
+
+.collection-section .shape-layer .shape-1{
+  position: absolute;
+  left: 0px;
+  top: -100px;
+  width: 179px;
+  height: 199px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.collection-section .shape-layer .shape-2{
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  width: 146px;
+  height: 176px;
+  background-repeat: no-repeat;
+}
+
+.collection-section .shape-layer .shape-3{
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 301px;
+  height: 304px;
+  background-repeat: no-repeat;
+}
+
+.shop-style-nine.collection-section .sec-title{
+  display: block;
+}
+
+.shop-style-nine.collection-section .tab-btns{
+  display: inline-flex;
+  z-index: 5;
+}
+
+.shop-style-nine.collection-section .tab-btns li.active-btn{
+
+}
+
+.shop-style-nine.collection-section .tab-btns li{
+  padding: 6px 27px;
+}
+
+.shop-style-nine.collection-section .p-tabs-content{
+  background: #fff;
+  border: dashed;
+  border-radius: 10px;
+  border-width: 1px;
+  padding-top: 26px;
+  margin-top: -26px;
+}
+
+.shop-style-nine.collection-section .owl-nav button{
+  font-size: 48px;
+  background: #fff;
+  transition: all 500ms ease;
+}
+
+.shop-style-nine.collection-section .owl-nav{
+  top: 50%;
+  margin-top: -24px;
+}
+
+.shop-style-nine.collection-section .pattern-layer{
+  position: absolute;
+  left: 0px;
+  top: -350px;
+  width: 100%;
+  height: 1475px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+
+/** rtl-css **/
+
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+  .collection-section .tabs-box{
+    padding-left: 0px;
+  }
+
+  .collection-section .tab-btn-box{
+    position: relative;
+    width: 100%;
+    border-bottom: dashed;
+    border-width: 1px;
+    border-color: var(--theme-color);
+  }
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .collection-section{
+    padding: 35px 0px 70px 0px;
+  }
+
+  .collection-section .shape-layer{
+    display: none;
+  }
+
+  .shop-style-nine.collection-section .tab-btns{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  .collection-section .sec-title{
+    display: block;
+  }
+
+  .collection-section .sec-title a{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

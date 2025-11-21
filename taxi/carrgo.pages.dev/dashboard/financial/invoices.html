@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/financial/invoices by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoices - CarrGo Dashboard</title>
+<!-- Bootstrap CSS -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Remix Icons CSS -->
+<link href="../assets/fonts/remixicon.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.min.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+<!-- Meta Tags for SEO -->
+<meta name="description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta name="keywords" content="carpool, dashboard, ride-sharing, transportation management">
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Invoices - CarPool Dashboard">
+<meta property="og:description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta property="og:type" content="website">
+<!-- Mobile Theme Color -->
+<meta name="theme-color" content="#4a6cf7">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <!-- Sidebar -->
+<div class="sidebar" id="sidebar" data-theme="light">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+        <div class="logo-container">
+            <!-- Light Theme Logos -->
+            <img src="../assets/img/logo-full.svg" alt="CarPool" class="logo-full logo-light">
+            <img src="../assets/img/logo-icon.svg" alt="CarPool" class="logo-icon logo-light">
+            
+            <!-- Dark Theme Logos -->
+            <img src="../assets/img/logo-white.svg" alt="CarPool" class="logo-full logo-dark">
+            <img src="../assets/img/logo-icon-white.svg" alt="CarPool" class="logo-icon logo-dark">
+        </div>
+        <button class="btn d-md-none" id="close-sidebar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Driver Management Section -->
+            <li class="has-dropdown">
+                <a href="#driverMenu" data-bs-toggle="collapse">
+                    <i class="ri-steering-line"></i>
+                    <span>Driver Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="driverMenu">
+                    <li><a href="../driver-management/driver-onboarding.html">Onboarding</a></li>
+                    <li><a href="../driver-management/driver-verification.html">Verification</a></li>
+                    <li><a href="../driver-management/driver-documents.html">Documents</a></li>
+                    <li><a href="../driver-management/driver-training.html">Training</a></li>
+                    <li><a href="../driver-management/driver-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="../driver-management/drivers.html">Drivers List</a></li>
+                    <li><a href="../driver-management/driver-schedule.html">Schedules</a></li>
+                    <li><a href="../driver-management/drivers-earnings.html">Earnings</a></li>
+                    <li><a href="../driver-management/vehicle-management.html">Vehicles</a></li>
+                </ul>
+            </li>
+
+            <!-- Financial Management Section -->
+            <li class="has-dropdown">
+                <a href="#financeMenu" data-bs-toggle="collapse">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Finance</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="financeMenu">
+                    <li><a href="revenue-reports.html">Revenue Reports</a></li>
+                    <li><a href="expense-tracking.html">Expense Tracking</a></li>
+                    <li><a href="driver-payouts.html">Driver Payouts</a></li>
+                    <li><a href="pricing-management.html">Pricing Management</a></li>
+                    <li><a href="invoices.html">Invoices</a></li>
+                    <li><a href="tax-reports.html">Tax Reports</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                </ul>
+            </li>
+
+            <!-- Customer Service Section -->
+            <li class="has-dropdown">
+                <a href="#customerMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customerMenu">
+                    <i class="ri-customer-service-line"></i>
+                    <span>Customer Service</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="customerMenu">
+                    <li><a href="../customer-service/support-tickets.html">Support Tickets</a></li>
+                    <li><a href="../customer-service/customer-feedback.html">Feedback</a></li>
+                    <li><a href="../customer-service/customer-communication.html">Communication</a></li>
+                    <li><a href="../customer-service/customer-reports.html">Reports</a></li>
+                    <li><a href="../customer-service/customer-preferences.html">Preferences</a></li>
+                </ul>
+            </li>
+
+            <!-- User Management Section -->
+            <li class="has-dropdown">
+                <a href="#userMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="userMenu">
+                    <i class="ri-team-line"></i>
+                    <span>User Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="userMenu">
+                    <li><a href="../user-management/users.html">Users List</a></li>
+                    <li><a href="../user-management/bookings.html">Bookings</a></li>
+                    <li><a href="../user-management/ride-history.html">Ride History</a></li>
+                </ul>
+            </li>
+
+            <!-- Operations Section -->
+            <li class="has-dropdown">
+                <a href="#operationsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="operationsMenu">
+                    <i class="ri-settings-5-line"></i>
+                    <span>Operations</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="operationsMenu">
+                    <li><a href="../operations/analytics.html">Analytics</a></li>
+                    <li><a href="../operations/fleet-management.html">Fleet Management</a></li>
+                    <li><a href="../operations/rides.html">Active Rides</a></li>
+                    <li><a href="../operations/maps.html">Maps</a></li>
+                </ul>
+            </li>
+
+            <!-- Settings Section -->
+            <li class="has-dropdown">
+                <a href="#settingsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="settingsMenu">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="settingsMenu">
+                    <li><a href="../settings/settings.html">General Settings</a></li>
+                    <li><a href="../settings/profile.html">Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="../settings/profile.html" class="d-flex align-items-center w-100" title="User Profile">
+                <div class="avatar avatar-sm me-3">
+                    <img src="../assets/img/headshot_32x32.png" alt="User Avatar" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <span class="fw-medium">John Doe</span>
+                    <small class="d-block text-muted">Administrator</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar Overlay - moved outside sidebar for better event handling -->
+<div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+        <div class="main-content">
+            <!-- Include Header -->
+            <!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center">
+                <button class="btn sidebar-toggle me-3" id="sidebar-toggle" type="button" aria-label="Toggle Sidebar" aria-expanded="true" aria-controls="sidebar">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </button>
+                <h1 class="header-title mb-0">Invoices</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle me-3">
+                    <button class="btn theme-toggle-btn" id="theme-toggle">
+                        <i class="ri-sun-line light-icon"></i>
+                        <i class="ri-moon-line dark-icon"></i>
+                    </button>
+                </div>
+                <!-- User Profile Dropdown -->
+                <div class="dropdown user-dropdown">
+                    <button class="d-flex align-items-center text-decoration-none dropdown-toggle border-0 bg-transparent" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User menu">
+                        <div class="avatar avatar-sm avatar-with-badge me-2">
+                            <img src="../assets/img/user-4.png" alt="User profile" class="avatar-image">
+                            <span class="avatar-status avatar-status-online"></span>
+                        </div>
+                        <span class="d-none d-md-inline">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../settings/profile.html"><i class="ri-user-line me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="../settings/settings.html"><i class="ri-settings-line me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../auth/login.html"><i class="ri-logout-box-line me-2"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <!-- Main Content -->
+            <div class="container-fluid py-4">
+                <!-- Invoice Overview Cards -->
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Total Invoices</h6>
+                                        <h2 class="card-title mb-0">1,248</h2>
+                                    </div>
+                                    <div class="stat-icon bg-primary">
+                                        <i class="ri-file-list-3-line"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="text-success">
+                                        <i class="ri-arrow-up-line"></i> 8.3%
+                                    </span>
+                                    <span class="text-muted ms-2">vs last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Pending Payment</h6>
+                                        <h2 class="card-title mb-0">$12,450</h2>
+                                    </div>
+                                    <div class="stat-icon bg-warning">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="text-danger">
+                                        <i class="ri-arrow-up-line"></i> 5.2%
+                                    </span>
+                                    <span class="text-muted ms-2">vs last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Paid Invoices</h6>
+                                        <h2 class="card-title mb-0">985</h2>
+                                    </div>
+                                    <div class="stat-icon bg-success">
+                                        <i class="ri-check-double-line"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="text-success">
+                                        <i class="ri-arrow-up-line"></i> 12.5%
+                                    </span>
+                                    <span class="text-muted ms-2">vs last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Overdue</h6>
+                                        <h2 class="card-title mb-0">24</h2>
+                                    </div>
+                                    <div class="stat-icon bg-danger">
+                                        <i class="ri-error-warning-line"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="text-danger">
+                                        <i class="ri-arrow-down-line"></i> 2.1%
+                                    </span>
+                                    <span class="text-muted ms-2">vs last month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invoice List -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Invoices</h5>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generateInvoiceModal">
+                                        <i class="ri-add-line me-1"></i>Generate Invoice
+                                    </button>
+                                    <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                            <i class="ri-filter-3-line me-1"></i>Filter
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">All Invoices</a></li>
+                                            <li><a class="dropdown-item" href="#">Paid</a></li>
+                                            <li><a class="dropdown-item" href="#">Pending</a></li>
+                                            <li><a class="dropdown-item" href="#">Overdue</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Invoice #</th>
+                                                <th>Client</th>
+                                                <th>Amount</th>
+                                                <th>Issue Date</th>
+                                                <th>Due Date</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" class="text-primary fw-bold">#INV-2023-001</a>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-6.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <div>
+                                                            <div class="fw-bold">John Smith</div>
+                                                            <small class="text-muted">john@example.com</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>$850.00</td>
+                                                <td>2023-07-01</td>
+                                                <td>2023-07-15</td>
+                                                <td><span class="badge bg-success">Paid</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light me-1" title="View">
+                                                        <i class="ri-eye-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light me-1" title="Download">
+                                                        <i class="ri-download-2-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light" title="Send">
+                                                        <i class="ri-mail-send-line"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" class="text-primary fw-bold">#INV-2023-002</a>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-4.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <div>
+                                                            <div class="fw-bold">Sarah Johnson</div>
+                                                            <small class="text-muted">sarah@example.com</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>$1,250.00</td>
+                                                <td>2023-07-05</td>
+                                                <td>2023-07-19</td>
+                                                <td><span class="badge bg-warning">Pending</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light me-1" title="View">
+                                                        <i class="ri-eye-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light me-1" title="Download">
+                                                        <i class="ri-download-2-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light" title="Send">
+                                                        <i class="ri-mail-send-line"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" class="text-primary fw-bold">#INV-2023-003</a>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-5.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <div>
+                                                            <div class="fw-bold">Michael Brown</div>
+                                                            <small class="text-muted">michael@example.com</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>$750.00</td>
+                                                <td>2023-06-15</td>
+                                                <td>2023-06-29</td>
+                                                <td><span class="badge bg-danger">Overdue</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light me-1" title="View">
+                                                        <i class="ri-eye-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light me-1" title="Download">
+                                                        <i class="ri-download-2-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light" title="Send">
+                                                        <i class="ri-mail-send-line"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Payments -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Recent Payments</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Invoice #</th>
+                                                <th>Client</th>
+                                                <th>Amount</th>
+                                                <th>Payment Date</th>
+                                                <th>Payment Method</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#INV-2023-001</td>
+                                                <td>John Smith</td>
+                                                <td>$850.00</td>
+                                                <td>2023-07-12</td>
+                                                <td>Credit Card</td>
+                                                <td><span class="badge bg-success">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#INV-2023-004</td>
+                                                <td>Emily Davis</td>
+                                                <td>$950.00</td>
+                                                <td>2023-07-11</td>
+                                                <td>Bank Transfer</td>
+                                                <td><span class="badge bg-success">Completed</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center g-3">
+            <div class="col-md-6">
+                <p class="mb-0">© 2025 CarrGo Dashboard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <a href="#" class="me-3">Help</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="ms-3 opacity-75">|</span>
+                    <span class="ms-3">Version 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+    <!-- Generate Invoice Modal -->
+    <div class="modal fade" id="generateInvoiceModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Generate Invoice</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Client</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Client</option>
+                                    <option value="1">John Smith</option>
+                                    <option value="2">Sarah Johnson</option>
+                                    <option value="3">Michael Brown</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Invoice Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Due Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Invoice Number</label>
+                                <input type="text" class="form-control" value="#INV-2023-005" readonly>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Items</label>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Rate</th>
+                                            <th>Amount</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" placeholder="Item description"></td>
+                                            <td><input type="number" class="form-control" value="1"></td>
+                                            <td><input type="number" class="form-control" value="0.00"></td>
+                                            <td><input type="number" class="form-control" value="0.00" readonly></td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-danger">
+                                                    <i class="ri-delete-bin-line"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button type="button" class="btn btn-light">
+                                <i class="ri-add-line me-1"></i>Add Item
+                            </button>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Notes</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Subtotal:</span>
+                                        <span>$0.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Tax (10%):</span>
+                                        <span>$0.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between fw-bold">
+                                        <span>Total:</span>
+                                        <span>$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Generate Invoice</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Vendor Scripts -->
+<script src="../../../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/vendor/chart.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    //dropdown fix - add as a separate script
+(function() {
+    // Wait for page to fully load
+    window.addEventListener('load', function() {
+        // Add click handlers directly to all dropdown toggles
+        document.querySelectorAll('li.has-dropdown > a').forEach(function(toggle) {
+            toggle.onclick = function(e) {
+                e.preventDefault();
+                
+                // Find target menu
+                var targetId = this.getAttribute('href') || this.getAttribute('data-bs-target');
+                var menu = document.querySelector(targetId);
+                
+                if (!menu) return false;
+                
+                // Toggle this menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Close all other menus
+                    document.querySelectorAll('.submenu').forEach(function(m) {
+                        m.style.display = 'none';
+                    });
+                    
+                    // Open this menu
+                    menu.style.display = 'block';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+                
+                return false;
+            };
+        });
+        
+        // Set active page
+        var path = window.location.pathname;
+        document.querySelectorAll('.submenu a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === path || href === path.substring(1) || '/' + href === path) {
+                // Mark as active
+                link.classList.add('active');
+                
+                // Show parent menu
+                var menu = link.closest('.submenu');
+                if (menu) {
+                    menu.style.display = 'block';
+                    
+                    // Mark parent as active
+                    var parent = document.querySelector('a[href="#' + menu.id + '"]');
+                    if (parent) {
+                        parent.classList.add('active-parent');
+                        parent.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+
+</body>
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/financial/invoices by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:10 GMT -->
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from carrgo.pages.dev/blog-post by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:36:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    
+        <title>CarrGo - Ridesharing Taxi HTML Template</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="robots" content="follow, index"/>
+        <meta name="description" content="CarrGo - Ridesharing Taxi HTML Template for building Ridesharing, Car-pooling and transportaion website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.webp">
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/plugins/animate/animate.css">
+        <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/icons/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+<body>
+    <!--header-->
+    <header class="bg-white sticky-top position-fixed w-100 top-0 start-0 z-6">
+        <!-- Upper Header -->
+    <div class="upper-header py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Logo and Search -->
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <!-- Desktop Logo -->
+                        <div class="d-none d-lg-block me-3">
+                            <a href="index.html">
+                                <img src="assets/images/logo-icon-desktop.svg" alt="Site Logo" class="img-fluid"  width="135" height="36" style="object-fit: contain;">
+                            </a>
+                        </div>
+                    
+                        <!-- Mobile Logo -->
+                        <div class="d-block d-lg-none me-3">
+                            <a href="index.html">
+                                <img src="assets/images/logo-icon-sm.svg" alt="Site Logo" class="img-fluid wd-50"  width="40" height="40" style="object-fit: contain;">
+                            </a>
+                        </div>
+                    
+                        <!-- Search Bar -->
+                        <div class="search flex-grow-1 me-3">
+                            <form class="form position-relative">
+                                <span class="icon icon-left position-absolute top-50 start-0 translate-middle-y ms-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <input
+                                    class="form-control ps-5"
+                                    type="search"
+                                    name="search-bar"
+                                    placeholder="Tell us your location"
+                                    id="search-bar" 
+                                    aria-label="search-bar"
+                                >
+                            </form>
+                        </div>
+                    
+                        <!-- Mobile Navbar Toggle -->
+                        <div class="ms-auto mobile-nav-toggle d-lg-none">
+                            <button 
+                                class="navbar-toggler" 
+                                type="button" 
+                                data-bs-toggle="offcanvas" 
+                                data-bs-target="#mobileNavbar" 
+                                aria-controls="mobileNavbar"
+                            >
+                            <div class="navbar-toggler-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Side: Dashboard and Action Links -->
+                <div class="col-lg-6 d-none d-lg-block text-end">
+                    <div class="d-inline-flex justify-content-end justify-content-lg-start align-items-center">
+                        <a href="dashboard/index.html" class="btn btn-link p-0 me-sm-2 mb-sm-0 me-2 d-inline-flex align-items-center">
+                            <span class="icon-circle me-2">
+                                <i class="far fa-user"></i>
+                            </span>
+                            Driver Dashboard
+                        </a>
+                        <a href="sign-up.html" class="btn btn-link p-0 me-2 d-inline-flex align-items-center">
+                            <span class="icon-circle me-2">
+                                <i class="far fa-user-astronaut"></i>
+                            </span>
+                            Drive with us
+                        </a>
+                        <a href="book-a-ride.html" class="btn btn-link p-0 d-inline-flex align-items-center">
+                            <span class="icon-circle me-2">
+                                <i class="far fa-taxi"></i>
+                            </span>
+                            Book a Ride
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Lower Header / Navigation -->
+         <div class="lower-header d-none d-lg-block">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">          
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 gap-sm-2">
+                        <li class="nav-item dropdown">
+                            <a 
+                                class="nav-link dropdown-toggle active" 
+                                href="index.html" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-home me-1"></i>Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                                <li><a class="dropdown-item" href="index-3.html">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-exclamation-circle me-1"></i>About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-cog me-1"></i>Our Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fleet.html">
+                                <i class="fas fa-taxi me-1"></i>Our Vehicles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">
+                                <i class="fas fa-cube me-1"></i>Packages
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                                class="nav-link dropdown-toggle" 
+                                href="blog.html" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-home me-1"></i>Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <i class="fas fa-map-marker-alt me-1"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="sign-in.html" class="btn btn-theme fw-bold w-100 rounded-pill">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <!--/Header -->
+     <!--offcanvas-->
+     <section class="mobile-menu d-lg-none">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavbar" aria-labelledby="mobileNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavbarLabel">
+                    <img src="assets/images/logo-white.html" alt="Site Logo" class="img-fluid" 
+                    width="150" 
+                    height="39"  
+                    style="max-height: 40px; object-fit: contain;">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            <li><a class="dropdown-item" href="index-3.html">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-exclamation-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-services.html">
+                            <i class="fas fa-cog"></i> Our Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-vehicles.html">
+                            <i class="fas fa-taxi"></i> Our Vehicles
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">
+                            <i class="fas fa-cube"></i> Packages
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-home"></i> Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
+                            <li><a class="dropdown-item" href="blog-single-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                            <i class="fas fa-map-marker-alt"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-3">
+                    <a href="sign-up.html" class="btn btn-theme fw-bold w-100 rounded-pill">Drive with Us</a>
+                    <a href="ride-with-carrgo.html" class="btn btn-theme-outline fw-bold w-100 rounded-pill">Book a Ride</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/offcanvas->
+    
+    <main>
+        <!-- Page Header -->
+        <section class="page-header position-relative overflow-hidden py-8">
+            <!-- Animated Background Shapes -->
+            <div class="position-absolute w-100 h-100 top-0 start-0">
+                <div class="position-absolute top-0 end-0 bg-warning bg-opacity-10 blob-radius-3" style="width: 300px; height: 300px; transform: translate(30%, -30%);"></div>
+                <div class="position-absolute bottom-0 start-0 bg-primary bg-opacity-10 blob-radius-2" style="width: 250px; height: 250px; transform: translate(-30%, 30%);"></div>
+            </div>
+
+            <!-- Dotted Pattern -->
+            <div class="position-absolute w-100 h-100 top-0 start-0" style="background-image: radial-gradient(rgba(0,0,0,0.1) 2px, transparent 2px); background-size: 30px 30px;"></div>
+
+            <div class="container position-relative">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center mb-3">
+                                <li class="breadcrumb-item">
+                                    <a href="#" class="text-decoration-none text-muted">
+                                        <i class="fas fa-home me-1"></i>Home
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active text-theme-color" aria-current="page">Blog Post</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Page Title -->
+                        <h1 class="display-4 fw-bold mb-3">Blog Post</h1>
+                
+                        <!-- Page Description -->
+                        <p class="lead text-muted mb-4 px-lg-5">
+                            Explore our blog for the latest industry insights and trends.
+                        </p>
+
+                        <!-- Optional CTA Button -->
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-theme">
+                                Get Started
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional Floating Elements -->
+                <div class="position-absolute d-none d-lg-block" style="bottom: -20px; right: 10%;">
+                    <div class="d-flex align-items-center bg-white rounded-3 shadow-sm p-3">
+                        <i class="fas fa-check-circle text-success fs-4 me-2"></i>
+                        <span class="text-dark fw-medium">Trusted by 50K+ Users</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Post Section -->
+        <section class="blog-post py-8">
+            <div class="container">
+                <!-- Post Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12 col-lg-10">
+                        <div class="text-center mb-4">
+                            <span class="badge bg-primary mb-2">Transportation</span>
+                            <h1 class="display-4 fw-bold mb-4">The Future of Urban Transportation: Trends to Watch</h1>
+                            <div class="post-meta d-flex justify-content-center align-items-center gap-4">
+                                <div class="author d-flex align-items-center">
+                                    <img src="assets/images/blog/author_32x32.webp" class="rounded-circle me-2" width="32" height="32" alt="Author">
+                                    <span class="text-muted">By <a href="#" class="text-decoration-none">John Smith</a></span>
+                                </div>
+                                <span class="text-muted">|</span>
+                                <span class="text-muted">Feb 11, 2025</span>
+                                <span class="text-muted">|</span>
+                                <span class="text-muted">5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Image -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12 col-lg-10">
+                        <div class="featured-image rounded-4 overflow-hidden">
+                            <img src="assets/images/blog/1.webp" class="img-fluid w-100" alt="Featured Image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <article class="blog-content">
+                            <p class="lead mb-4">
+                                The transportation industry is undergoing a radical transformation, driven by technological innovation, 
+                                changing consumer preferences, and environmental concerns.
+                            </p>
+
+                            <h2 class="h3 fw-bold mt-5 mb-4">1. Electric Vehicle Revolution</h2>
+                            <p>
+                                The shift towards electric vehicles is accelerating at an unprecedented pace. Cities worldwide are 
+                                investing in charging infrastructure and setting ambitious targets for EV adoption. This transition 
+                                isn't just about personal vehicles – commercial fleets, public transit, and last-mile delivery 
+                                services are all embracing electrification.
+                            </p>
+
+                            <div class="content-image my-5">
+                                <img src="assets/images/blog/2.webp" class="img-fluid rounded-4" alt="Electric Vehicles">
+                                <figcaption class="text-muted text-center mt-2">Electric vehicles charging at a modern station</figcaption>
+                            </div>
+
+                            <h2 class="h3 fw-bold mt-5 mb-4">2. Smart Infrastructure</h2>
+                            <p>
+                                Smart infrastructure is becoming the backbone of modern urban transportation. From intelligent 
+                                traffic signals to connected parking solutions, cities are leveraging IoT and AI to optimize 
+                                traffic flow and reduce congestion.
+                            </p>
+
+                            <blockquote class="bg-light p-4 rounded-4 my-5">
+                                <p class="mb-0 fs-5 fst-italic">
+                                    "The future of transportation isn't just about moving from point A to point B – it's about 
+                                    creating seamless, sustainable, and intelligent mobility solutions that enhance urban life."
+                                </p>
+                                <footer class="mt-3">
+                                    <cite>Dr. Sarah Johnson, Urban Planning Expert</cite>
+                                </footer>
+                            </blockquote>
+
+                            <h2 class="h3 fw-bold mt-5 mb-4">3. Sustainable Solutions</h2>
+                            <p>
+                                Sustainability is no longer optional in transportation planning. Cities are implementing:
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Zero-emission zones in city centers
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Integrated public transportation networks
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Bike-sharing and micro-mobility solutions
+                                </li>
+                            </ul>
+                        </article>
+
+                        <!-- Tags -->
+                        <div class="post-tags mt-5 pt-4 border-top">
+                            <h6 class="fw-bold mb-3">Related Topics:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#" class="btn btn-light btn-sm">Transportation</a>
+                                <a href="#" class="btn btn-light btn-sm">Smart Cities</a>
+                                <a href="#" class="btn btn-light btn-sm">Electric Vehicles</a>
+                                <a href="#" class="btn btn-light btn-sm">Sustainability</a>
+                            </div>
+                        </div>
+
+                        <!-- Share -->
+                        <div class="post-share mt-5 pt-4 border-top">
+                            <h6 class="fw-bold mb-3">Share this article:</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-facebook-f me-2"></i>Share
+                                </a>
+                                <a href="#" class="btn btn-outline-info btn-sm">
+                                    <i class="fab fa-twitter me-2"></i>Tweet
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm">
+                                    <i class="fab fa-linkedin-in me-2"></i>Share
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Author Bio -->
+                        <div class="author-bio mt-5 p-4 bg-light rounded-4">
+                            <div class="d-flex gap-4">
+                                <img src="assets/images/blog/author_80x80.webp" class="rounded-circle" width="80" height="80" alt="Author">
+                                <div>
+                                    <h5 class="fw-bold mb-2">John Smith</h5>
+                                    <p class="text-muted mb-3">Transportation and Urban Mobility Expert</p>
+                                    <p class="mb-0">
+                                        John has over 15 years of experience in transportation planning and urban mobility. 
+                                        He specializes in sustainable transportation solutions and smart city initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <!-- Related Posts -->
+                <div class="related-posts mt-5 mb-5 py-5">
+                    <div class="row">
+                        <div class="col-12 text-center mb-5">
+                            <h3 class="fw-bold">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm border-0 hover-shadow-lg transition-all">
+                                <img src="assets/images/blog/3.webp" class="card-img-top" alt="Related Post">
+                                <div class="card-body">
+                                    <span class="badge bg-success mb-2">Logistics</span>
+                                    <h2 class="card-title">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            Sustainable Logistics: A Guide to Green Transportation
+                                        </a>
+                                    </h2>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted">Feb 10, 2025</small>
+                                        <div class="author">
+                                            <small><a href="#" class="text-decoration-none">Sarah Johnson</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm border-0 hover-shadow-lg transition-all">
+                                <img src="assets/images/blog/4.webp" class="card-img-top" alt="Related Post">
+                                <div class="card-body">
+                                    <span class="badge bg-info mb-2">Technology</span>
+                                    <h2 class="card-title ">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            AI in Transportation: Revolutionizing the Industry
+                                        </a>
+                                    </h2>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted">Feb 9, 2025</small>
+                                        <div class="author">
+                                            <small><a href="#" class="text-decoration-none">Mike Chen</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm border-0 hover-shadow-lg transition-all">
+                                <img src="assets/images/blog/5.webp" class="card-img-top" alt="Related Post">
+                                <div class="card-body">
+                                    <span class="badge bg-warning mb-2">Business</span>
+                                    <h2 class="card-title ">
+                                        <a href="#" class="text-decoration-none text-dark">
+                                            Supply Chain Optimization: Strategies for Success
+                                        </a>
+                                    </h2>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted">Feb 8, 2025</small>
+                                        <div class="author">
+                                            <small><a href="#" class="text-decoration-none">Emma Davis</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Related Posts -->
+            </div>
+        </section>
+        <!-- /Blog Post Section -->
+    </main>
+    
+    <!--footer 2-->
+    <footer class="footer-2">
+        <div class="footer-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-nav-div py-13">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-brand">
+                            <a href="index.html"
+                            ><img src="assets/images/logo-white.html" alt="Logo"
+                            ></a>
+                        </div>
+                        <div class="footer-text pe-lg-3">
+                            <p class="mb-4">
+                                Nulla justo neque, tincidunt id bibendum a, rhoncus et eros.
+                                Vestibulum commodo diam ut risus pulvinar consequat vitae a
+                                dui. Vivamus sed molestie diam. Maecenas vitae enim lacus.
+                            </p>
+                        </div>
+                        <div class="helpline">
+                            <h3 class="mb-0">Toll Free <span>Helpline</span></h3>
+                            <p class="mb-0">(+1) 123 4567 890</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Useful links</h4>
+                        <nav class="footer-navigation">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="our-vehicles.html">Our vehicles</a></li>
+                                <li><a href="our-services.html">Services</a></li>
+                                <li><a href="packages.html">Packages</a></li>
+                                <li><a href="sign-in.html">Login</a></li>
+                                <li><a href="sign-up.html">Register</a></li>
+                                <li><a href="index.html">Latest News</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="ride-with-carrgo.html">Ride</a></li>
+                                <li><a href="my-driver-dashboard.html">Drive</a></li>
+                                <li><a href="sign-up.html">Become a Driver</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="contact-us.html">Help</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Head Office</h4>
+                        <address class="company-address">
+                            <p class="m-b-20">
+                                15 Street No, Ox Building,
+                                <span class="d-block">Near Station, 1356.</span>
+                            </p>
+                            <p class="m-b-8">Phone number: (+1) 123 4567 890</p>
+                            <p class="m-b-8">Email Address: Carrgo@gmail.com</p>
+                            <p class="m-b-8">Fax : Service@carrgo.com</p>
+                        </address>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Download Mobile App</h4>
+                        <div class="download-box d-flex flex-wrap align-items-center gap-2 mb-3">
+                            <a href="#" class="btn btn-dark btn-sm flex-grow-1 d-inline-flex align-items-center gap-2 px-3 py-2 text-nowrap wd-160">
+                                <i class="fab fa-apple fs-4 me-2"></i>
+                                <span class="d-inline-block text-start">
+                                    <small class="d-block text-white-50 opacity-100 small">Available on</small>
+                                    App Store
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-dark btn-sm flex-grow-1 d-inline-flex align-items-center gap-2 px-3 py-2 text-nowrap wd-160">     
+                                <i class="fab fa-google-play fs-4 me-2"></i>
+                                <span class="d-inline-block text-start">
+                                    <small class="d-block text-white-50 opacity-100 small">Available on</small>
+                                    Google Play
+                                </span>
+                            </a>
+                        </div>
+                        <div class="cta-button">
+                            <a href="#" class="btn btn-theme fw-bold wd-160 rounded-pill">Become a Driver</a>
+                            <a href="#" class="btn btn-theme-outline btn-white fw-bold wd-160 rounded-pill">Ride with CarrGo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright 2025 by Tortoiz Themes. All Right Reserved.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="social-nav">
+                            <li>
+                                <a href="#" class="facebook" aria-label="facebook"
+                                ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="instagram" aria-label="instagram"
+                                ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="google-p" aria-label="google"
+                                ><i class="fab fa-google-plus-g"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="linkedin" aria-label="linkedin"
+                                ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="pinterest" aria-label="pinterest"
+                                ><i class="fab fa-pinterest-p"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer 2-->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&amp;sensor=true"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from carrgo.pages.dev/blog-post by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:36:34 GMT -->
+</html>

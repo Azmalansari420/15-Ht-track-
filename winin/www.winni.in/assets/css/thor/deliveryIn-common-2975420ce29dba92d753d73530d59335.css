@@ -1,0 +1,131 @@
+.btn-current-location {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper-confirm-location .logo-location-finder {
+    margin-right: 6px;
+    vertical-align: text-bottom;
+}
+
+.wrapper-glocation {
+    text-align: center;
+    padding: 9px;
+    color: #212121;
+    margin-top: 40px;
+}
+
+.span-location-found {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.wrapper-glocation .location-address-1 {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.location-address-2 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.location-notif-pop {
+    background: #f0f0f0;
+    width: 368px;
+    position: fixed;
+    left: 50px;
+    box-shadow: 0 0 11px 0 #c2c2c2;
+    color: #212121;
+    z-index: 100;
+    border-radius: 0 0 2px 2px;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,
+    -webkit-transform .3s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-name: _3sE8Hb;
+    animation-name: _3sE8Hb;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    top: 200px;
+}
+
+.location-notif-pop .notif-btn-ok {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.location-notif-pop .ntif-msg .notif-sec-01 {
+    width: 52px;
+    max-width: 100%;
+    height: 42px;
+}
+
+.location-notif-pop .notif-btn-ok .notif-sec-02 {
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 140px;
+    font-size: 14px;
+}
+
+.location-notif-pop .notif-btn-ok .notif-sec-FVtOK {
+    margin-left: 16px;
+}
+
+
+
+.notif-sec-03.notif-sec-04 {
+    background: #da0e68;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border: none;
+}
+
+.location-notif-pop.notif-sec-05 {
+    width: 315px;
+}
+
+.location-notif-pop .ntif-msg.notif-sec-05 {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+
+.location-notif-pop .ntif-msg {
+    padding: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.model-confirm-bt {
+    font-size: 16px !important;
+    background: #3CB324 !important;
+    border: none !important;
+    color: #fff !important;
+    float: right;
+}
+
+
+.model-cancel-bt {
+    font-weight: 500;
+    padding: 8px 0;
+    min-width: 48%;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid #c2c2c2;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    font-size: 14px;
+}
+

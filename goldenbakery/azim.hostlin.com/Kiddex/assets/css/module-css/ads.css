@@ -1,0 +1,172 @@
+
+/** ads-section **/
+
+.ads-section{
+  position: relative;
+  background: #E2D1FF;
+}
+
+.ads-section .content-box{
+  position: relative;
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ads-section .content-box .icon-box{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 11px;
+}
+
+.ads-section .content-box h2{
+  display: block;
+  font-size: 72px;
+  line-height: 80px;
+  margin-bottom: 11px;
+}
+
+.ads-section .content-box h2 span{
+  position: relative;
+  display: block;
+  font-weight: 400;
+}
+
+.ads-section .content-box h3{
+  display: block;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.ads-section .content-box h3 span{
+  color: #FF0000;
+}
+
+.ads-section .pattern-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ads-section .image-box-one{
+  position: absolute;
+  left: 80px;
+  bottom: -90px;
+}
+
+.ads-section .image-box-two{
+  position: absolute;
+  right: 80px;
+  bottom: -90px;
+}
+
+.ads-section .image-inner .author-box{
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  padding: 7px;
+  border: dashed;
+  border-width: 2px;
+}
+
+.ads-section .image-inner .author-box img{
+  width: 1005;
+}
+
+.ads-section .image-inner .image-box-one .author-box{
+  left: 0px;
+  top: 50px;
+}
+
+.ads-section .image-inner .image-box-two .author-box{
+  right: 0px;
+  top: 50px;
+}
+
+
+/** rtl-css **/
+
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+  .ads-section .image-inner{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .ads-section{
+    padding: 70px 0px;
+  }
+
+  .ads-section .content-box h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

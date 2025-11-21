@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- dir="rtl"-->
+
+<!-- Mirrored from www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Sep 2025 07:45:08 GMT -->
+<head>
+    <!-- Required meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="application-name" content="eShopUIUX">
+    <meta name="apple-mobile-web-app-title" content="eShopUIUX">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link rel="apple-touch-icon" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/logo-512.png">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>eCommerce eShopUIUX - Bootstrap 5 Admin Dashboard HTML template - Inventory and Customer Management - adminuiux.com</title>
+    <meta name="description" content="Shopping e-Commerce Inventory and Customer Management App HTML Templates | Bootstrap 5 | UI/UX | Mobile | Admin | Dashboard | Universal App | Build stunning smart IOT Automation apps with our premium templates.">
+    <link rel="icon" type="image/png" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --adminuiux-content-font: "Open Sans", serif;
+            --adminuiux-content-font-weight: 400;
+            --adminuiux-title-font: "Poppins", serif;
+            --adminuiux-title-font-weight: 600;
+        }
+    </style>
+<script defer src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/js/app.js?e5e60e3925d7f9a7cded"></script><link href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/css/app.css?e5e60e3925d7f9a7cded" rel="stylesheet"></head>
+
+    <body class="main-bg main-bg-opac main-bg-blur roundedui adminuiux-header-standard adminuiux-sidebar-standard adminuiux-mobile-footer-fill-theme adminuiux-header-transparent theme-pista bg-r-gradient adminuiux-sidebar-fill-none scrollup" data-theme="theme-pista" data-sidebarfill="adminuiux-sidebar-fill-none" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0" data-sidebarlayout="adminuiux-sidebar-standard"
+        data-headerlayout="adminuiux-header-standard" data-headerfill="adminuiux-header-transparent" data-bggradient="bg-r-gradient" style="">
+        <!-- Pageloader -->
+<div class="pageloader">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center text-center h-100 pb-ios">
+            <div class="col-12 mb-auto pt-4"></div>
+            <div class="col-auto">
+                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/logo.svg" alt="" class="height-80 mb-3">
+                <p class="h2 mb-0 text-theme-accent-1">AdminUIUX</p>
+                <p class="display-3 text-theme-1 fw-bold mb-4">eShopUIUX</p>
+                <div class="loader5 mb-2 mx-auto"></div>
+            </div>
+            <div class="col-12 mt-auto pb-4">
+                <p class="small text-secondary">Please wait we are preparing awesome things...</p>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- standard header -->
+<header class="adminuiux-header">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- main sidebar toggle -->
+            <button class="btn btn-link btn-square sidebar-toggler" type="button" onclick="initSidebar()">
+                <i class="sidebar-svg" data-feather="menu"></i>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-dashboard.html">
+                <img data-bs-img="light" src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/logo-light.svg" alt="" class="avatar avatar-30">
+                <img data-bs-img="dark" src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/logo.svg" alt="" class="avatar avatar-30">
+                <div class="d-block ps-2">
+                    <h6 class="fs-6 mb-0">eShop<span class="fs-6">UIUX</span></h6>
+                    <p class="company-tagline">Mobile App HTML</p>
+                </div>
+            </a>
+
+            <!-- right icons button -->
+            <div class="ms-auto">
+                <!-- fullscreen toggle -->
+                <button class="btn btn-link btn-square btn-icon btn-link-header" type="button" data-bs-toggle="modal" data-bs-target="#searchmodalfull">
+                    <i data-feather="search"></i>
+                </button>
+                <!-- dark mode -->
+                <button class="btn btn-link btn-square btnsunmoon btn-link-header" id="btn-layout-modes-dark-page">
+                    <i class="sun mx-auto" data-feather="sun"></i>
+                    <i class="moon mx-auto" data-feather="moon"></i>
+                </button>
+                <!-- application list dropdown -->
+                <div class="dropdown d-none d-sm-inline-block">
+                    <button class="btn btn-link btn-square btn-icon btn-link-header dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i data-feather="grid"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end width-300 pt-0 px-0 overflow-hidden">
+                        <div class="py-3 mb-2 dropdown-dontclose text-center">
+                            <h5 class="mb-0">Applications</h5>
+                            <p class="text-secondary small">Make your app innovative</p>
+                        </div>
+                        <div class="px-2">
+                            <div class="row g-2 text-center mb-2">
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-bank fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">Finance</p>
+                                        <p class="fs-12 opacity-50 mb-2">Accounting</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-globe fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">Network</p>
+                                        <p class="fs-12 opacity-50 mb-2">Stabilize</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-box fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">Inventory</p>
+                                        <p class="fs-12 opacity-50 mb-2">Assuring</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-folder fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">Project</p>
+                                        <p class="fs-12 opacity-50 mb-2">Management</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-people fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">Social</p>
+                                        <p class="fs-12 opacity-50 mb-2">Tracking</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="dropdown-item square-item position-relative" href="#">
+                                        <div class="avatar avatar-40 rounded mb-2">
+                                            <i class="bi bi-journal-bookmark fs-4 mx-0"></i>
+                                        </div>
+                                        <p class="mb-0">eComm</p>
+                                        <p class="fs-12 opacity-50 mb-2">Make-easy</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-link text-center" href="#">View all <i class="bi bi-arrow-right fs-14"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- language dropdown -->
+                <div class="dropdown d-none d-sm-inline-block">
+                    <button class="btn btn-link btn-square btn-icon btn-link-header dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bi bi-translate"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item active" data-value="EN">EN - English</a></li>
+                        <li><a class="dropdown-item" data-value="FR">FR - French</a></li>
+                        <li><a class="dropdown-item" data-value="CH">CH - Chinese</a></li>
+                        <li><a class="dropdown-item" data-value="HI">HI - Hindi</a></li>
+                    </ul>
+                </div>
+                <!-- notification dropdown -->
+                <button class="btn btn-link btn-square btn-icon btn-link-header position-relative" data-bs-toggle="offcanvas" data-bs-target="#view-notification">
+                    <i data-feather="bell"></i>
+                    <span class="position-absolute top-0 end-0 badge rounded-pill bg-danger p-1">
+                        <small>9+</small>
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<!-- full-screen search modal -->
+<div class="modal fade" tabindex="-1" id="searchmodalfull" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-none border-0">
+            <div class="modal-body z-index-1">
+                <div class="input-group w-100 rounded search-wrap mb-3 mb-lg-4">
+                    <span class="input-group-text border-0 bg-none">
+                        <i data-feather="search"></i>
+                    </span>
+                    <input class="form-control pe-0 border-0 bg-none" type="search" placeholder="Type something here..." id="searchglobal">
+                </div>
+
+                <!-- products -->
+                <div class="row gx-3 align-items-center mb-3">
+                    <div class="col">
+                        <h6 class="text-white">Results in Products (3)</h6>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-products.html" class="btn btn-sm btn-link text-white">View All</a>
+                    </div>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="card adminuiux-card mb-3 mb-lg-4">
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="rounded coverimg height-100 mb-2 m-1">
+                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-5.jpg" alt="">
+                            </a>
+                            <div class="card-body pt-1">
+                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="style-none">
+                                    <h6 class="text-theme-1 text-truncated mb-2">Bracelet Woman Platinum</h6>
+                                </a>
+                                <div class="row gx-3 align-items-center mb-2">
+                                    <div class="col">
+                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                    </div>
+                                </div>
+
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col">
+                                        <p class="mb-0">6 Stock</p>
+                                        <p class="small text-secondary">36 wishlist</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="btn btn-sm btn-square btn-link"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="card adminuiux-card mb-3 mb-lg-4">
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="rounded coverimg height-100 mb-2 m-1">
+                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-6.jpg" alt="">
+                            </a>
+                            <div class="card-body pt-1">
+                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="style-none">
+                                    <h6 class="text-theme-1 text-truncated mb-2">Sofa single coco color</h6>
+                                </a>
+                                <div class="row gx-3 align-items-center mb-2">
+                                    <div class="col">
+                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                    </div>
+                                </div>
+
+                                <div class="row gx-2 align-items-center">
+                                    <div class="col">
+                                        <p class="mb-0">3 stock</p>
+                                        <p class="small text-secondary">2 wishlist</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="btn btn-sm btn-square btn-link"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="card adminuiux-card mb-3 mb-lg-4">
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="rounded coverimg height-100 mb-2 m-1">
+                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-7.jpg" alt="">
+                            </a>
+                            <div class="card-body pt-1">
+                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="style-none">
+                                    <h6 class="text-theme-1 text-truncated mb-2">Shine Nails Hiclon</h6>
+                                </a>
+                                <div class="row gx-3 align-items-center mb-2">
+                                    <div class="col">
+                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                    </div>
+                                </div>
+
+                                <div class="row gx-2 align-items-center">
+                                    <div class="col">
+                                        <p class="mb-0">25 stock</p>
+                                        <p class="small text-secondary">21 wishlist</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-details.html" class="btn btn-sm btn-square btn-link"><i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-link text-white" data-bs-dismiss="modal">Cancel Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="adminuiux-wrap">
+                    <!-- Standard sidebar -->
+                    <!-- Standard sidebar -->
+<div class="adminuiux-sidebar">
+    <div class="adminuiux-sidebar-inner">
+        <ul class="nav flex-column menu-active-line mt-3">
+            <!-- ecommerce sidebar -->
+            <li class="nav-item dropdown">
+                <a href="javascrit:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="menu-icon bi bi-shop"></i>
+                    <span class="menu-name">eShop</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="nav-item">
+                        <a href="ecommerce-shop.html" class="nav-link">
+                            <i class="menu-icon bi bi-shop-window"></i>
+                            <span class="menu-name">Shopping</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="nav-link">
+                            <i class="menu-icon bi bi-boxes"></i>
+                            <span class="menu-name">Products</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-orders.html" class="nav-link">
+                            <i class="menu-icon bi bi-basket"></i>
+                            <span class="menu-name">My Orders</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-wishlist.html" class="nav-link">
+                            <i class="menu-icon bi bi-heart"></i>
+                            <span class="menu-name">Wishlist</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-orders-checkout.html" class="nav-link">
+                            <i class="menu-icon bi bi-cart-check"></i>
+                            <span class="menu-name">Checkout</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-dashboard.html" class="nav-link">
+                    <i class="menu-icon bi bi-columns-gap"></i>
+                    <span class="menu-name">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascrit:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="menu-icon bi bi-bag-check"></i>
+                    <span class="menu-name">Orders</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-orders.html" class="nav-link">
+                            <i class="menu-icon bi bi-luggage"></i>
+                            <span class="menu-name">All Orders</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-order-details.html" class="nav-link">
+                            <i class="menu-icon bi bi-basket"></i>
+                            <span class="menu-name">Order Details</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-order-completed.html" class="nav-link">
+                            <i class="menu-icon bi bi-cart-check"></i>
+                            <span class="menu-name">Completed Orders</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-customers.html" class="nav-link">
+                    <i class="menu-icon bi bi-people"></i>
+                    <span class="menu-name">Customers</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-products.html" class="nav-link">
+                    <i class="menu-icon bi bi-boxes"></i>
+                    <span class="menu-name">Products</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="javascrit:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="menu-icon bi bi-cash-stack"></i>
+                    <span class="menu-name">Finance</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-finance-billing.html" class="nav-link">
+                            <i class="menu-icon bi bi-receipt-cutoff"></i>
+                            <span class="menu-name">Billing</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-finance-invoices.html" class="nav-link">
+                            <i class="menu-icon bi bi-receipt"></i>
+                            <span class="menu-name">Invoices</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-finance-discounts.html" class="nav-link">
+                            <i class="menu-icon bi bi-tags"></i>
+                            <span class="menu-name">Discount</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-integration.html" class="nav-link">
+                    <i class="menu-icon bi bi-gear-wide-connected"></i>
+                    <span class="menu-name">Integrations</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-settings.html" class="nav-link">
+                    <i class="menu-icon" data-feather="settings"></i>
+                    <span class="menu-name">Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-pages.html" class="nav-link">
+                    <i class="menu-icon bi bi-layers"></i>
+                    <span class="menu-name">Pages</span>
+                    <span class="badge text-bg-primary mx-2">54+</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-personalization.html" class="nav-link">
+                    <i class="menu-icon bi bi-palette h4"></i>
+                    <span class="menu-name">Personalize <small class="fs-14 bi bi-heart-fill text-danger"></small></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/components.html">
+                    <i class="menu-icon bi bi-cpu"></i>
+                    <span class="menu-name">Components</span>
+                </a>
+            </li>
+        </ul>
+        <div class=" mt-auto "></div>
+        <div class="px-3 not-iconic">
+            <div class="card adminuiux-card bg-theme-l-gradient mb-3">
+                <div class="card-body">
+                    <div class="row gx-3 mb-2">
+                        <div class="col">
+                            <p class="mb-0"><i class="bi bi-basket me-1 "></i> Plan</p>
+                        </div>
+                        <div class="col-auto">
+                            <p class="small opacity-75">4 d left</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-subscription-upgrade.html" class="btn btn-square btn-sm btn-accent"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="progress height-dynamic bg-white-opacity mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--h-dynamic:5px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 45%"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card adminuiux-card shadow-sm border-0">
+                <div class="card-body p-2">
+                    <div class="row gx-2">
+                        <div class="col-12 d-flex justify-content-between">
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-product-add.html" class="btn btn-square btn-link">
+                                <span class="position-relative">
+                                    <i data-feather="package"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-warning rounded-circle"><span class="visually-hidden">New alerts</span> </span></span>
+                            </a>
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-calendar.html" class="btn btn-square btn-link"><span class="position-relative">
+                                    <i data-feather="calendar"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle"><span class="visually-hidden">New alerts</span> </span></span>
+                            </a>
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-inbox.html" class="btn btn-square btn-link">
+                                <i data-feather="inbox"></i>
+                            </a>
+                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-help-center.html" class="btn btn-square btn-link">
+                                <i data-feather="help-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+
+                            <!-- content -->
+                            <div class="container mt-3 mt-lg-4 mt-xl-5" id="main-content">
+                                <div class="row gx-2">
+                                    <div class="col mb-3 mb-lg-4">
+                                        <div class="row gx-2 align-items-center">
+                                            <!-- userphoto  -->
+                                            <div class="col-auto col-md-auto text-center">
+                                                <figure class="avatar avatar-30 rounded coverimg align-middle">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-2.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- welcome section -->
+                                            <div class="col">
+                                                <p class="small text-theme-1 text-truncated mb-0">Welcome,</p>
+                                                <h6 class="fw-bold text-theme-accent-1 mb-0">Adminuiuxer</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto mb-3 mb-lg-4">
+                                        <div class="input-group input-group-sm my-2">
+                                            <select class="form-select form-select-sm bg-none">
+                                                <option>London</option>
+                                                <option>New York</option>
+                                                <option>Canada</option>
+                                                <option>Russia</option>
+                                                <option>Australia</option>
+                                            </select>
+                                            <span class="input-group-text bg-none"><i class="bi bi-geo-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- category swiper -->
+                                <div class="swiper swipernav text-center mb-3 mb-lg-4">
+                                    <div class="swiper-wrapper">
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Men</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-2.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Women</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-3.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Kids</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-4.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Appliances</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-5.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Footwear</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 mb-2 rounded">
+                                                <div class="background">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-6.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Accessories</p>
+                                        </a>
+                                        <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-products.html" class="swiper-slide w-auto style-none">
+                                            <div class="avatar avatar-80 bg-theme-1 mb-2 rounded">
+                                                <i class="bi bi-tags h2"></i>
+                                            </div>
+                                            <p class="fs-12 text-truncated">Offer Sale</p>
+                                        </a>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination white-pagination text-left mb-3"></div>
+                                </div>
+
+                                <!-- offer swiper -->
+                                <div class="swiper swipernavpagination mb-2 mb-lg-3">
+                                    <div class="swiper-wrapper pb-2">
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-50 blur-overlay">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-3.jpg" alt="">
+                                                </div>
+                                                <div class="height-120 p-3 z-index-1">
+                                                    <h2 class="mb-0">10% OFF</h2>
+                                                    <h5>On Credit Cards</h5>
+                                                    <p class="opacity-75">Best product and collections</p>
+                                                </div>
+                                                <div class="card adminuiux-card bg-none blur-overlay overflow-hidden position-relative" style="--bs-border-radius: 1.15rem;">
+                                                    <div class="card-body z-index-1">
+                                                        <div class="row gx-2 align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-5.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-6.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-7.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <h6 class="mb-0 small">20 million +</h6>
+                                                                <p class="small text-secondary mb-0">Products</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-accent-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-50 overlay-gradiant">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-7.jpg" alt="">
+                                                </div>
+                                                <div class="height-120 p-3 z-index-1">
+                                                    <h2 class="mb-0">8% OFF</h2>
+                                                    <h5>On Bank Offers</h5>
+                                                    <p class="opacity-75">Large scale of collections</p>
+                                                </div>
+                                                <div class="card adminuiux-card bg-none blur-overlay overflow-hidden position-relative" style="--bs-border-radius: 1.15rem;">
+                                                    <div class="card-body z-index-1">
+                                                        <div class="row gx-2 align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-4.jpeg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-5.jpeg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-3.jpeg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <h6 class="mb-0 small">20 million +</h6>
+                                                                <p class="small text-secondary mb-0">Products</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-50">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-4.jpg" alt="">
+                                                </div>
+                                                <div class="height-120 p-3 z-index-1">
+                                                    <h2 class="mb-0">10% OFF</h2>
+                                                    <h5>On Credit Cards</h5>
+                                                    <p class="opacity-75">Best product and collections</p>
+                                                </div>
+                                                <div class="card adminuiux-card bg-none blur-overlay overflow-hidden position-relative" style="--bs-border-radius: 1.15rem;">
+                                                    <div class="card-body z-index-1">
+                                                        <div class="row gx-2 align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-8.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-9.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="avatar avatar-50 rounded border coverimg">
+                                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-10.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <h6 class="mb-0 small">20 million +</h6>
+                                                                <p class="small text-secondary mb-0">Products</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-1 position-relative">
+                                            <div class="swiper-pagination line inline text-left bottom-2 mx-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- products -->
+                                <div class="row gx-3">
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-5.jpg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">Bracelet Woman Platinum</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row gx-3 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="javscript:void(0)" class="btn btn-square btn-link"><i class="bi bi-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-6.jpg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">Sofa single coco color</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row gx-2 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="javscript:void(0)" class="btn btn-square btn-link"><i class="bi bi-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-1.jpeg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">Green Shirt for Men</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h6 class="mb-0">$55.00 <s class="fw-normal small text-secondary">$ 70.00</s></h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row gx-3 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="javscript:void(0)" class="btn btn-square btn-link"><i class="bi bi-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-9.jpg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">High Heels blue</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i> 4.8 (15 ratings)</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <h6 class="mb-0">$65.00 <span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row gx-2 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a href="javscript:void(0)" class="btn btn-square btn-link"><i class="bi bi-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-10.jpg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">Black two strap sandals</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <h6>$65.00<br><span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                                    </div>
+                                                    <div class="col-auto text-end">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i><br> 4.8</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row gx-1 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-sm btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="row gx-0 justify-content-center increamenter border rounded">
+                                                            <div class="col-auto ms-auto"><button class="btn btn-sm btn-square btn-link rounded-circle increamenter-remove">-</button></div>
+                                                            <div class="col-auto"><input type="number" class="form-control form-control-sm text-center width-30 increamenter-value border-0 px-0" placeholder="" value="1"></div>
+                                                            <div class="col-auto"><button class="btn btn-sm btn-square btn-link rounded-circle increamenter-add">+</button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-4">
+                                        <div class="card bg-none mb-3 mb-lg-4">
+                                            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="rounded coverimg height-140 mb-2 m-1">
+                                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/image-7.jpg" alt="">
+                                            </a>
+                                            <div class="card-body pt-1">
+                                                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop-product-details.html" class="style-none">
+                                                    <h6 class="text-theme-1 text-truncated mb-2">Shine Nails Hiclon</h6>
+                                                </a>
+                                                <div class="row gx-3 align-items-center mb-2">
+                                                    <div class="col">
+                                                        <h6>$65.00<br><span class="fw-normal small text-secondary">10% OFF</span></h6>
+                                                    </div>
+                                                    <div class="col-auto text-end">
+                                                        <p class="small text-secondary"><i class="bi bi-star-fill text-warning"></i><br> 4.8</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row gx-1 align-items-center">
+                                                    <div class="col">
+                                                        <button class="btn btn-sm btn-square btn-link theme-pink"><i class="bi bi-heart"></i></button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="row gx-0 justify-content-center increamenter border rounded">
+                                                            <div class="col-auto ms-auto"><button class="btn btn-sm btn-square btn-link rounded-circle increamenter-remove">-</button></div>
+                                                            <div class="col-auto"><input type="number" class="form-control form-control-sm text-center width-30 increamenter-value border-0 px-0" placeholder="" value="1"></div>
+                                                            <div class="col-auto"><button class="btn btn-sm btn-square btn-link rounded-circle increamenter-add">+</button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row text-center mb-3 mb-lg-4">
+                                    <div class="col-6 col-md-4 col-lg-3 mx-auto">
+                                        <button class="btn btn-sm btn-link">Show more...</button>
+                                    </div>
+                                </div>
+
+                                <!-- offer divider -->
+                                <div class="card bg-none mb-3 mb-lg-4">
+                                    <div class="row gx-3 gx-lg-4">
+                                        <div class="col-7">
+                                            <div class="card-body">
+                                                <h5 class="mb-2">Wear Smart in this season</h5>
+                                                <p class="small text-secondary">Adi, Rebo, Lees and more...</p>
+                                                <a href="#" class="btn btn-sm btn-theme">Show Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 align-self-end text-center">
+                                            <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/ecommerce/offerimage1.png" alt="" class="mw-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- swiper collection discounts -->
+                                <div class="swiper swipernav text-center">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-75">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-2.jpeg" alt="">
+                                                </div>
+                                                <div class="card-body py-5 z-index-1">
+                                                    <h3>Woman's<br>Collections</h3>
+                                                    <p class="opacity-75">Upto 70% off</p>
+                                                    <a href="#" class="btn btn-sm btn-accent">Show Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-75">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-1.jpeg" alt="">
+                                                </div>
+                                                <div class="card-body py-5 z-index-1">
+                                                    <h3>Men's<br>Collections</h3>
+                                                    <p class="opacity-75">Upto 70% off</p>
+                                                    <a href="#" class="btn btn-sm btn-accent">Show Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide width-300">
+                                            <div class="card border-0 position-relative overflow-hidden bg-theme-1 p-1 mb-3 mb-lg-4">
+                                                <div class="coverimg top-0 start-0 h-100 w-100 position-absolute z-index-0 opacity-75">
+                                                    <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/cat-3.jpeg" alt="">
+                                                </div>
+                                                <div class="card-body py-5 z-index-1">
+                                                    <h3>Kid's<br>Collections </h3>
+                                                    <p class="opacity-75">Upto 70% off</p>
+                                                    <a href="#" class="btn btn-sm btn-accent">Show Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </main>
+                </div>
+
+                <!-- notification -->
+                <div class="offcanvas offcanvas-end shadow border-0 maxwidth-300" tabindex="-1" id="view-notification" data-bs-scroll="true" data-bs-backdrop="false">
+    <div class="offcanvas-header border-bottom">
+        <div class="flex-grow-1">
+            <h6 class="mb-0">Notifications</h6>
+            <p class="text-secondary">6 new updates</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="small text-center p-3 bg-theme-1-subtle text-theme-1 theme-blue">
+        <div class="input-group">
+            <input type="text" class="form-control" id="daterangepicker">
+            <span class="input-group-text text-secondary">
+                <i class="bi bi-calendar-week"></i>
+            </span>
+        </div>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card bg-none mb-2">
+            <div class="card-body">
+                <div class="row gx-3">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-30 coverimg rounded-circle">
+                            <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-2.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <p class="small mb-2"><a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-profile.html">Alex Smith</a>, <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-profile.html">John McMillan</a> and <span class="fw-medium">36 others</span> are also ordered from same website</p>
+
+                        <div class="row gx-3 gx-lg-4 align-items-center">
+                            <div class="col">
+                                <p class="text-secondary small">2:14 pm</p>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-none mb-2">
+            <div class="card-body">
+                <div class="row gx-3">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-30 rounded-circle bg-theme-1 border border-theme-1">
+                            <p class="h6 fw-medium">JM</p>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <p class="small mb-2"><a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-profile.html">Jack Mario</a> commented: "This one is most usable design with great user experience. w..."</p>
+
+                        <div class="row gx-3 gx-lg-4 align-items-center">
+                            <div class="col">
+                                <p class="text-secondary small">2 days ago</p>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-warning mb-2">
+            <div class="row gx-3">
+                <div class="col-auto">
+                    <figure class="avatar avatar-30 rounded-circle bg-warning text-white">
+                        <i class="bi bi-bell"></i>
+                    </figure>
+                </div>
+                <div class="col">
+                    <p class="small mb-2">Your subscription going to expire soon. Please <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-subscription.html">upgrade</a> to get service interrupt free.</p>
+
+                    <div class="row gx-3 gx-lg-4 align-items-center">
+                        <div class="col">
+                            <p class="text-secondary small">4 days ago</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-none mb-2">
+            <div class="card-body">
+                <div class="row gx-3">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-30 coverimg rounded-circle">
+                            <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-4.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col ps-0">
+                        <p class="small mb-2"><a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-invoices.html">Roberto Carlos</a> has requested to send $120.00 money.</p>
+
+                        <div class="row gx-3 gx-lg-4 align-items-center">
+                            <div class="col">
+                                <p class="text-secondary small">6 days ago</p>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-none mb-2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-30 rounded-circle bg-theme-1-subtle text-theme-1 theme-orange">
+                            <i class="bi bi-calendar-event"></i>
+                        </figure>
+                    </div>
+                    <div class="col ps-0">
+                        <h6 class="mb-1">Adminuiux: #1 HTML Templates</h6>
+                        <p class="small mb-2">Learning for better user experience on Universal app. development</p>
+                        <div class="avatar-group mb-2">
+                            <figure class="avatar avatar-20 coverimg rounded-circle" data-bs-toggle="tooltip" title="Mickey">
+                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-3.jpg" alt="" style="display: none;">
+                            </figure>
+                            <figure class="avatar avatar-20 coverimg rounded-circle" data-bs-toggle="tooltip" title="Jacky">
+                                <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-4.jpg" alt="">
+                            </figure>
+                            <div class="avatar avatar-20 bg-theme-1 rounded-circle">
+                                <small class="fs-10 vm">9+</small>
+                            </div>
+                            <span class="text-secondary small"> are attending</span>
+                        </div>
+
+                        <div class="row gx-3 gx-lg-4 align-items-center">
+                            <div class="col">
+                                <p class="text-secondary small">7 days ago</p>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-none mb-2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <figure class="avatar avatar-30 coverimg rounded-circle">
+                            <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-3.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col ps-0">
+                        <p class="small mb-2"><a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/profile.html">The AdminUIUX</a> commented: "Thank you so much for this deep view at Adminuiux..."</p>
+
+                        <div class="row gx-3 gx-lg-4 align-items-center">
+                            <div class="col">
+                                <p class="text-secondary small">1 year ago</p>
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-square btn-link theme-red"><i class="bi bi-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <!-- mobile footer -->
+                    <footer class="adminuiux-mobile-footer hide-on-scrolldown style-1">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="ecommerce-shop.html">
+                    <span>
+                        <i class="nav-icon bi bi-shop"></i>
+                        <span class="nav-text">Shop</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-orders.html">
+                    <span>
+                        <i class="nav-icon bi bi-bag-check"></i>
+                        <span class="nav-text">Orders</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-customers.html" class="nav-link ">
+                    <span>
+                        <i class="nav-icon bi bi-people"></i>
+                        <span class="nav-text">Customers</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-dashboard.html">
+                    <span>
+                        <i class="nav-icon bi bi-person-gear"></i>
+                        <span class="nav-text">Admin</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-profile.html">
+                    <span>
+                        <span class="avatar avatar-20 rounded-circle coverimg align-middle mb-2">
+                            <img src="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/assets/img/modern-ai-image/user-2.jpg" alt="">
+                        </span><br>
+                        <span class="nav-text">Profile</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+                        <!-- footer -->
+                        <!-- theming offcanvas-->
+<div class="offcanvas offcanvas-end shadow border-0 maxwidth-250" tabindex="-1" id="theming" data-bs-scroll="true" data-bs-backdrop="false" aria-labelledby="theminglabel">
+    <div class="offcanvas-header border-bottom">
+        <div>
+            <h5 class="offcanvas-title" id="theminglabel">Personalize</h5>
+            <p class="text-secondary small">Make it more like your own</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <h6 class="offcanvas-title">Colors</h6>
+        <p class="text-secondary small mb-4">Change colors of templates</p>
+        <div class="row gx-3 mb-3 theme-select">
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-blue">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-blue"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-indigo">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-indigo"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-purple">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-purple"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-pink">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-pink"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-red">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-red"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-orange">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-orange"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-yellow">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-yellow"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-green">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-green"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-teal">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-teal"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-pista">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-pista"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-cyan">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-cyan"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-grey">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-grey"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-brown">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-brown"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-chocolate">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-chocolate"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="theme-black">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-dark"></span>
+                </div>
+            </div>
+        </div>
+        <h6 class="offcanvas-title">Backgrounds</h6>
+        <p class="text-secondary small mb-4">Change color for background</p>
+        <div class="row gx-3 mb-3 theme-background">
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-default">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default"><i class="bi bi-arrow-clockwise"></i></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-white">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-white"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-r-gradient">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-r-gradient"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-1">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-1"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-2">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-2"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-3">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-3"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-4">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-4"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-5">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-5"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-6">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-6"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-7">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-7"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-8">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-8"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-9">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-9"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="gradient-box text-center mb-2" data-title="bg-gradient-10">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-gradient-10"></span>
+                </div>
+            </div>
+        </div>
+        <h6 class="offcanvas-title">Sidebar Layout</h6>
+        <p class="text-secondary small mb-4">Change sidebar layout style</p>
+        <div class="row gx-3 mb-3 sidebar-layout">
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="adminuiux-sidebar-standard" data-bs-toggle="tooltip" title="None">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="adminuiux-sidebar-iconic" data-bs-toggle="tooltip" title="Iconic">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default">
+                        <i class="bi bi-bezier h4"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="adminuiux-sidebar-boxed" data-bs-toggle="tooltip" title="Boxed">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default">
+                        <i class="bi bi-box h5"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="select-box text-center mb-2" data-title="adminuiux-sidebar-boxed adminuiux-sidebar-iconic" data-bs-toggle="tooltip" title="Iconic+Boxed">
+                    <span class="avatar avatar-40 rounded-circle mb-2 bg-default">
+                        <i class="bi bi-bounding-box h5"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-3">
+            <a href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-personalization.html" class="btn btn-sm btn-outline-theme">More options <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+    </div>
+</div>
+                            <!-- standard footer -->
+<footer class="adminuiux-footer has-adminuiux-sidebar mt-auto">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md col-lg py-2">
+                <span class="small">Copyright @2025, <a href="https://adminuiux.com/" target="_blank">eShopUIUX</a> on Earth ❤️ </span>
+            </div>
+            <div class="col-12 col-md-auto col-lg-auto align-self-center">
+                <ul class="nav small">
+                    <li class="nav-item"><a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/help-center.html">Help</a></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/terms-of-use.html">Terms of Use</a></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- theming action-->
+<div class="position-fixed bottom-0 end-0 m-3 z-index-5" id="fixedbuttons">
+    <button class="btn btn-square btn-theme shadow rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#theming" aria-controls="theming"><i class="bi bi-palette"></i></button>
+    <br>
+    <button class="btn btn-theme btn-square shadow mt-2 d-none rounded-circle" id="backtotop"><i class="bi bi-arrow-up"></i></button>
+</div>
+
+                                <!-- Page Level js -->
+
+
+    </body>
+
+
+<!-- Mirrored from www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Sep 2025 07:45:08 GMT -->
+</html>

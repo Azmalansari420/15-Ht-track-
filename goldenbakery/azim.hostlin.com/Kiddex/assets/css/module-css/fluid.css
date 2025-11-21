@@ -1,0 +1,260 @@
+
+/** fluid-section **/
+
+.fluid-section{
+  position: relative;
+  background: #FFD6E1;
+}
+
+.fluid-section .left-column{
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 110px 115px;
+  overflow: hidden;
+}
+
+.fluid-section .left-column .big-text{
+  position: absolute;
+  left: -10px;
+  bottom: -22px;
+  width: 100%;
+  text-align: center;
+  font-size: 128px;
+  line-height: 130px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(17, 17, 17, 0.10);
+}
+
+.fluid-section .left-column .left-content{
+  position: relative;
+  display: block;
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fluid-section .testimonial-content{
+  position: relative;
+  display: block;
+}
+
+.fluid-section .testimonial-content .icon-box{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.fluid-section .testimonial-content p{
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.fluid-section .testimonial-content .signature{
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.fluid-section .testimonial-content .signature img{
+  display: inline-block;
+}
+
+.fluid-section .testimonial-content .thumb-box{
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+  border: dashed;
+  border-width: 1px;
+  margin-bottom: 12px;
+}
+
+.fluid-section .testimonial-content h4{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.fluid-section .testimonial-content .designation{
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6A6A6A;
+}
+
+.fluid-section .right-column{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  background: #F3F1D8;
+  padding: 110px 0px 116px 125px;
+}
+
+.fluid-section .right-column .shape{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fluid-section .collection-block-one .inner-box{
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+.fluid-section .collection-block-one .inner-box .theme-btn{
+  padding: 8px 30px;
+  width: 100%;
+}
+
+.fluid-section .right-column .right-content{
+  position: relative;
+  display: block;
+  margin-right: -143px;
+}
+
+.fluid-section .right-column .owl-nav{
+  position: absolute;
+  top: -86px;
+  right: 278px;
+}
+
+.fluid-section .collection-block-one .inner-box .image-box .image{
+  max-width: 216px;
+}
+
+
+/** rtl-css **/
+
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1600px){
+  .fluid-section .right-column .owl-nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .fluid-section .left-column{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .fluid-section .right-column{
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .fluid-section .left-column{
+    float: none;
+    width: 100%;
+  }
+
+  .fluid-section .right-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .fluid-section .right-column .right-content{
+    margin: 0px;
+  }
+
+  .fluid-section .right-column{
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .fluid-section .left-column,
+  .fluid-section .right-column{
+    padding: 70px 30px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+  .fluid-section .left-column,
+  .fluid-section .right-column{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .fluid-section .testimonial-content p{
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

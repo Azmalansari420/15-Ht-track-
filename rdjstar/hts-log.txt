@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 21 Mar 2025 14:35:50 at https://adminuiux.com/adminuiux/investment-mobile-uiux/investment-dashboard.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://adminuiux.com/adminuiux/investment-mobile-uiux/investment-dashboard.html -O1 "D:\httrackdownload\rdjstar" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:35:52	Warning: 	Moved Permanently for https://adminuiux.com/robots.txt
+14:35:52	Warning: 	Redirected link is identical because of 'URL Hack' option: https://adminuiux.com/robots.txt and https://www.adminuiux.com/robots.txt
+14:35:52	Warning: 	Warning moved treated for https://adminuiux.com/robots.txt (real one is https://www.adminuiux.com/robots.txt)
+14:38:45	Error: 	"Not Found" (404) at link https://www.adminuiux.com/adminuiux/investment-mobile-uiux/%22assets/img/modern-ai-image/flamingo-3.jpg (from https://adminuiux.com/adminuiux/investment-mobile-uiux/investment-settings-users.html)
+14:38:45	Error: 	"Not Found" (404) at link https://www.adminuiux.com/adminuiux/investment-mobile-uiux/%22assets/img/modern-ai-image/user-6.jpg (from https://adminuiux.com/adminuiux/investment-mobile-uiux/investment-settings-users.html)
+14:38:45	Error: 	"Not Found" (404) at link https://www.adminuiux.com/adminuiux/investment-mobile-uiux/%22assets/img/modern-ai-image/tree-3.jpg (from https://adminuiux.com/adminuiux/investment-mobile-uiux/investment-share-details.html)
+14:38:45	Error: 	"Not Found" (404) at link https://www.adminuiux.com/adminuiux/investment-mobile-uiux/%22assets/img/modern-ai-image/flamingo-2.jpg (from https://adminuiux.com/adminuiux/investment-mobile-uiux/component-pricing.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 55 seconds : 272 links scanned, 267 files written (37119185 bytes overall), 267 files updated [35278378 bytes received at 201590 bytes/sec], 3035121 bytes transferred using HTTP compression in 116 files, ratio 17%, 14.6 requests per connection
+(4 errors, 3 warnings, 0 messages)

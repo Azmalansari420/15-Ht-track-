@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/customer-service/support-tickets by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Tickets - CarrGo Dashboard</title>
+<!-- Bootstrap CSS -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Remix Icons CSS -->
+<link href="../assets/fonts/remixicon.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.min.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+<!-- Meta Tags for SEO -->
+<meta name="description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta name="keywords" content="carpool, dashboard, ride-sharing, transportation management">
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Support Tickets - CarPool Dashboard">
+<meta property="og:description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta property="og:type" content="website">
+<!-- Mobile Theme Color -->
+<meta name="theme-color" content="#4a6cf7">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <!-- Sidebar -->
+<div class="sidebar" id="sidebar" data-theme="light">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+        <div class="logo-container">
+            <!-- Light Theme Logos -->
+            <img src="../assets/img/logo-full.svg" alt="CarPool" class="logo-full logo-light">
+            <img src="../assets/img/logo-icon.svg" alt="CarPool" class="logo-icon logo-light">
+            
+            <!-- Dark Theme Logos -->
+            <img src="../assets/img/logo-white.svg" alt="CarPool" class="logo-full logo-dark">
+            <img src="../assets/img/logo-icon-white.svg" alt="CarPool" class="logo-icon logo-dark">
+        </div>
+        <button class="btn d-md-none" id="close-sidebar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Driver Management Section -->
+            <li class="has-dropdown">
+                <a href="#driverMenu" data-bs-toggle="collapse">
+                    <i class="ri-steering-line"></i>
+                    <span>Driver Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="driverMenu">
+                    <li><a href="../driver-management/driver-onboarding.html">Onboarding</a></li>
+                    <li><a href="../driver-management/driver-verification.html">Verification</a></li>
+                    <li><a href="../driver-management/driver-documents.html">Documents</a></li>
+                    <li><a href="../driver-management/driver-training.html">Training</a></li>
+                    <li><a href="../driver-management/driver-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="../driver-management/drivers.html">Drivers List</a></li>
+                    <li><a href="../driver-management/driver-schedule.html">Schedules</a></li>
+                    <li><a href="../driver-management/drivers-earnings.html">Earnings</a></li>
+                    <li><a href="../driver-management/vehicle-management.html">Vehicles</a></li>
+                </ul>
+            </li>
+
+            <!-- Financial Management Section -->
+            <li class="has-dropdown">
+                <a href="#financeMenu" data-bs-toggle="collapse">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Finance</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="financeMenu">
+                    <li><a href="../financial/revenue-reports.html">Revenue Reports</a></li>
+                    <li><a href="../financial/expense-tracking.html">Expense Tracking</a></li>
+                    <li><a href="../financial/driver-payouts.html">Driver Payouts</a></li>
+                    <li><a href="../financial/pricing-management.html">Pricing Management</a></li>
+                    <li><a href="../financial/invoices.html">Invoices</a></li>
+                    <li><a href="../financial/tax-reports.html">Tax Reports</a></li>
+                    <li><a href="../financial/payments.html">Payments</a></li>
+                </ul>
+            </li>
+
+            <!-- Customer Service Section -->
+            <li class="has-dropdown">
+                <a href="#customerMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customerMenu">
+                    <i class="ri-customer-service-line"></i>
+                    <span>Customer Service</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="customerMenu">
+                    <li><a href="support-tickets.html">Support Tickets</a></li>
+                    <li><a href="customer-feedback.html">Feedback</a></li>
+                    <li><a href="customer-communication.html">Communication</a></li>
+                    <li><a href="customer-reports.html">Reports</a></li>
+                    <li><a href="customer-preferences.html">Preferences</a></li>
+                </ul>
+            </li>
+
+            <!-- User Management Section -->
+            <li class="has-dropdown">
+                <a href="#userMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="userMenu">
+                    <i class="ri-team-line"></i>
+                    <span>User Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="userMenu">
+                    <li><a href="../user-management/users.html">Users List</a></li>
+                    <li><a href="../user-management/bookings.html">Bookings</a></li>
+                    <li><a href="../user-management/ride-history.html">Ride History</a></li>
+                </ul>
+            </li>
+
+            <!-- Operations Section -->
+            <li class="has-dropdown">
+                <a href="#operationsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="operationsMenu">
+                    <i class="ri-settings-5-line"></i>
+                    <span>Operations</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="operationsMenu">
+                    <li><a href="../operations/analytics.html">Analytics</a></li>
+                    <li><a href="../operations/fleet-management.html">Fleet Management</a></li>
+                    <li><a href="../operations/rides.html">Active Rides</a></li>
+                    <li><a href="../operations/maps.html">Maps</a></li>
+                </ul>
+            </li>
+
+            <!-- Settings Section -->
+            <li class="has-dropdown">
+                <a href="#settingsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="settingsMenu">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="settingsMenu">
+                    <li><a href="../settings/settings.html">General Settings</a></li>
+                    <li><a href="../settings/profile.html">Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="../settings/profile.html" class="d-flex align-items-center w-100" title="User Profile">
+                <div class="avatar avatar-sm me-3">
+                    <img src="../assets/img/headshot_32x32.png" alt="User Avatar" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <span class="fw-medium">John Doe</span>
+                    <small class="d-block text-muted">Administrator</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar Overlay - moved outside sidebar for better event handling -->
+<div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+        <div class="main-content">
+            <!-- Include Header -->
+            <!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center">
+                <button class="btn sidebar-toggle me-3" id="sidebar-toggle" type="button" aria-label="Toggle Sidebar" aria-expanded="true" aria-controls="sidebar">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </button>
+                <h1 class="header-title mb-0">Support Tickets</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle me-3">
+                    <button class="btn theme-toggle-btn" id="theme-toggle">
+                        <i class="ri-sun-line light-icon"></i>
+                        <i class="ri-moon-line dark-icon"></i>
+                    </button>
+                </div>
+                <!-- User Profile Dropdown -->
+                <div class="dropdown user-dropdown">
+                    <button class="d-flex align-items-center text-decoration-none dropdown-toggle border-0 bg-transparent" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User menu">
+                        <div class="avatar avatar-sm avatar-with-badge me-2">
+                            <img src="../assets/img/user-4.png" alt="User profile" class="avatar-image">
+                            <span class="avatar-status avatar-status-online"></span>
+                        </div>
+                        <span class="d-none d-md-inline">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../settings/profile.html"><i class="ri-user-line me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="../settings/settings.html"><i class="ri-settings-line me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../auth/login.html"><i class="ri-logout-box-line me-2"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <!-- Main Content -->
+            <div class="container-fluid py-4">
+                <!-- Ticket Overview Cards -->
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Total Tickets</h6>
+                                        <h2 class="card-title mb-0">1,247</h2>
+                                        <small class="text-success">+8% from last month</small>
+                                    </div>
+                                    <div class="stat-icon bg-primary">
+                                        <i class="ri-ticket-2-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Open Tickets</h6>
+                                        <h2 class="card-title mb-0">85</h2>
+                                        <small class="text-danger">+12% from last week</small>
+                                    </div>
+                                    <div class="stat-icon bg-warning">
+                                        <i class="ri-error-warning-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Avg Response Time</h6>
+                                        <h2 class="card-title mb-0">2.4h</h2>
+                                        <small class="text-success">-15min from last week</small>
+                                    </div>
+                                    <div class="stat-icon bg-info">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Resolution Rate</h6>
+                                        <h2 class="card-title mb-0">94%</h2>
+                                        <small class="text-success">+2% from last month</small>
+                                    </div>
+                                    <div class="stat-icon bg-success">
+                                        <i class="ri-check-double-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tickets List -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Support Tickets</h5>
+                                <div class="action-buttons">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createTicketModal">
+                                        <i class="ri-add-line"></i> Create Ticket
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="ri-filter-3-line"></i> Filter
+                                    </button>
+                                    <button class="btn btn-outline-secondary">
+                                        <i class="ri-download-2-line"></i> Export
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-3 mb-4">
+                                    <div class="search-input-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text border-end-0">
+                                                <i class="ri-search-line"></i>
+                                            </span>
+                                            <input type="text" class="form-control border-start-0" placeholder="Search tickets...">
+                                        </div>
+                                    </div>
+                                    <select class="filter-select">
+                                        <option>All Status</option>
+                                        <option>Open</option>
+                                        <option>In Progress</option>
+                                        <option>Resolved</option>
+                                        <option>Closed</option>
+                                    </select>
+                                    <select class="filter-select">
+                                        <option>All Priority</option>
+                                        <option>High</option>
+                                        <option>Medium</option>
+                                        <option>Low</option>
+                                    </select>
+                                    <select class="filter-select">
+                                        <option>All Categories</option>
+                                        <option>Technical</option>
+                                        <option>Billing</option>
+                                        <option>Account</option>
+                                        <option>General</option>
+                                    </select>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Ticket ID</th>
+                                                <th>Subject</th>
+                                                <th>Customer</th>
+                                                <th>Priority</th>
+                                                <th>Status</th>
+                                                <th>Created</th>
+                                                <th>Assigned To</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" class="text-primary fw-bold">#TKT-2023-001</a>
+                                                </td>
+                                                <td>Payment not processed</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-5.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <div>
+                                                            <div class="fw-bold">John Smith</div>
+                                                            <small class="text-muted">john@example.com</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-danger">High</span></td>
+                                                <td><span class="badge bg-warning">In Progress</span></td>
+                                                <td>2023-07-15 09:45</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-5.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <span>Sarah Wilson</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light me-1" title="View">
+                                                        <i class="ri-eye-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light me-1" title="Edit">
+                                                        <i class="ri-edit-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light" title="Close">
+                                                        <i class="ri-close-circle-line"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" class="text-primary fw-bold">#TKT-2023-002</a>
+                                                </td>
+                                                <td>App crash during ride</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-5.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <div>
+                                                            <div class="fw-bold">Sarah Johnson</div>
+                                                            <small class="text-muted">sarah@example.com</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-warning">Medium</span></td>
+                                                <td><span class="badge bg-success">Resolved</span></td>
+                                                <td>2023-07-14 15:30</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../assets/img/user-5.png" class="rounded-circle me-2" width="32" height="32">
+                                                        <span>Mike Thompson</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light me-1" title="View">
+                                                        <i class="ri-eye-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light me-1" title="Edit">
+                                                        <i class="ri-edit-line"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-light" title="Close">
+                                                        <i class="ri-close-circle-line"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Recent Activities</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker bg-success"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <span class="fw-bold">Ticket #TKT-2023-002 resolved</span>
+                                                <small class="text-muted">2 hours ago</small>
+                                            </div>
+                                            <p class="mb-0">Mike Thompson resolved the ticket: App crash during ride</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker bg-warning"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <span class="fw-bold">New response added</span>
+                                                <small class="text-muted">4 hours ago</small>
+                                            </div>
+                                            <p class="mb-0">Sarah Wilson responded to ticket #TKT-2023-001</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker bg-primary"></div>
+                                        <div class="timeline-content">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <span class="fw-bold">New ticket created</span>
+                                                <small class="text-muted">6 hours ago</small>
+                                            </div>
+                                            <p class="mb-0">John Smith created a new ticket: Payment not processed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center g-3">
+            <div class="col-md-6">
+                <p class="mb-0">© 2025 CarrGo Dashboard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <a href="#" class="me-3">Help</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="ms-3 opacity-75">|</span>
+                    <span class="ms-3">Version 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+    <!-- Create Ticket Modal -->
+    <div class="modal fade" id="createTicketModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Support Ticket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Customer</label>
+                            <select class="form-select" required>
+                                <option value="">Select Customer</option>
+                                <option value="1">John Smith</option>
+                                <option value="2">Sarah Johnson</option>
+                                <option value="3">Michael Brown</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Priority</label>
+                                <select class="form-select" required>
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                    <option value="urgent">Urgent</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Category</label>
+                                <select class="form-select" required>
+                                    <option value="technical">Technical Issue</option>
+                                    <option value="billing">Billing</option>
+                                    <option value="account">Account</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Attachments</label>
+                            <input type="file" class="form-control" multiple>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Assign To</label>
+                            <select class="form-select">
+                                <option value="">Auto Assign</option>
+                                <option value="1">Sarah Wilson</option>
+                                <option value="2">Mike Thompson</option>
+                                <option value="3">Emily Davis</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Create Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor Scripts -->
+<script src="../../../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/vendor/chart.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    //dropdown fix - add as a separate script
+(function() {
+    // Wait for page to fully load
+    window.addEventListener('load', function() {
+        // Add click handlers directly to all dropdown toggles
+        document.querySelectorAll('li.has-dropdown > a').forEach(function(toggle) {
+            toggle.onclick = function(e) {
+                e.preventDefault();
+                
+                // Find target menu
+                var targetId = this.getAttribute('href') || this.getAttribute('data-bs-target');
+                var menu = document.querySelector(targetId);
+                
+                if (!menu) return false;
+                
+                // Toggle this menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Close all other menus
+                    document.querySelectorAll('.submenu').forEach(function(m) {
+                        m.style.display = 'none';
+                    });
+                    
+                    // Open this menu
+                    menu.style.display = 'block';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+                
+                return false;
+            };
+        });
+        
+        // Set active page
+        var path = window.location.pathname;
+        document.querySelectorAll('.submenu a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === path || href === path.substring(1) || '/' + href === path) {
+                // Mark as active
+                link.classList.add('active');
+                
+                // Show parent menu
+                var menu = link.closest('.submenu');
+                if (menu) {
+                    menu.style.display = 'block';
+                    
+                    // Mark parent as active
+                    var parent = document.querySelector('a[href="#' + menu.id + '"]');
+                    if (parent) {
+                        parent.classList.add('active-parent');
+                        parent.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+
+
+    <style>
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 1rem 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .timeline-item:not(:last-child):before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 15px;
+            height: 100%;
+            width: 1px;
+            background-color: var(--border-color);
+        }
+
+        .timeline-content {
+            padding: 0.5rem 0;
+        }
+    </style>
+</body>
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/customer-service/support-tickets by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:11 GMT -->
+</html>

@@ -1,0 +1,7 @@
+document.addEventListener('DOMContentLoaded',function(){const form=document.querySelector('.themepunch-beta-form');if(!form)return;form.addEventListener('submit',function(e){const name=document.getElementById('name');const email=document.getElementById('email');const websiteURL=document.getElementById('website_url');const websiteViews=document.getElementById('website_views');const srEngine=document.getElementById('sr_engine');const consent=document.getElementById('consent');let valid=!0;if(!name.value.trim()){alert('Name is required.');name.focus();valid=!1}
+if(valid&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){alert('Please enter a valid email address.');email.focus();valid=!1}
+if(valid&&!/^https?:\/\/[^\s$.?#].[^\s]*$/.test(websiteURL.value)){alert('Please enter a valid website URL.');websiteURL.focus();valid=!1}
+if(valid&&(!websiteViews.value||websiteViews.value<=0)){alert('Website Views must be a positive number.');websiteViews.focus();valid=!1}
+if(valid&&!srEngine.value){alert('Please select an SR Engine.');srEngine.focus();valid=!1}
+if(valid&&!consent.checked){alert('You must agree to the consent for anonymous data.');consent.focus();valid=!1}
+if(!valid)e.preventDefault()})})

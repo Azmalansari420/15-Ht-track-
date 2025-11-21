@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+adminuiux.com	TRUE	/	FALSE	1999999999	PHPSESSID	ethsupddd8eb3smmaf53vn37op
+

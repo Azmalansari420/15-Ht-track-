@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 20 Mar 2025 18:05:22 at https://carrgo.pages.dev/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://carrgo.pages.dev/ -O1 "D:\httrackdownload\taxi" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:05:23	Warning: 	File not parsed, looks like binary: https://carrgo.pages.dev/robots.txt
+18:19:31	Error: 	Exit requested by shell or user
+18:19:31	Warning: 	File not added due to mirror cancel: https://carrgo.pages.dev/assets/images/assets/css/assets/plugins/animate/assets/images/blog/1.webp
+18:19:31	Warning: 	File not added due to mirror cancel: https://carrgo.pages.dev/assets/images/assets/css/assets/plugins/animate/assets/images/blog/1.webp
+18:19:31	Warning: 	File not added due to mirror cancel: https://carrgo.pages.dev/assets/images/assets/css/assets/plugins/animate/assets/images/blog/1.webp
+18:19:31	Warning: 	File not added due to mirror cancel: https://carrgo.pages.dev/assets/images/assets/css/assets/plugins/animate/assets/images/blog/1.webp
+18:19:34	Error: 	Exit requested by shell or user
+18:19:34	Error: 	"" (-1) at link https://carrgo.pages.dev/assets/images/assets/images/home/assets/images/bg-video-2.mp4 (from https://carrgo.pages.dev/assets/images/assets/images/home/who-we-are-01.webp)
+18:19:34	Error: 	Exit requested by shell or user
+
+HTTrack Website Copier/3.49-2 mirror complete in 14 minutes 12 seconds : 3260 links scanned, 3258 files written (223664309 bytes overall) [41305206 bytes received at 48480 bytes/sec], 213668587 bytes transferred using HTTP compression in 3207 files, ratio 12%, 523.2 requests per connection
+(4 errors, 5 warnings, 0 messages)
+* * MIRROR ABORTED! * *
+The current temporary cache is required for any update operation and only contains data downloaded during the present aborted session.
+The former cache might contain more complete information; if you do not want to lose that information, you have to restore it and delete the current cache.
+This can easily be done here by erasing the hts-cache/new.* files]

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/settings/settings by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - CarrGo Dashboard</title>
+<!-- Bootstrap CSS -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Remix Icons CSS -->
+<link href="../assets/fonts/remixicon.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.min.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+<!-- Meta Tags for SEO -->
+<meta name="description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta name="keywords" content="carpool, dashboard, ride-sharing, transportation management">
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Settings - CarPool Dashboard">
+<meta property="og:description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta property="og:type" content="website">
+<!-- Mobile Theme Color -->
+<meta name="theme-color" content="#4a6cf7">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <!-- Sidebar -->
+<div class="sidebar" id="sidebar" data-theme="light">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+        <div class="logo-container">
+            <!-- Light Theme Logos -->
+            <img src="../assets/img/logo-full.svg" alt="CarPool" class="logo-full logo-light">
+            <img src="../assets/img/logo-icon.svg" alt="CarPool" class="logo-icon logo-light">
+            
+            <!-- Dark Theme Logos -->
+            <img src="../assets/img/logo-white.svg" alt="CarPool" class="logo-full logo-dark">
+            <img src="../assets/img/logo-icon-white.svg" alt="CarPool" class="logo-icon logo-dark">
+        </div>
+        <button class="btn d-md-none" id="close-sidebar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Driver Management Section -->
+            <li class="has-dropdown">
+                <a href="#driverMenu" data-bs-toggle="collapse">
+                    <i class="ri-steering-line"></i>
+                    <span>Driver Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="driverMenu">
+                    <li><a href="../driver-management/driver-onboarding.html">Onboarding</a></li>
+                    <li><a href="../driver-management/driver-verification.html">Verification</a></li>
+                    <li><a href="../driver-management/driver-documents.html">Documents</a></li>
+                    <li><a href="../driver-management/driver-training.html">Training</a></li>
+                    <li><a href="../driver-management/driver-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="../driver-management/drivers.html">Drivers List</a></li>
+                    <li><a href="../driver-management/driver-schedule.html">Schedules</a></li>
+                    <li><a href="../driver-management/drivers-earnings.html">Earnings</a></li>
+                    <li><a href="../driver-management/vehicle-management.html">Vehicles</a></li>
+                </ul>
+            </li>
+
+            <!-- Financial Management Section -->
+            <li class="has-dropdown">
+                <a href="#financeMenu" data-bs-toggle="collapse">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Finance</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="financeMenu">
+                    <li><a href="../financial/revenue-reports.html">Revenue Reports</a></li>
+                    <li><a href="../financial/expense-tracking.html">Expense Tracking</a></li>
+                    <li><a href="../financial/driver-payouts.html">Driver Payouts</a></li>
+                    <li><a href="../financial/pricing-management.html">Pricing Management</a></li>
+                    <li><a href="../financial/invoices.html">Invoices</a></li>
+                    <li><a href="../financial/tax-reports.html">Tax Reports</a></li>
+                    <li><a href="../financial/payments.html">Payments</a></li>
+                </ul>
+            </li>
+
+            <!-- Customer Service Section -->
+            <li class="has-dropdown">
+                <a href="#customerMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customerMenu">
+                    <i class="ri-customer-service-line"></i>
+                    <span>Customer Service</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="customerMenu">
+                    <li><a href="../customer-service/support-tickets.html">Support Tickets</a></li>
+                    <li><a href="../customer-service/customer-feedback.html">Feedback</a></li>
+                    <li><a href="../customer-service/customer-communication.html">Communication</a></li>
+                    <li><a href="../customer-service/customer-reports.html">Reports</a></li>
+                    <li><a href="../customer-service/customer-preferences.html">Preferences</a></li>
+                </ul>
+            </li>
+
+            <!-- User Management Section -->
+            <li class="has-dropdown">
+                <a href="#userMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="userMenu">
+                    <i class="ri-team-line"></i>
+                    <span>User Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="userMenu">
+                    <li><a href="../user-management/users.html">Users List</a></li>
+                    <li><a href="../user-management/bookings.html">Bookings</a></li>
+                    <li><a href="../user-management/ride-history.html">Ride History</a></li>
+                </ul>
+            </li>
+
+            <!-- Operations Section -->
+            <li class="has-dropdown">
+                <a href="#operationsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="operationsMenu">
+                    <i class="ri-settings-5-line"></i>
+                    <span>Operations</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="operationsMenu">
+                    <li><a href="../operations/analytics.html">Analytics</a></li>
+                    <li><a href="../operations/fleet-management.html">Fleet Management</a></li>
+                    <li><a href="../operations/rides.html">Active Rides</a></li>
+                    <li><a href="../operations/maps.html">Maps</a></li>
+                </ul>
+            </li>
+
+            <!-- Settings Section -->
+            <li class="has-dropdown">
+                <a href="#settingsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="settingsMenu">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="settingsMenu">
+                    <li><a href="settings.html">General Settings</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="profile.html" class="d-flex align-items-center w-100" title="User Profile">
+                <div class="avatar avatar-sm me-3">
+                    <img src="../assets/img/headshot_32x32.png" alt="User Avatar" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <span class="fw-medium">John Doe</span>
+                    <small class="d-block text-muted">Administrator</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar Overlay - moved outside sidebar for better event handling -->
+<div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+        <div class="main-content">
+            <!-- Include Header -->
+            <!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center">
+                <button class="btn sidebar-toggle me-3" id="sidebar-toggle" type="button" aria-label="Toggle Sidebar" aria-expanded="true" aria-controls="sidebar">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </button>
+                <h1 class="header-title mb-0">Settings</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle me-3">
+                    <button class="btn theme-toggle-btn" id="theme-toggle">
+                        <i class="ri-sun-line light-icon"></i>
+                        <i class="ri-moon-line dark-icon"></i>
+                    </button>
+                </div>
+                <!-- User Profile Dropdown -->
+                <div class="dropdown user-dropdown">
+                    <button class="d-flex align-items-center text-decoration-none dropdown-toggle border-0 bg-transparent" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User menu">
+                        <div class="avatar avatar-sm avatar-with-badge me-2">
+                            <img src="../assets/img/user-4.png" alt="User profile" class="avatar-image">
+                            <span class="avatar-status avatar-status-online"></span>
+                        </div>
+                        <span class="d-none d-md-inline">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="profile.html"><i class="ri-user-line me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="settings.html"><i class="ri-settings-line me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../auth/login.html"><i class="ri-logout-box-line me-2"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <!-- Main Content -->
+            <div class="container-fluid py-4">
+                <div class="row">
+                    <!-- Settings Navigation -->
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush settings-nav">
+                                    <a href="#general" class="list-group-item list-group-item-action active" data-bs-toggle="list">
+                                        <i class="ri-settings-3-line me-2"></i> General
+                                    </a>
+                                    <a href="#appearance" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-palette-line me-2"></i> Appearance
+                                    </a>
+                                    <a href="#notifications" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-notification-3-line me-2"></i> Notifications
+                                    </a>
+                                    <a href="#security" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-shield-keyhole-line me-2"></i> Security
+                                    </a>
+                                    <a href="#privacy" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-eye-off-line me-2"></i> Privacy
+                                    </a>
+                                    <a href="#integrations" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-puzzle-line me-2"></i> Integrations
+                                    </a>
+                                    <a href="#permissions" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-lock-line me-2"></i> Permissions
+                                    </a>
+                                    <a href="#activity" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                                        <i class="ri-history-line me-2"></i> Activity Log
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Settings Content -->
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <!-- General Settings -->
+                            <div class="tab-pane fade show active" id="general">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">General Settings</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="language" class="form-label">Language</label>
+                                                <select class="form-select" id="language">
+                                                    <option value="en" selected>English</option>
+                                                    <option value="es">Spanish</option>
+                                                    <option value="fr">French</option>
+                                                    <option value="de">German</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="timezone" class="form-label">Timezone</label>
+                                                <select class="form-select" id="timezone">
+                                                    <option value="utc" selected>UTC (Coordinated Universal Time)</option>
+                                                    <option value="est">EST (Eastern Standard Time)</option>
+                                                    <option value="cst">CST (Central Standard Time)</option>
+                                                    <option value="pst">PST (Pacific Standard Time)</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="dateFormat" class="form-label">Date Format</label>
+                                                <select class="form-select" id="dateFormat">
+                                                    <option value="mdy" selected>MM/DD/YYYY</option>
+                                                    <option value="dmy">DD/MM/YYYY</option>
+                                                    <option value="ymd">YYYY/MM/DD</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Appearance Settings -->
+                            <div class="tab-pane fade" id="appearance">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Appearance Settings</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-4">
+                                                <label class="form-label">Theme Mode</label>
+                                                <div class="d-flex">
+                                                    <div class="form-check me-4">
+                                                        <input class="form-check-input" type="radio" name="themeMode" id="lightMode" checked>
+                                                        <label class="form-check-label" for="lightMode">
+                                                            Light Mode
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check me-4">
+                                                        <input class="form-check-input" type="radio" name="themeMode" id="darkMode">
+                                                        <label class="form-check-label" for="darkMode">
+                                                            Dark Mode
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="themeMode" id="systemMode">
+                                                        <label class="form-check-label" for="systemMode">
+                                                            System Default
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="form-label">Sidebar Position</label>
+                                                <div class="d-flex">
+                                                    <div class="form-check me-4">
+                                                        <input class="form-check-input" type="radio" name="sidebarPosition" id="sidebarLeft" checked>
+                                                        <label class="form-check-label" for="sidebarLeft">
+                                                            Left
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="sidebarPosition" id="sidebarRight">
+                                                        <label class="form-check-label" for="sidebarRight">
+                                                            Right
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="form-label">Font Size</label>
+                                                <div class="d-flex">
+                                                    <div class="form-check me-3">
+                                                        <input class="form-check-input" type="radio" name="fontSize" id="fontSmall">
+                                                        <label class="form-check-label" for="fontSmall">
+                                                            Small
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check me-3">
+                                                        <input class="form-check-input" type="radio" name="fontSize" id="fontMedium" checked>
+                                                        <label class="form-check-label" for="fontMedium">
+                                                            Medium
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="fontSize" id="fontLarge">
+                                                        <label class="form-check-label" for="fontLarge">
+                                                            Large
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Notification Settings -->
+                            <div class="tab-pane fade" id="notifications">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Notification Settings</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label class="form-label">Email Notifications</label>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="emailNewRide" checked>
+                                                    <label class="form-check-label" for="emailNewRide">New ride requests</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="emailRideUpdates" checked>
+                                                    <label class="form-check-label" for="emailRideUpdates">Ride status updates</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="emailPayments" checked>
+                                                    <label class="form-check-label" for="emailPayments">Payment confirmations</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="emailMarketing">
+                                                    <label class="form-check-label" for="emailMarketing">Marketing and promotions</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">SMS Notifications</label>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="smsRideUpdates" checked>
+                                                    <label class="form-check-label" for="smsRideUpdates">Ride status updates</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="smsDriverArrival" checked>
+                                                    <label class="form-check-label" for="smsDriverArrival">Driver arrival alerts</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="smsPromotions">
+                                                    <label class="form-check-label" for="smsPromotions">Promotions and discounts</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Push Notifications</label>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="pushAll" checked>
+                                                    <label class="form-check-label" for="pushAll">Enable push notifications</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Security Settings -->
+                            <div class="tab-pane fade" id="security">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Security Settings</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="currentPassword" class="form-label">Current Password</label>
+                                                <input type="password" class="form-control" id="currentPassword">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="newPassword" class="form-label">New Password</label>
+                                                <input type="password" class="form-control" id="newPassword">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                                <input type="password" class="form-control" id="confirmPassword">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="form-label">Two-Factor Authentication</label>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="twoFactorAuth">
+                                                    <label class="form-check-label" for="twoFactorAuth">Enable two-factor authentication</label>
+                                                </div>
+                                                <div class="form-text text-muted">Add an extra layer of security to your account</div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Update Security Settings</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Privacy Settings -->
+                            <div class="tab-pane fade" id="privacy">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Privacy Settings</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label class="form-label">Profile Visibility</label>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="radio" name="profileVisibility" id="profilePublic" checked>
+                                                    <label class="form-check-label" for="profilePublic">
+                                                        Public - Anyone can view your profile
+                                                    </label>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="radio" name="profileVisibility" id="profileLimited">
+                                                    <label class="form-check-label" for="profileLimited">
+                                                        Limited - Only registered users can view your profile
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="profileVisibility" id="profilePrivate">
+                                                    <label class="form-check-label" for="profilePrivate">
+                                                        Private - Only you and administrators can view your profile
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Data Sharing</label>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="shareRideHistory" checked>
+                                                    <label class="form-check-label" for="shareRideHistory">Share ride history with drivers</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="shareLocation" checked>
+                                                    <label class="form-check-label" for="shareLocation">Share location data during rides</label>
+                                                </div>
+                                                <div class="form-check form-switch mb-2">
+                                                    <input class="form-check-input" type="checkbox" id="shareAnalytics">
+                                                    <label class="form-check-label" for="shareAnalytics">Share usage data for service improvement</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save Privacy Settings</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Integrations Settings -->
+                            <div class="tab-pane fade" id="integrations">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Connected Services</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="integration-item d-flex align-items-center justify-content-between mb-3 p-3 border rounded">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-google fs-4 me-3"></i>
+                                                <div>
+                                                    <h6 class="mb-0">Google</h6>
+                                                    <small class="text-muted">Calendar, Contacts</small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-sm btn-outline-danger">Disconnect</button>
+                                            </div>
+                                        </div>
+                                        <div class="integration-item d-flex align-items-center justify-content-between mb-3 p-3 border rounded">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-facebook fs-4 me-3"></i>
+                                                <div>
+                                                    <h6 class="mb-0">Facebook</h6>
+                                                    <small class="text-muted">Not connected</small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                            </div>
+                                        </div>
+                                        <div class="integration-item d-flex align-items-center justify-content-between mb-3 p-3 border rounded">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-apple fs-4 me-3"></i>
+                                                <div>
+                                                    <h6 class="mb-0">Apple</h6>
+                                                    <small class="text-muted">Not connected</small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-sm btn-outline-primary">Connect</button>
+                                            </div>
+                                        </div>
+                                        <div class="integration-item d-flex align-items-center justify-content-between mb-3 p-3 border rounded">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-paypal fs-4 me-3"></i>
+                                                <div>
+                                                    <h6 class="mb-0">PayPal</h6>
+                                                    <small class="text-muted">Connected</small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-sm btn-outline-danger">Disconnect</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Permissions Settings -->
+                            <div class="tab-pane fade" id="permissions">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Role-Based Access Controls</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <label class="form-label">Your Current Role</label>
+                                            <div class="d-flex align-items-center">
+                                                <span class="badge bg-danger me-2">Administrator</span>
+                                                <span class="text-muted">Full access to all system features and settings</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label class="form-label">Manage Team Permissions</label>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Feature</th>
+                                                            <th>Admin</th>
+                                                            <th>Manager</th>
+                                                            <th>Support</th>
+                                                            <th>Customer</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>User Management</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Driver Management</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Financial Reports</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>System Settings</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" checked disabled>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">Save Permission Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Activity Log -->
+                            <div class="tab-pane fade" id="activity">
+                                <div class="card mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-0">Activity Log</h5>
+                                        <div>
+                                            <select class="form-select form-select-sm">
+                                                <option selected>All Activities</option>
+                                                <option>Login Events</option>
+                                                <option>System Changes</option>
+                                                <option>User Management</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="activity-timeline">
+                                            <div class="activity-item mb-3 pb-3 border-bottom">
+                                                <div class="d-flex">
+                                                    <div class="activity-icon bg-primary text-white">
+                                                        <i class="ri-login-box-line"></i>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-0">System Login</h6>
+                                                            <small class="text-muted">Today, 10:30 AM</small>
+                                                        </div>
+                                                        <p class="text-muted mb-0">Successful login from 192.168.1.105 (Chrome/Windows)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="activity-item mb-3 pb-3 border-bottom">
+                                                <div class="d-flex">
+                                                    <div class="activity-icon bg-warning text-white">
+                                                        <i class="ri-user-settings-line"></i>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-0">User Role Updated</h6>
+                                                            <small class="text-muted">Today, 09:45 AM</small>
+                                                        </div>
+                                                        <p class="text-muted mb-0">Changed Emily Johnson's role from Support to Manager</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="activity-item mb-3 pb-3 border-bottom">
+                                                <div class="d-flex">
+                                                    <div class="activity-icon bg-info text-white">
+                                                        <i class="ri-settings-3-line"></i>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-0">Settings Changed</h6>
+                                                            <small class="text-muted">Yesterday, 3:30 PM</small>
+                                                        </div>
+                                                        <p class="text-muted mb-0">Updated notification preferences for system alerts</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="activity-item mb-3 pb-3 border-bottom">
+                                                <div class="d-flex">
+                                                    <div class="activity-icon bg-danger text-white">
+                                                        <i class="ri-shield-keyhole-line"></i>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-0">Password Changed</h6>
+                                                            <small class="text-muted">Yesterday, 2:15 PM</small>
+                                                        </div>
+                                                        <p class="text-muted mb-0">Successfully updated account password</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="activity-item">
+                                                <div class="d-flex">
+                                                    <div class="activity-icon bg-success text-white">
+                                                        <i class="ri-user-add-line"></i>
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h6 class="mb-0">New User Added</h6>
+                                                            <small class="text-muted">Jun 10, 2023, 11:20 AM</small>
+                                                        </div>
+                                                        <p class="text-muted mb-0">Added new user account for Robert Thompson</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center mt-4">
+                                            <button class="btn btn-outline-primary">Load More Activity</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center g-3">
+            <div class="col-md-6">
+                <p class="mb-0">© 2025 CarrGo Dashboard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <a href="#" class="me-3">Help</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="ms-3 opacity-75">|</span>
+                    <span class="ms-3">Version 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <!-- Vendor Scripts -->
+<script src="../../../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/vendor/chart.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    //dropdown fix - add as a separate script
+(function() {
+    // Wait for page to fully load
+    window.addEventListener('load', function() {
+        // Add click handlers directly to all dropdown toggles
+        document.querySelectorAll('li.has-dropdown > a').forEach(function(toggle) {
+            toggle.onclick = function(e) {
+                e.preventDefault();
+                
+                // Find target menu
+                var targetId = this.getAttribute('href') || this.getAttribute('data-bs-target');
+                var menu = document.querySelector(targetId);
+                
+                if (!menu) return false;
+                
+                // Toggle this menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Close all other menus
+                    document.querySelectorAll('.submenu').forEach(function(m) {
+                        m.style.display = 'none';
+                    });
+                    
+                    // Open this menu
+                    menu.style.display = 'block';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+                
+                return false;
+            };
+        });
+        
+        // Set active page
+        var path = window.location.pathname;
+        document.querySelectorAll('.submenu a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === path || href === path.substring(1) || '/' + href === path) {
+                // Mark as active
+                link.classList.add('active');
+                
+                // Show parent menu
+                var menu = link.closest('.submenu');
+                if (menu) {
+                    menu.style.display = 'block';
+                    
+                    // Mark parent as active
+                    var parent = document.querySelector('a[href="#' + menu.id + '"]');
+                    if (parent) {
+                        parent.classList.add('active-parent');
+                        parent.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+
+
+    <!-- Page-specific script -->
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+            // Direct manual activation for settings tab
+            const generalTab = document.querySelector('.tab-pane#general');
+            const generalNav = document.querySelector('.list-group-item[href="#general"]');
+            
+            if (generalTab && generalNav) {
+                // Force active tab to be visible by adding classes directly
+                document.querySelectorAll('.tab-pane').forEach(tab => {
+                    tab.classList.remove('show', 'active');
+                });
+                
+                document.querySelectorAll('.list-group-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                generalTab.classList.add('show', 'active');
+                generalNav.classList.add('active');
+            }
+            
+            // Add click handlers to all tabs
+            document.querySelectorAll('.list-group-item[data-bs-toggle="list"]').forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Get target tab
+                    const target = this.getAttribute('href');
+                    const targetTab = document.querySelector(target);
+                    
+                    if (targetTab) {
+                        // Hide all tabs
+                        document.querySelectorAll('.tab-pane').forEach(tab => {
+                            tab.classList.remove('show', 'active');
+                        });
+                        
+                        // Remove active class from all nav items
+                        document.querySelectorAll('.list-group-item').forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        
+                        // Show target tab
+                        targetTab.classList.add('show', 'active');
+                        
+                        // Set this nav item as active
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/settings/settings by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:16 GMT -->
+</html>

@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+13:15:07	89169/89169	---M-Z	200	added ('OK')	text/html	etag:%221a79-15c51-62fe45c01e470-gzip%22	https://www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop.html	D:/httrackdownload/ttt/www.adminuiux.com/adminuiux/ecommerce-mobile-uiux/ecommerce-shop.html	(from )
+13:15:08	142/142	---MC-	200	added ('OK')	text/plain	date:Tue,%2002%20Sep%202025%2007:45:09%20GMT	https://www.adminuiux.com/robots.txt		(from )

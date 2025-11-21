@@ -1,0 +1,22 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 29 Sep 2025 11:07:44 at https://creativelayers.net/themes/superio/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://creativelayers.net/themes/superio/index.html -O1 "D:\httrackdownload\quickjob2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:10:06	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/add-listing.html (from https://creativelayers.net/themes/superio/index.html)
+11:10:07	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/thebeehost@support.com (from https://creativelayers.net/themes/superio/index.html)
+11:10:20	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/images/resource/company-logo/3-1.png (from https://creativelayers.net/themes/superio/css/style.css)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/dashboard-profile.html (from https://creativelayers.net/themes/superio/candidate-dashboard.html)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/dashboard-delete.html (from https://creativelayers.net/themes/superio/candidate-dashboard.html)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/invoice@superio.com (from https://creativelayers.net/themes/superio/invoice.html)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/owl.video.play.png (from https://creativelayers.net/themes/superio/css/owl.css)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/images/ui-icons_ffffff_256x240.png (from https://creativelayers.net/themes/superio/css/jquery-ui.min.css)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/images/ui-icons_777620_256x240.png (from https://creativelayers.net/themes/superio/css/jquery-ui.min.css)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/images/ui-icons_cc0000_256x240.png (from https://creativelayers.net/themes/superio/css/jquery-ui.min.css)
+11:10:21	Error: 	"Not Found" (404) at link https://creativelayers.net/themes/superio/css/images/ui-icons_777777_256x240.png (from https://creativelayers.net/themes/superio/css/jquery-ui.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 39 seconds : 598 links scanned, 586 files written (64458428 bytes overall) [59112312 bytes received at 371775 bytes/sec], 6566238 bytes transferred using HTTP compression in 140 files, ratio 15%, 42.7 requests per connection
+(11 errors, 0 warnings, 0 messages)

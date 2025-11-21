@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 12 Sep 2025 10:46:15 at https://html.themehour.net/kleanix/demo/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.themehour.net/kleanix/demo/index.html -O1 "D:\httrackdownload\clining2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:48:08	Error: 	"Not Found" (404) at link https://html.themehour.net/kleanix/demo/privacy-policy.html (from https://html.themehour.net/kleanix/demo/index.html)
+10:48:08	Error: 	"Not Found" (404) at link https://html.themehour.net/kleanix/demo/portfolio.html (from https://html.themehour.net/kleanix/demo/index.html)
+10:48:08	Error: 	"Not Found" (404) at link https://html.themehour.net/kleanix/demo/assets/img/theme-img/button_shape.png (from https://html.themehour.net/kleanix/demo/assets/css/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 57 seconds : 468 links scanned, 464 files written (22340099 bytes overall) [14114565 bytes received at 120637 bytes/sec], 12579820 bytes transferred using HTTP compression in 150 files, ratio 33%, 46.8 requests per connection
+(3 errors, 0 warnings, 0 messages)

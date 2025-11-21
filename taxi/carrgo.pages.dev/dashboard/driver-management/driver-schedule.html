@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/driver-management/driver-schedule by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Schedule - CarrGo Dashboard</title>
+<!-- Bootstrap CSS -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Remix Icons CSS -->
+<link href="../assets/fonts/remixicon.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.min.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+<!-- Meta Tags for SEO -->
+<meta name="description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta name="keywords" content="carpool, dashboard, ride-sharing, transportation management">
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Driver Schedule - CarPool Dashboard">
+<meta property="og:description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta property="og:type" content="website">
+<!-- Mobile Theme Color -->
+<meta name="theme-color" content="#4a6cf7">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <!-- Sidebar -->
+<div class="sidebar" id="sidebar" data-theme="light">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+        <div class="logo-container">
+            <!-- Light Theme Logos -->
+            <img src="../assets/img/logo-full.svg" alt="CarPool" class="logo-full logo-light">
+            <img src="../assets/img/logo-icon.svg" alt="CarPool" class="logo-icon logo-light">
+            
+            <!-- Dark Theme Logos -->
+            <img src="../assets/img/logo-white.svg" alt="CarPool" class="logo-full logo-dark">
+            <img src="../assets/img/logo-icon-white.svg" alt="CarPool" class="logo-icon logo-dark">
+        </div>
+        <button class="btn d-md-none" id="close-sidebar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Driver Management Section -->
+            <li class="has-dropdown">
+                <a href="#driverMenu" data-bs-toggle="collapse">
+                    <i class="ri-steering-line"></i>
+                    <span>Driver Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="driverMenu">
+                    <li><a href="driver-onboarding.html">Onboarding</a></li>
+                    <li><a href="driver-verification.html">Verification</a></li>
+                    <li><a href="driver-documents.html">Documents</a></li>
+                    <li><a href="driver-training.html">Training</a></li>
+                    <li><a href="driver-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="drivers.html">Drivers List</a></li>
+                    <li><a href="driver-schedule.html">Schedules</a></li>
+                    <li><a href="drivers-earnings.html">Earnings</a></li>
+                    <li><a href="vehicle-management.html">Vehicles</a></li>
+                </ul>
+            </li>
+
+            <!-- Financial Management Section -->
+            <li class="has-dropdown">
+                <a href="#financeMenu" data-bs-toggle="collapse">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Finance</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="financeMenu">
+                    <li><a href="../financial/revenue-reports.html">Revenue Reports</a></li>
+                    <li><a href="../financial/expense-tracking.html">Expense Tracking</a></li>
+                    <li><a href="../financial/driver-payouts.html">Driver Payouts</a></li>
+                    <li><a href="../financial/pricing-management.html">Pricing Management</a></li>
+                    <li><a href="../financial/invoices.html">Invoices</a></li>
+                    <li><a href="../financial/tax-reports.html">Tax Reports</a></li>
+                    <li><a href="../financial/payments.html">Payments</a></li>
+                </ul>
+            </li>
+
+            <!-- Customer Service Section -->
+            <li class="has-dropdown">
+                <a href="#customerMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customerMenu">
+                    <i class="ri-customer-service-line"></i>
+                    <span>Customer Service</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="customerMenu">
+                    <li><a href="../customer-service/support-tickets.html">Support Tickets</a></li>
+                    <li><a href="../customer-service/customer-feedback.html">Feedback</a></li>
+                    <li><a href="../customer-service/customer-communication.html">Communication</a></li>
+                    <li><a href="../customer-service/customer-reports.html">Reports</a></li>
+                    <li><a href="../customer-service/customer-preferences.html">Preferences</a></li>
+                </ul>
+            </li>
+
+            <!-- User Management Section -->
+            <li class="has-dropdown">
+                <a href="#userMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="userMenu">
+                    <i class="ri-team-line"></i>
+                    <span>User Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="userMenu">
+                    <li><a href="../user-management/users.html">Users List</a></li>
+                    <li><a href="../user-management/bookings.html">Bookings</a></li>
+                    <li><a href="../user-management/ride-history.html">Ride History</a></li>
+                </ul>
+            </li>
+
+            <!-- Operations Section -->
+            <li class="has-dropdown">
+                <a href="#operationsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="operationsMenu">
+                    <i class="ri-settings-5-line"></i>
+                    <span>Operations</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="operationsMenu">
+                    <li><a href="../operations/analytics.html">Analytics</a></li>
+                    <li><a href="../operations/fleet-management.html">Fleet Management</a></li>
+                    <li><a href="../operations/rides.html">Active Rides</a></li>
+                    <li><a href="../operations/maps.html">Maps</a></li>
+                </ul>
+            </li>
+
+            <!-- Settings Section -->
+            <li class="has-dropdown">
+                <a href="#settingsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="settingsMenu">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="settingsMenu">
+                    <li><a href="../settings/settings.html">General Settings</a></li>
+                    <li><a href="../settings/profile.html">Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="../settings/profile.html" class="d-flex align-items-center w-100" title="User Profile">
+                <div class="avatar avatar-sm me-3">
+                    <img src="../assets/img/headshot_32x32.png" alt="User Avatar" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <span class="fw-medium">John Doe</span>
+                    <small class="d-block text-muted">Administrator</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar Overlay - moved outside sidebar for better event handling -->
+<div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+        <div class="main-content">
+            <!-- Include Header -->
+            <!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center">
+                <button class="btn sidebar-toggle me-3" id="sidebar-toggle" type="button" aria-label="Toggle Sidebar" aria-expanded="true" aria-controls="sidebar">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </button>
+                <h1 class="header-title mb-0">Driver Schedule</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle me-3">
+                    <button class="btn theme-toggle-btn" id="theme-toggle">
+                        <i class="ri-sun-line light-icon"></i>
+                        <i class="ri-moon-line dark-icon"></i>
+                    </button>
+                </div>
+                <!-- User Profile Dropdown -->
+                <div class="dropdown user-dropdown">
+                    <button class="d-flex align-items-center text-decoration-none dropdown-toggle border-0 bg-transparent" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User menu">
+                        <div class="avatar avatar-sm avatar-with-badge me-2">
+                            <img src="../assets/img/user-4.png" alt="User profile" class="avatar-image">
+                            <span class="avatar-status avatar-status-online"></span>
+                        </div>
+                        <span class="d-none d-md-inline">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../settings/profile.html"><i class="ri-user-line me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="../settings/settings.html"><i class="ri-settings-line me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../auth/login.html"><i class="ri-logout-box-line me-2"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <!-- Main Content -->
+            <div class="container-fluid py-4">
+                <!-- Statistics Cards Row -->
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Scheduled Hours</h6>
+                                        <h2 class="card-title mb-0">42</h2>
+                                    </div>
+                                    <div class="stat-icon bg-primary">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Upcoming Rides</h6>
+                                        <h2 class="card-title mb-0">12</h2>
+                                    </div>
+                                    <div class="stat-icon bg-warning">
+                                        <i class="ri-calendar-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Completed Rides</h6>
+                                        <h2 class="card-title mb-0">28</h2>
+                                    </div>
+                                    <div class="stat-icon bg-success">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Availability Rate</h6>
+                                        <h2 class="card-title mb-0">85%</h2>
+                                    </div>
+                                    <div class="stat-icon bg-info">
+                                        <i class="ri-percent-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Schedule Calendar -->
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Weekly Schedule</h5>
+                        <div>
+                            <button class="btn btn-outline-primary me-2">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </button>
+                            <span class="fw-bold">June 12 - June 18, 2023</span>
+                            <button class="btn btn-outline-primary ms-2">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                        <th>Saturday</th>
+                                        <th>Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>6:00 AM</td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7:00 AM</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8:00 AM</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9:00 AM</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-light"></td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 AM</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-warning text-white">Booked</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:00 AM</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-primary text-white">Available</td>
+                                        <td class="bg-light"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <i class="ri-edit-line me-2"></i>Edit Schedule
+                        </button>
+                        <button class="btn btn-outline-secondary ms-2">
+                            <i class="ri-save-line me-2"></i>Save as Template
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Upcoming Rides -->
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Upcoming Scheduled Rides</h5>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filter
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">All Rides</a></li>
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Week</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Ride ID</th>
+                                        <th>Date & Time</th>
+                                        <th>Passenger</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#RD5421</td>
+                                        <td>Jun 12, 2023 - 9:00 AM</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="img/avatar.html" alt="User" width="32" height="32" class="rounded-circle me-2">
+                                                <span>Sarah Johnson</span>
+                                            </div>
+                                        </td>
+                                        <td>Downtown Station</td>
+                                        <td>Business Park</td>
+                                        <td><span class="badge bg-warning">Scheduled</span></td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">View Details</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Passenger</a></li>
+                                                    <li><a class="dropdown-item text-danger" href="#">Cancel Ride</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#RD5422</td>
+                                        <td>Jun 12, 2023 - 10:00 AM</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="img/avatar.html" alt="User" width="32" height="32" class="rounded-circle me-2">
+                                                <span>Michael Brown</span>
+                                            </div>
+                                        </td>
+                                        <td>Central Mall</td>
+                                        <td>Airport Terminal</td>
+                                        <td><span class="badge bg-warning">Scheduled</span></td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">View Details</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Passenger</a></li>
+                                                    <li><a class="dropdown-item text-danger" href="#">Cancel Ride</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#RD5425</td>
+                                        <td>Jun 13, 2023 - 9:00 AM</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="img/avatar.html" alt="User" width="32" height="32" class="rounded-circle me-2">
+                                                <span>Emily Wilson</span>
+                                            </div>
+                                        </td>
+                                        <td>Riverside Apartments</td>
+                                        <td>City Hospital</td>
+                                        <td><span class="badge bg-warning">Scheduled</span></td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">View Details</a></li>
+                                                    <li><a class="dropdown-item" href="#">Contact Passenger</a></li>
+                                                    <li><a class="dropdown-item text-danger" href="#">Cancel Ride</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center g-3">
+            <div class="col-md-6">
+                <p class="mb-0">© 2025 CarrGo Dashboard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <a href="#" class="me-3">Help</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="ms-3 opacity-75">|</span>
+                    <span class="ms-3">Version 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+    <!-- Vendor Scripts -->
+<script src="../../../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/vendor/chart.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    //dropdown fix - add as a separate script
+(function() {
+    // Wait for page to fully load
+    window.addEventListener('load', function() {
+        // Add click handlers directly to all dropdown toggles
+        document.querySelectorAll('li.has-dropdown > a').forEach(function(toggle) {
+            toggle.onclick = function(e) {
+                e.preventDefault();
+                
+                // Find target menu
+                var targetId = this.getAttribute('href') || this.getAttribute('data-bs-target');
+                var menu = document.querySelector(targetId);
+                
+                if (!menu) return false;
+                
+                // Toggle this menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Close all other menus
+                    document.querySelectorAll('.submenu').forEach(function(m) {
+                        m.style.display = 'none';
+                    });
+                    
+                    // Open this menu
+                    menu.style.display = 'block';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+                
+                return false;
+            };
+        });
+        
+        // Set active page
+        var path = window.location.pathname;
+        document.querySelectorAll('.submenu a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === path || href === path.substring(1) || '/' + href === path) {
+                // Mark as active
+                link.classList.add('active');
+                
+                // Show parent menu
+                var menu = link.closest('.submenu');
+                if (menu) {
+                    menu.style.display = 'block';
+                    
+                    // Mark parent as active
+                    var parent = document.querySelector('a[href="#' + menu.id + '"]');
+                    if (parent) {
+                        parent.classList.add('active-parent');
+                        parent.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+
+</body>
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/driver-management/driver-schedule by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:07 GMT -->
+</html>

@@ -1,0 +1,18 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.sliderrevolution.com	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_sec_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/wp-admin	FALSE	1999999999	wordpress_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/wp-admin	FALSE	1999999999	wordpress_sec_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpress_logged_in_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wp-settings-0	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wp-settings-time-0	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpress_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpress_sec_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpressuser_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wordpresspass_c370d1f701d12c671a87a91b61e73f02	%20
+www.sliderrevolution.com	TRUE	/	FALSE	1999999999	wp-postpass_c370d1f701d12c671a87a91b61e73f02	%20
+.onesignal.com	TRUE	/	FALSE	1999999999	__cf_bm	1knbL1JEzTpmRrlg4LWl80K3brADqfbkXt8Ac49X3Wo-1741764162-1.0.1.1-tO64Y3kAb2ez7FMjKFpmgq2xIpN5A8YCfm.H5zR.l1pBKND0cjbipEWd7HVOwE4ZMtQkvVGtka0xrCtuvq7Q_8nETdexhpP5OIIJA5Z6XQQ
+cdn.onesignal.com	TRUE	/	FALSE	1999999999	SameSite	None
+

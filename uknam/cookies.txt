@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.www.eco4govscheme.co.uk	TRUE	/	FALSE	1999999999	__cf_bm	5hD2EnmMiyQRANKhuM8yDMnS.tbXynHyQJ9onG08TPk-1749623396-1.0.1.1-keDyzQri8Gu51MpgmzylIcgzHjpSKOaa4Nj0ugHucyrqSkUu.BNQcX.Y1QB6JNMj.9djxQnRsSErXRiSY.n6xhlDLFVP2AhVd47ORuDFY2Q
+www.eco4govscheme.co.uk	TRUE	/	FALSE	1999999999	SameSite	None
+

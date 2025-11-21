@@ -1,0 +1,42 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 04 Jun 2025 14:54:18 at https://datrixinsights.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://datrixinsights.com/ -O1 "D:\httrackdownload\datrix" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=108
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=108 to https://datrixinsights.com/about-us/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=153
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=153 to https://datrixinsights.com/services/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=241
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=241 to https://datrixinsights.com/industries/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=233
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=233 to https://datrixinsights.com/blogs/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=144
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=144 to https://datrixinsights.com/contact-us/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=288
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=288 to https://datrixinsights.com/the-importance-of-recruiting-the-right-participants-for-your-study/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=1
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=1 to https://datrixinsights.com/why-consumer-centric-research-is-the-key-to-brand-loyalty/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=267
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=267 to https://datrixinsights.com/privacy-policy/
+14:55:07	Warning: 	Moved Permanently for https://datrixinsights.com/?p=268
+14:55:07	Warning: 	File has moved from https://datrixinsights.com/?p=268 to https://datrixinsights.com/terms-and-conditions/
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/cute-alert.js (from https://datrixinsights.com/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.8)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/${i}/img/${e}.svg (from https://datrixinsights.com/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.8)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/l (from https://datrixinsights.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/e (from https://datrixinsights.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/t.params.url (from https://datrixinsights.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/$&/ (from https://datrixinsights.com/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/blots/ (from https://datrixinsights.com/wp-content/plugins/metform/public/assets/js/app.js?ver=3.9.8)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/formats/ (from https://datrixinsights.com/wp-content/plugins/metform/public/assets/js/app.js?ver=3.9.8)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/Trident/ (from https://datrixinsights.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.4)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/-negative.svg (from https://datrixinsights.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/OPR/ (from https://datrixinsights.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/window.location.href (from https://datrixinsights.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.3)
+14:55:08	Error: 	"Not Found" (404) at link https://datrixinsights.com/e,window.location.origin (from https://datrixinsights.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.4.9)
+
+HTTrack Website Copier/3.49-2 mirror complete in 50 seconds : 201 links scanned, 178 files written (10763125 bytes overall) [5678405 bytes received at 113568 bytes/sec], 8601614 bytes transferred using HTTP compression in 141 files, ratio 30%, 40.4 requests per connection
+(13 errors, 18 warnings, 0 messages)

@@ -1,0 +1,32 @@
+/* Specific styles for the Themepunch Beta Tester Form */
+.themepunch-beta-form {
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.themepunch-beta-form label {
+    /*display: block;*/
+    margin: 10px 0 5px;
+}
+
+.themepunch-beta-form input, 
+.themepunch-beta-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.themepunch-beta-form input[type="submit"] {
+    margin: 30px 0 50px 0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.themepunch-beta-form #consent { width: 20px;}

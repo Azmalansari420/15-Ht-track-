@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+11:22:43	65509/65509	---M-Z	200	added ('OK')	text/html	etag:%22ffe5-640cd8fcedf3c-gzip%22	https://frexushtml.websitelayout.net/index.html	D:/httrackdownload/kdkn%20logistic/frexushtml.websitelayout.net/index.html	(from )
+11:22:43	32/32	---M--	200	added ('OK')	text/plain	etag:%2220-640cd8fb2cd08%22	https://frexushtml.websitelayout.net/robots.txt		(from )

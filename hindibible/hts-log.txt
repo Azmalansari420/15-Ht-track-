@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 15 Mar 2025 14:49:11 at https://askbootstrap.com/preview/adopet/home.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://askbootstrap.com/preview/adopet/home.html -O1 "D:\httrackdownload\hindibible" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:50:06	Error: 	"Not Found" (404) at link https://askbootstrap.com/preview/adopet/img/welcome.png (from https://askbootstrap.com/preview/adopet/secure-account.html)
+14:50:06	Error: 	"Not Found" (404) at link https://askbootstrap.com/preview/adopet/contact-Support.html (from https://askbootstrap.com/preview/adopet/help-support.html)
+14:50:06	Error: 	"Not Found" (404) at link https://askbootstrap.com/preview/adopet/privacy--policy.html (from https://askbootstrap.com/preview/adopet/help-support.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 55 seconds : 89 links scanned, 84 files written (11330947 bytes overall) [9035755 bytes received at 164286 bytes/sec], 4962311 bytes transferred using HTTP compression in 57 files, ratio 42%, 9.8 requests per connection
+(3 errors, 0 warnings, 0 messages)

@@ -1,0 +1,22 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 19 Sep 2025 15:41:42 at https://html.kodesolution.com/2024/citycar-html/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.kodesolution.com/2024/citycar-html/index.html -O1 "D:\httrackdownload\tirangacab" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/pattern-7.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/pattern-3.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/cat-1-bg.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/cat-2-bg.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/cat-3-bg.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/cat-4-bg.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/pattern-8.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/images/icons/shape-7.png (from https://html.kodesolution.com/2024/citycar-html/css/style.css)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/shop-details.html (from https://html.kodesolution.com/2024/citycar-html/shop-products-sidebar.html)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/js/jquery.countdown.js (from https://html.kodesolution.com/2024/citycar-html/shop-checkout.html)
+15:44:48	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/citycar-html/css/owl.video.play.png (from https://html.kodesolution.com/2024/citycar-html/css/owl.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 7 seconds : 275 links scanned, 263 files written (30949704 bytes overall) [25544377 bytes received at 136600 bytes/sec], 8421227 bytes transferred using HTTP compression in 84 files, ratio 33%, 45.8 requests per connection
+(11 errors, 0 warnings, 0 messages)

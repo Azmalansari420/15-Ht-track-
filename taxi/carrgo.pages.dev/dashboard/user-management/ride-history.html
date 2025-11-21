@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/user-management/ride-history by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Ride History - CarrGo Dashboard</title>
+<!-- Bootstrap CSS -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Remix Icons CSS -->
+<link href="../assets/fonts/remixicon.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../assets/css/main.min.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+<!-- Meta Tags for SEO -->
+<meta name="description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta name="keywords" content="carpool, dashboard, ride-sharing, transportation management">
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Detailed Ride History - CarPool Dashboard">
+<meta property="og:description" content="CarPool Dashboard - Manage your rides, drivers, and fleet efficiently">
+<meta property="og:type" content="website">
+<!-- Mobile Theme Color -->
+<meta name="theme-color" content="#4a6cf7">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <!-- Sidebar -->
+<div class="sidebar" id="sidebar" data-theme="light">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+        <div class="logo-container">
+            <!-- Light Theme Logos -->
+            <img src="../assets/img/logo-full.svg" alt="CarPool" class="logo-full logo-light">
+            <img src="../assets/img/logo-icon.svg" alt="CarPool" class="logo-icon logo-light">
+            
+            <!-- Dark Theme Logos -->
+            <img src="../assets/img/logo-white.svg" alt="CarPool" class="logo-full logo-dark">
+            <img src="../assets/img/logo-icon-white.svg" alt="CarPool" class="logo-icon logo-dark">
+        </div>
+        <button class="btn d-md-none" id="close-sidebar">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Driver Management Section -->
+            <li class="has-dropdown">
+                <a href="#driverMenu" data-bs-toggle="collapse">
+                    <i class="ri-steering-line"></i>
+                    <span>Driver Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="driverMenu">
+                    <li><a href="../driver-management/driver-onboarding.html">Onboarding</a></li>
+                    <li><a href="../driver-management/driver-verification.html">Verification</a></li>
+                    <li><a href="../driver-management/driver-documents.html">Documents</a></li>
+                    <li><a href="../driver-management/driver-training.html">Training</a></li>
+                    <li><a href="../driver-management/driver-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="../driver-management/drivers.html">Drivers List</a></li>
+                    <li><a href="../driver-management/driver-schedule.html">Schedules</a></li>
+                    <li><a href="../driver-management/drivers-earnings.html">Earnings</a></li>
+                    <li><a href="../driver-management/vehicle-management.html">Vehicles</a></li>
+                </ul>
+            </li>
+
+            <!-- Financial Management Section -->
+            <li class="has-dropdown">
+                <a href="#financeMenu" data-bs-toggle="collapse">
+                    <i class="ri-money-dollar-circle-line"></i>
+                    <span>Finance</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse" id="financeMenu">
+                    <li><a href="../financial/revenue-reports.html">Revenue Reports</a></li>
+                    <li><a href="../financial/expense-tracking.html">Expense Tracking</a></li>
+                    <li><a href="../financial/driver-payouts.html">Driver Payouts</a></li>
+                    <li><a href="../financial/pricing-management.html">Pricing Management</a></li>
+                    <li><a href="../financial/invoices.html">Invoices</a></li>
+                    <li><a href="../financial/tax-reports.html">Tax Reports</a></li>
+                    <li><a href="../financial/payments.html">Payments</a></li>
+                </ul>
+            </li>
+
+            <!-- Customer Service Section -->
+            <li class="has-dropdown">
+                <a href="#customerMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="customerMenu">
+                    <i class="ri-customer-service-line"></i>
+                    <span>Customer Service</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="customerMenu">
+                    <li><a href="../customer-service/support-tickets.html">Support Tickets</a></li>
+                    <li><a href="../customer-service/customer-feedback.html">Feedback</a></li>
+                    <li><a href="../customer-service/customer-communication.html">Communication</a></li>
+                    <li><a href="../customer-service/customer-reports.html">Reports</a></li>
+                    <li><a href="../customer-service/customer-preferences.html">Preferences</a></li>
+                </ul>
+            </li>
+
+            <!-- User Management Section -->
+            <li class="has-dropdown">
+                <a href="#userMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="userMenu">
+                    <i class="ri-team-line"></i>
+                    <span>User Management</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="userMenu">
+                    <li><a href="users.html">Users List</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="ride-history.html">Ride History</a></li>
+                </ul>
+            </li>
+
+            <!-- Operations Section -->
+            <li class="has-dropdown">
+                <a href="#operationsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="operationsMenu">
+                    <i class="ri-settings-5-line"></i>
+                    <span>Operations</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="operationsMenu">
+                    <li><a href="../operations/analytics.html">Analytics</a></li>
+                    <li><a href="../operations/fleet-management.html">Fleet Management</a></li>
+                    <li><a href="../operations/rides.html">Active Rides</a></li>
+                    <li><a href="../operations/maps.html">Maps</a></li>
+                </ul>
+            </li>
+
+            <!-- Settings Section -->
+            <li class="has-dropdown">
+                <a href="#settingsMenu" data-bs-toggle="collapse" aria-expanded="false" aria-controls="settingsMenu">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                    <i class="ri-arrow-down-s-line ms-auto"></i>
+                </a>
+                <ul class="collapse submenu" id="settingsMenu">
+                    <li><a href="../settings/settings.html">General Settings</a></li>
+                    <li><a href="../settings/profile.html">Profile</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="../settings/profile.html" class="d-flex align-items-center w-100" title="User Profile">
+                <div class="avatar avatar-sm me-3">
+                    <img src="../assets/img/headshot_32x32.png" alt="User Avatar" class="rounded-circle">
+                </div>
+                <div class="user-info">
+                    <span class="fw-medium">John Doe</span>
+                    <small class="d-block text-muted">Administrator</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Mobile Sidebar Overlay - moved outside sidebar for better event handling -->
+<div class="mobile-sidebar-overlay" id="mobile-sidebar-overlay" role="button" tabindex="0" aria-label="Close sidebar"></div>
+
+        <div class="main-content">
+            <!-- Include Header -->
+            <!-- Header -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center">
+                <button class="btn sidebar-toggle me-3" id="sidebar-toggle" type="button" aria-label="Toggle Sidebar" aria-expanded="true" aria-controls="sidebar">
+                    <i class="ri-menu-line" aria-hidden="true"></i>
+                </button>
+                <h1 class="header-title mb-0">Detailed Ride History</h1>
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle me-3">
+                    <button class="btn theme-toggle-btn" id="theme-toggle">
+                        <i class="ri-sun-line light-icon"></i>
+                        <i class="ri-moon-line dark-icon"></i>
+                    </button>
+                </div>
+                <!-- User Profile Dropdown -->
+                <div class="dropdown user-dropdown">
+                    <button class="d-flex align-items-center text-decoration-none dropdown-toggle border-0 bg-transparent" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User menu">
+                        <div class="avatar avatar-sm avatar-with-badge me-2">
+                            <img src="../assets/img/user-4.png" alt="User profile" class="avatar-image">
+                            <span class="avatar-status avatar-status-online"></span>
+                        </div>
+                        <span class="d-none d-md-inline">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../settings/profile.html"><i class="ri-user-line me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="../settings/settings.html"><i class="ri-settings-line me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../auth/login.html"><i class="ri-logout-box-line me-2"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <!-- Main Content -->
+            <div class="container-fluid py-4">
+                <!-- Advanced Filter Section -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Advanced Filters</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-3">
+                                    <label class="form-label">Date Range</label>
+                                    <select class="form-select">
+                                        <option>Last 7 days</option>
+                                        <option>Last 30 days</option>
+                                        <option>Last 90 days</option>
+                                        <option>Custom range</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Ride Status</label>
+                                    <select class="form-select">
+                                        <option>All Statuses</option>
+                                        <option>Completed</option>
+                                        <option>Cancelled</option>
+                                        <option>In Progress</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Payment Method</label>
+                                    <select class="form-select">
+                                        <option>All Methods</option>
+                                        <option>Credit Card</option>
+                                        <option>Cash</option>
+                                        <option>Wallet</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Rating</label>
+                                    <select class="form-select">
+                                        <option>All Ratings</option>
+                                        <option>5 Stars</option>
+                                        <option>4+ Stars</option>
+                                        <option>3+ Stars</option>
+                                        <option>Below 3 Stars</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="reset" class="btn btn-outline-secondary me-2">Reset</button>
+                                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Statistics Cards Row -->
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Total Rides</h6>
+                                        <h2 class="card-title mb-0">15,678</h2>
+                                        <small class="text-success">+12% from last month</small>
+                                    </div>
+                                    <div class="stat-icon bg-primary">
+                                        <i class="ri-taxi-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Average Distance</h6>
+                                        <h2 class="card-title mb-0">8.7 mi</h2>
+                                        <small class="text-muted">Per ride</small>
+                                    </div>
+                                    <div class="stat-icon bg-info">
+                                        <i class="ri-route-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Average Rating</h6>
+                                        <h2 class="card-title mb-0">4.7</h2>
+                                        <small class="text-success">+0.2 from last month</small>
+                                    </div>
+                                    <div class="stat-icon bg-warning">
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="card-subtitle text-muted">Total Revenue</h6>
+                                        <h2 class="card-title mb-0">$45,290</h2>
+                                        <small class="text-success">+8% from last month</small>
+                                    </div>
+                                    <div class="stat-icon bg-success">
+                                        <i class="ri-money-dollar-circle-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ride History Analytics -->
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Ride History Analytics</h5>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
+                                Last 30 Days
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Last 7 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Last 30 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Last 90 Days</a></li>
+                                <li><a class="dropdown-item" href="#">Custom Range</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="rideHistoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Ride History Table -->
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Detailed Ride History</h5>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary">
+                                <i class="ri-filter-3-line me-2"></i>Filter
+                            </button>
+                            <button class="btn btn-outline-secondary">
+                                <i class="ri-download-2-line me-2"></i>Export
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Ride ID</th>
+                                        <th>Date & Time</th>
+                                        <th>User</th>
+                                        <th>Driver</th>
+                                        <th>Pickup</th>
+                                        <th>Destination</th>
+                                        <th>Distance</th>
+                                        <th>Duration</th>
+                                        <th>Status</th>
+                                        <th>Payment</th>
+                                        <th>Rating</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="text-primary">#RD-2305</span>
+                                        </td>
+                                        <td>2023-05-15 14:30</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-5.png" alt="User" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>John Smith</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-4.png" alt="Driver" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>Michael Brown</div>
+                                            </div>
+                                        </td>
+                                        <td>123 Main St</td>
+                                        <td>456 Park Ave</td>
+                                        <td>5.2 mi</td>
+                                        <td>18 min</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                        <td>$24.50 (Card)</td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip"
+                                                    title="View Details"><i class="ri-eye-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary"
+                                                    data-bs-toggle="tooltip" title="Receipt"><i
+                                                        class="ri-file-list-3-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip"
+                                                    title="View Route"><i class="ri-map-pin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-primary">#RD-2304</span>
+                                        </td>
+                                        <td>2023-05-14 09:15</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-6.png" alt="User" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>Sarah Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-4.png" alt="Driver" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>David Wilson</div>
+                                            </div>
+                                        </td>
+                                        <td>789 Oak Dr</td>
+                                        <td>101 Business Center</td>
+                                        <td>8.7 mi</td>
+                                        <td>25 min</td>
+                                        <td><span class="badge bg-success">Completed</span></td>
+                                        <td>$32.75 (Wallet)</td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-fill text-warning"></i>
+                                                <i class="ri-star-line text-warning"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip"
+                                                    title="View Details"><i class="ri-eye-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary"
+                                                    data-bs-toggle="tooltip" title="Receipt"><i
+                                                        class="ri-file-list-3-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip"
+                                                    title="View Route"><i class="ri-map-pin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-primary">#RD-2303</span>
+                                        </td>
+                                        <td>2023-05-13 18:45</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-5.png" alt="User" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>Robert Davis</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="../assets/img/user-4.png" alt="Driver" width="32" height="32"
+                                                    class="rounded-circle me-2">
+                                                <div>Jennifer Lee</div>
+                                            </div>
+                                        </td>
+                                        <td>555 Elm Street</td>
+                                        <td>777 Pine Road</td>
+                                        <td>3.8 mi</td>
+                                        <td>12 min</td>
+                                        <td><span class="badge bg-warning">Cancelled</span></td>
+                                        <td>$0.00 (Refunded)</td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <span class="text-muted">N/A</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip"
+                                                    title="View Details"><i class="ri-eye-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-secondary"
+                                                    data-bs-toggle="tooltip" title="Receipt"><i
+                                                        class="ri-file-list-3-line"></i></button>
+                                                <button class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip"
+                                                    title="View Route"><i class="ri-map-pin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+             <!-- Footer -->
+              <!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row align-items-center g-3">
+            <div class="col-md-6">
+                <p class="mb-0">© 2025 CarrGo Dashboard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <a href="#" class="me-3">Help</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                    <span class="ms-3 opacity-75">|</span>
+                    <span class="ms-3">Version 1.0.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+    <!-- Vendor Scripts -->
+<script src="../../../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/vendor/chart.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    //dropdown fix - add as a separate script
+(function() {
+    // Wait for page to fully load
+    window.addEventListener('load', function() {
+        // Add click handlers directly to all dropdown toggles
+        document.querySelectorAll('li.has-dropdown > a').forEach(function(toggle) {
+            toggle.onclick = function(e) {
+                e.preventDefault();
+                
+                // Find target menu
+                var targetId = this.getAttribute('href') || this.getAttribute('data-bs-target');
+                var menu = document.querySelector(targetId);
+                
+                if (!menu) return false;
+                
+                // Toggle this menu
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    // Close all other menus
+                    document.querySelectorAll('.submenu').forEach(function(m) {
+                        m.style.display = 'none';
+                    });
+                    
+                    // Open this menu
+                    menu.style.display = 'block';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+                
+                return false;
+            };
+        });
+        
+        // Set active page
+        var path = window.location.pathname;
+        document.querySelectorAll('.submenu a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === path || href === path.substring(1) || '/' + href === path) {
+                // Mark as active
+                link.classList.add('active');
+                
+                // Show parent menu
+                var menu = link.closest('.submenu');
+                if (menu) {
+                    menu.style.display = 'block';
+                    
+                    // Mark parent as active
+                    var parent = document.querySelector('a[href="#' + menu.id + '"]');
+                    if (parent) {
+                        parent.classList.add('active-parent');
+                        parent.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    });
+})();
+</script>
+
+</body>
+
+
+<!-- Mirrored from carrgo.pages.dev/dashboard/user-management/ride-history by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 12:37:14 GMT -->
+</html>

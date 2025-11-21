@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 10 Oct 2025 10:51:52 at https://templates.thememodern.com/industris/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://templates.thememodern.com/industris/index.html -O1 "D:\httrackdownload\kambishindustry" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:52:57	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/carrer.html (from https://templates.thememodern.com/industris/index.html)
+10:53:14	Warning: 	Retry after error -4 (No data (connection closed)) at link https://templates.thememodern.com/industris/post.html (from https://templates.thememodern.com/industris/index.html)
+10:53:14	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/service-detail.html (from https://templates.thememodern.com/industris/index.html)
+10:53:14	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/about.html (from https://templates.thememodern.com/industris/index.html)
+10:53:14	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/blog.html (from https://templates.thememodern.com/industris/index.html)
+10:53:15	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/fonts/slick.eot (from https://templates.thememodern.com/industris/css/slick-theme.css)
+10:53:15	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/fonts/slick.eot? (from https://templates.thememodern.com/industris/css/slick-theme.css)
+10:53:15	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/fonts/slick.woff (from https://templates.thememodern.com/industris/css/slick-theme.css)
+10:53:15	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/fonts/slick.ttf (from https://templates.thememodern.com/industris/css/slick-theme.css)
+10:53:15	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/fonts/slick.svg (from https://templates.thememodern.com/industris/css/slick-theme.css)
+10:53:16	Error: 	"Not Found" (404) at link https://templates.thememodern.com/industris/Pipes (from https://templates.thememodern.com/industris/shop-detail.html)
+10:53:16	Warning: 	Retry after error -4 (No data (connection closed)) at link https://templates.thememodern.com/industris/images/gallery-9.jpg (from https://templates.thememodern.com/industris/gallery.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 27 seconds : 268 links scanned, 255 files written (20517554 bytes overall) [19861302 bytes received at 228290 bytes/sec], 955514 bytes transferred using HTTP compression in 43 files, ratio 23%, 24.3 requests per connection
+(10 errors, 2 warnings, 0 messages)

@@ -1,0 +1,1315 @@
+/* Header styling */
+
+.tp-subtitle h2 {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 0px) {
+  .srdPageHeader {
+  padding-bottom: 35px !important;
+}
+}
+
+@media (min-width: 1024px) {
+  .srdPageHeader {
+  padding-bottom: 55px !important;
+}
+}
+
+@media (min-width: 1240px) {
+ .srdPageHeader {
+  padding-bottom: 75px !important;
+}
+}
+
+.srdPageHeader .widgettitle {
+display: none;
+}
+
+@media (min-width: 0px) {
+ .srdPageHeader_title {
+  font-size: 40px;
+  line-height: 40px;
+    margin-bottom: 25px;
+}
+}
+
+@media (min-width: 480px) {
+.srdPageHeader_title {
+  font-size: 50px;
+  line-height: 50px;
+    margin-bottom: 25px;
+}
+}
+
+@media (min-width: 1240px) {
+ .srdPageHeader_title {
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 25px;
+}
+}
+
+.srdPageHeader_subtitle {
+font-size: 20px;
+line-height: 30px;
+font-weight: 400;
+color: rgba(28,9,80,0.75);
+ margin-bottom: 30px;
+}
+
+/* Main layout grid */
+
+.srdGridColLayout{
+display: grid;
+grid-template-areas:"srdSecondary srdPrimary";
+width: 100%;
+}
+
+.srdPrimaryColumn {
+grid-area: srdPrimary;
+}
+
+.srdSecondaryColumn {
+grid-area: srdSecondary;
+}
+
+/* template specific column widths */
+.srdTutorialCols {
+grid-template-columns: 2.3fr 7.7fr;
+grid-gap: 50px;
+}
+
+.srdGuideCols {
+grid-template-columns: 2.5fr 7.5fr;
+grid-gap: 50px;
+}
+
+.srdDefinitionsCols {
+grid-template-columns: 2fr 8fr;
+grid-gap: 50px;
+}
+
+.srdFaqCols, .srdFaqCols_single {
+grid-template-columns: 2.7fr 7.3fr;
+grid-gap: 50px;
+}
+
+/* Nested menu */
+ul.srdNestedList, ul.srdNestedList ul, ul.srdTaxMenuFlat {
+list-style-type: none;
+}
+
+ul.srdNestedList, ul.srdTaxMenuFlat {
+margin: 0;
+}
+
+ul.srdNestedList ul {
+margin-left: 0;
+grid-area: childmenu;
+}
+
+ul.srdNestedList ul.children ul {
+margin-left: 1em;
+}
+
+ul.srdNestedList li {
+position: relative;
+margin: 0;
+}
+
+ul.srdNestedList li a {
+display: inline-block;
+line-height: 1.6;
+padding: 0.6em 0;
+grid-area: link;
+}
+
+ul.srdNestedList li.srdTopLevelMenu, .srdTaxMenu > a {
+font-weight: bold;
+font-size: 24px;
+}
+
+.srdTaxMenu > a {
+display: block;
+margin-bottom: 1.25em;
+}
+
+.srdTaxMenu > a:first-of-type {
+  display: none;
+}
+
+ul.srdNestedList li.srdTopLevelMenu {
+margin-bottom: 0.75em;
+}
+
+ul.srdNestedList li.srdTopLevelMenu > a {
+line-height: 2;
+}
+
+ul.srdNestedList ul.children li {
+font-weight: 300;
+font-size: 18px;
+display: grid;
+grid-template:
+  "switch link"
+  "childmenu childmenu";
+grid-template-columns: 1.5em auto;
+}
+
+ul.srdNestedList ul.children li li {
+font-size: 16px;
+}
+
+ul.srdNestedList ul.children li li li {
+font-size: 14px;
+}
+
+span.srd_toggleSwitch {
+grid-area: switch;
+justify-self: center;
+align-self: top;
+}
+
+span.srd_toggleSwitch:hover {
+color: #f7345e;
+transition: color 0.2s ease-in-out;
+}
+
+span.srd_toggleSwitch::before {
+display: block;
+width: 1.5em;
+text-align: left;
+line-height: 2.4;
+font-family: monospace;
+font-weight: 700;
+  color: rgba(28,9,80,1);
+}
+
+span.srd_toggleSwitch_closed:hover {
+cursor: zoom-in;
+}
+
+span.srd_toggleSwitch_open:hover {
+cursor: zoom-out;
+}
+
+span.srd_toggleSwitch_closed::before {
+content: "+";
+}
+
+span.srd_toggleSwitch_open::before {
+content: "-";
+}
+
+/* Sidebar child menu styles */
+
+.srdChildMenu_closed {
+float: left;
+opacity: 0;
+margin: 0;
+height: 0;
+pointer-events: none;
+}
+
+.srdChildMenu_open {
+float: none;
+opacity: 1;
+height: auto;
+pointer-events: all;
+transition: opacity 0.2s linear;
+}
+
+/* Non nested menus */
+
+.srdTaxMenu {
+margin-bottom: 50px;
+}
+
+.srdTaxMenu h3 {
+font-weight: bold;
+font-size: 24px;
+margin: 0;
+}
+
+/* List of taxonomies style menu */
+
+ul.srdTaxMenuFlat {
+font-weight: 500;
+padding-left: 20px;
+}
+
+ul.srdTaxMenuFlat li {
+margin: 10px 0 0 10px;
+}
+
+ul.srdTaxMenuFlat li::before, .srdDefinitionLink::before {
+color: #1C0950;
+content: "\2022";
+font-weight: bold;
+font-size: 25px;
+display: inline-block;
+width: 30px;
+margin-left: -30px;
+}
+
+/* Cloud of tags style menu */
+
+ul.srdTaxCloudMenu {
+list-style-type: none;
+margin: 1em 1em 50px 0;
+padding: 0;
+}
+
+.srdTaxCloudMenu li {
+display: inline-block;
+}
+
+.srdTaxCloudMenu li a {
+display: inline-block;
+color: #1c0950;
+margin: 5px 5px 5px 0;
+padding: 0 15px;
+line-height: 30px;
+border-radius: 5px;
+font-size: 13px;
+font-weight: 400;
+background: rgba(29,10,81,0.1);
+transition: all 0.2s ease-in-out;
+}
+
+.srdTaxCloudMenu li a:hover, .srdTaxCloudMenu li.current-cat a {
+background: #f7345e;
+color: #ffffff;
+}
+
+/* Definitions */
+
+.srdDefinitionsHeader {
+  font-size: 24px;
+  margin-top: 0 !important;
+}
+
+article.sr_definition {
+background: #fff;
+box-shadow: 0px 20px 50px 0px rgba(28,9,80,0.07);
+padding: 50px;
+border-radius: 5px;
+margin-bottom: 50px;
+}
+
+/* article.sr_definition h2, article.sr_definition h3, article.sr_definition h4 {
+text-align: center;
+} */
+
+article.sr_definition .entry-content, .single .srdGuideCols .entry-content {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+article.sr_definition h2 {
+/* font-size: 48px;
+font-weight: normal; */
+margin-bottom: 1em;
+/* display: inline-block;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+padding: 0.5em 1em;
+background-color: #F3F2F7; */
+}
+
+article.sr_definition h3, article.sr_definition h4 {
+font-size: 24px;
+}
+
+article.sr_definition figcaption {
+font-size: 16px;
+text-align: center;
+}
+
+/* Definition sidebar styling */
+
+.srdDefinitionLetter {
+font-size: 20px;
+color: #F7345E;
+font-weight: bold;
+margin-left: 0.5em;
+margin-top: 1em;
+}
+
+.srdDefinitionLink {
+display: block;
+margin-left: 20px;
+padding-left: 20px;
+line-height: 1.6;
+}
+
+/* Definition tooltips */
+sup.srdToolTip {
+position: relative;
+cursor: pointer;
+}
+
+sup.srdToolTip > span {
+cursor: default;
+background: #fff;
+color: #1c0950;
+text-align: left;
+box-shadow: 0px 20px 50px 0px rgba(28,9,80,0.07); 
+border-width: 5px;
+border-style: solid;
+border-image-source: linear-gradient(to bottom, #5e35b1 0%, #f7345e 100%);
+border-image-slice: 1;
+position: absolute;
+left: 0;
+bottom: 100%;
+margin: 0 0 0.7em -1em;
+width: 24em;
+padding: 1em;
+line-height: 1.618em;
+opacity: 0;
+visibility: hidden;
+transition: visibility 0.35s, opacity 0.35s;
+z-index: 2;
+font-style: normal;
+font-weight: normal;
+}
+
+sup.srdToolTip span .arrow {
+content: '';
+display: block;
+border-style: solid;
+border-width: 10px 10px 0 10px;
+border-color: #f7345e transparent transparent transparent;
+position: absolute;
+left: 10px;
+bottom: -10px;
+width: 0;
+height: 0;
+}
+
+sup.srdToolTip:hover > span {
+opacity: 1;
+visibility: visible;
+transition: visibility 0.35s, opacity 0.35s;
+}
+
+/* Embedded definitions */
+/* .srd_definition_embed {
+background: #F3F2F7;
+padding: 50px;
+margin-bottom: 50px;
+}
+
+.srd_definition_embed p:last-of-type {
+margin-bottom: 0;
+}
+
+.srd_definition_embed h3 {
+font-weight: normal;
+font-size: 45px;
+line-height: 1.6;
+} */
+
+.sr_faq h2 {
+text-align: center;
+font-size: 40px;
+}
+
+.srdCurrentTax > a, .srdTaxMenu .current-cat > a, a.srdCurrentDefinition, .srdTaxMenuFlat .current-cat a {
+font-weight: 700;
+}
+
+/* This grid controls the archive of FAQ items */
+.srdFaqCols .srdPrimaryColumn {
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(260px, 0.33fr));
+row-gap: 20px;
+column-gap: 20px;
+align-content: start;
+}
+
+/* This grid controls what happens inside each FAQ item */
+.srdFaqCols .srdPrimaryColumn a.srdFaqArchiveLink {
+background-color: #5D35B0;
+border-radius: 5px;
+padding: 12px;
+color: white;
+font-weight: 500;
+display: grid;
+grid-template-areas:
+  "srdInfoIcon srdStatus"
+  "srdTitle srdTitle";
+align-content: start;
+min-height: 160px;
+}
+
+.srdFaqCols .srdPrimaryColumn a.srdFaqArchiveLink:hover {
+background-color: #F7345E;
+color: white;
+box-shadow: 0px 20px 30px 0px rgba(247,52,97,0.25);
+transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.srdInfoIcon {
+grid-area: srdInfoIcon;
+display: block;
+width: 20px;
+height: 20px;
+background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="16" stroke="white" stroke-width="4"/><path d="M18 9V20" stroke="white" stroke-width="4"/><path d="M18 23V27" stroke="white" stroke-width="4"/></svg>');
+background-size: contain;
+}
+
+.srdFaqTitle {
+grid-area: srdTitle;
+padding: 8px 20px 23px 20px;
+}
+
+.single .srdFaqCols_single .entry-content {
+margin-top: 50px;
+}
+
+.single .srdFaqCols_single h2 span {
+font-weight: normal;
+display: inline-block;
+margin-top: 0.5em;
+padding: 0 0.5em;
+}
+
+.single .srdFaqCols_single p {
+font-size: 18px !important;
+line-height: 1.6;
+}
+
+/* Pagination for next and previous guides or definitions */
+.srdPagination {
+display: grid;
+/* margin-top: 3em; */
+grid-row-gap: 40px;
+}
+
+/* .srdDefinitionsCols .srdPagination { */
+.srdPagination {
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "first second";
+margin-top: 30px;
+}
+
+.srdNextLink {
+justify-self: end; 
+}
+
+/* .srdNextLink a, .srdPrevLink a {
+display: grid;
+grid-column-gap: 20px;
+justify-content: center;
+} */
+
+/* .srdNextLink a {
+grid-template-areas:
+  "srdLinkedTitle srdNext";
+grid-template-columns: auto 180px;
+} */
+
+/* .srdPrevLink a {
+grid-template-areas:
+  "srdPrev srdLinkedTitle";
+grid-template-columns: 180px auto;
+} */
+
+/* a.wp-block-button__link, a.wp-block-button__link:visited, a.wp-block-button__link:focus { */
+.srdNextLink a, .srdPrevLink a, .srdNextLink a:visited, .srdPrevLink a:visited, .srdNextLink a:focus, .srdPrevLink a:focus {
+	font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 25px;
+    background-color: #f7345e;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* a.wp-block-button__link:hover {  */
+.srdNextLink a:hover, .srdPrevLink a:hover {
+	color: #fff;
+	background-color: #22c8e5; 
+}
+
+.srdNextArrow img {
+  transform: scaleX(-1);  
+}
+
+
+/* .srdPrevArrow, .srdNextArrow {
+display: grid;
+height: 30px;
+text-align: center;
+justify-content: start;
+}
+
+.srdNextArrow {
+grid-area: srdNext;
+grid-template-columns: auto 15px;
+justify-content: end;
+}
+
+.srdPrevArrow {
+grid-area: srdPrev;
+grid-template-columns: 15px auto;
+justify-content: start;
+}
+
+.srdPrevItem, .srdNextItem {
+display: inline-block;
+background: #F3F2F7;
+line-height: 30px;
+padding: 0 20px;
+min-width: 160px;
+transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.srdNextArrow::after, .srdPrevArrow::before {
+content: '';
+border-color: #F3F2F7;
+border-style: solid;
+border-width: 15px;
+border-top-color: transparent;
+border-bottom-color: transparent;
+}
+
+.srdNextArrow::after {
+margin-right: -15px;
+border-right-width: 0;
+transition: border-left-color 0.2s ease-in-out;
+}
+
+.srdPrevArrow::before {
+margin-left: -15px;
+border-left-width: 0;
+transition: border-right-color 0.2s ease-in-out;
+} */
+
+.srdPrevTitle, .srdNextTitle {
+grid-area: srdLinkedTitle;
+font-size: 1.1em;
+line-height: 30px;
+}
+
+.srdNextLink a:hover .srdNextItem, .srdPrevLink a:hover .srdPrevItem {
+background: #22c8e5;
+color: #fff;
+transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* .srdNextLink a:hover .srdNextArrow::after {
+border-left-color: #f7345e;
+transition: border-left-color 0.2s ease-in-out;
+}
+
+.srdPrevLink a:hover .srdPrevArrow::before {
+border-right-color: #f7345e;
+transition: border-right-color 0.2s ease-in-out;
+} */
+
+.srdPrevTitle {
+text-align: left;
+}
+
+.srdNextTitle {
+text-align: right;
+}
+
+/* Tutorial archive page */
+
+.srdTutorialGrid {
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(425px, 1fr));
+row-gap: 20px;
+column-gap: 20px;
+align-content: start;
+}
+
+.srdTutorialArchive {
+text-align: center;
+font-size: 36px;
+line-height: 2;
+margin-bottom: 30px;
+}
+
+/* Whole link to tutorial article is styled as a grid cell */
+.srdTutorialGrid a {
+background-color: #FFFFFF;
+box-shadow: 0px 20px 50px rgba(28, 9, 80, 0.07);
+border-radius: 5px;
+border-radius: 5px;
+padding: 10px;
+display: grid;
+grid-template-columns: 200px auto;
+grid-template-rows: 21px auto 21px;
+grid-template-areas:
+  "srdThumb srdStatus"
+  "srdThumb srdTutInfo"
+  "srdThumb .";
+column-gap: 15px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.srdTutorialGrid a:hover {
+background-color: #F7345E;
+color: white;
+box-shadow: 0px 20px 30px 0px rgba(247,52,97,0.25);
+transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.srdTutorialGrid img {
+grid-area: srdThumb;
+padding: 5px;
+border-radius: 10px;
+}
+
+.srdTutorialGrid a span.srdTutTitle {
+grid-area: srdTutInfo;
+align-self: center;
+}
+
+/* This status is also used in the FAQ items too */
+.srdStatus {
+grid-area: srdStatus;
+justify-self: end;
+font-size: 11px;
+line-height: 20px;
+color: #ffffff;
+font-weight: 700;
+padding: 1px 7px 0px 7px;
+border-radius: 5px 5px 5px 5px;
+background: #f7345e;
+letter-spacing: 1px;
+}
+
+/* Single page tutorial */
+
+.entry-meta .srdModuleType {
+margin-right: 8px;
+}
+
+.entry-meta .srdModuleType::after {
+content: " | ";
+margin-left: 8px;
+}
+
+/* Breadcrumbs */
+.srdBreadcrumb {
+font-size: 16px;
+margin-bottom: 30px;
+color: rgba(28,9,80,0.5);
+}
+
+.srdBreadcrumb a {
+color: #F73460;
+}
+
+.srdBreadcrumb a {
+padding: 0 5px;
+}
+
+.srdBreadcrumb a:first-child {
+padding: 0 5px 0 0;
+}
+
+/* Guides heading (now named manual) */
+.srdGuideHeading {
+margin-bottom: 30px;
+font-size: 45px;
+line-height: 50px;
+text-align: left;
+}
+
+/* .srdGuideCols h3 {
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 32px;
+} */
+
+/* .srdGuideCols p, .srdFaqCols p {
+font-size: 18px !important;
+line-height: 1.5 !important;
+margin-top: 2em !important;
+margin-bottom: 2em !important;
+} */
+
+/* .srdGuideCols ul, .srdGuideCols ol {
+font-size: 18px !important;	
+} */
+
+/* .srdGuideCols h3, .srdFaqCols h3, .srdGuideCols h4, .srdFaqCols h4, .srdGuideCols h5, .srdFaqCols h5, .srdGuideCols h6, .srdFaqCols h6 {
+margin-top: 2em !important;
+margin-bottom: 1em !important;
+} */
+
+h3.srdExcerpt {
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgba(28,9,80,1);
+}
+
+/* Content Panel for Manual and Definitions */
+
+.srdContentPanel {
+	background: #fff;
+	border-radius: 5px;
+	text-align: left;
+	padding: 50px 50px 50px 50px;
+}
+
+.srdContentPanel code {
+	word-break: break-all;
+}
+
+@media (min-width: 0px) {
+  .srdContentPanel { 
+    padding: 30px;
+  }
+
+  h2.srdExcerpt {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	
+}
+
+@media (min-width: 480px) {
+  .srdContentPanel {
+    padding: 50px;
+  }
+  
+  h2.srdExcerpt {
+    font-size: 30px;
+    line-height: 40px;
+	}
+}
+
+/* Manual thumbnail styling */
+.srdPostThumb img {
+border-radius: 10px;
+box-shadow: 0px 20px 50px 0px rgba(28,9,80,0.15);
+}
+
+.srdPostThumb {
+  margin-bottom: 90px;
+  }
+  
+
+/* Moved styling of embed shortcode headings here to ensure this styling takes precedence */
+/* .srd_definition_embed h3, .srd_definition_embed h4 {
+text-align: center;
+margin-top: 0 !important;
+} */
+
+/* Make sure archive posts in the manual get spacing beneath them */
+.tax-sr_faq_category .tp-aftercontent, .tax-sr_manual_section .tp-aftercontent, .tax-sr_module_type .tp-aftercontent, .tax-sr_tutorial_topic .tp-aftercontent, .post-type-archive-sr_manual .tp-aftercontent, .post-type-archive-sr_faq .tp-aftercontent, .post-type-archive-sr_tutorial .tp-aftercontent, .post-type-archive-sr_definition .tp-aftercontent {
+  margin-top: 120px;
+}
+
+/* WP-PageNavi styling */
+.srdNumberedPagination {
+margin: 50px 0;
+text-align: center;
+}
+
+.srdNumberedPagination .wp-pagenavi a, .srdNumberedPagination .wp-pagenavi span {
+display: inline-block;
+min-width: 40px;
+min-height: 40px;
+line-height: 33px;
+border-width: 0px;
+border-radius: 5px;
+margin: 5px;
+}
+
+.srdNumberedPagination .wp-pagenavi a {
+background-color: #F3F2F7;
+
+}
+.srdNumberedPagination .wp-pagenavi span.current {
+background-color: #F73460;
+color: white;
+}
+
+/* Styling for the Help Center page elements */
+.srdMiddleSection {
+padding: 0 !important;
+margin-top: 0px !important;
+}
+
+.srdMiddleSection h3 {
+font-size: 58px;
+margin-bottom: 80px !important;
+}
+
+.srdMiddleSection h4 {
+font-size: 35px;
+margin-top: 0px;
+}
+
+.srdMiddleSection h5 {
+font-size: 20px;
+margin: 35px 0 15px 0 !important;
+}
+
+.srdMiddleSection .wp-block-column.tp-cardshadow:nth-child(2n) {
+margin-left: 20px;
+}
+
+.srdMiddleSection .wp-block-columns {
+margin-bottom: 20px;
+}
+
+/* Prevent the buttons breaking onto two lines */
+.srdMiddleSection .wp-block-button__link {
+white-space: nowrap;
+}
+
+/* Utility classes to use in post editor */
+
+.srdNoOverflow {
+overflow: hidden;
+}
+
+.srdHighlightBox {
+box-shadow: 0px 20px 50px 0px rgba(28,9,80,0.07);
+/* border-width: 10px; */
+border-width: 20px;
+border-style: solid;
+border-image-source: linear-gradient(to bottom, #5e35b1 0%, #f7345e 100%);
+border-image-slice: 1;
+padding: 2rem;
+margin: 2.25rem auto 2.75rem auto;
+}
+
+.srdHighlightBox ol, .srdHighlightBox ul {
+margin: 0 0 0px 20px !important;
+font-size: 20px !important;
+}
+
+.srdHighlightBox ol li:last-of-type, .srdHighlightBox ul li:last-of-type {
+margin-bottom: 0;
+}
+
+.srdPrimaryColumn .has-large-font-size {
+font-size: 2em !important;
+margin: 0.75em auto !important;
+}
+
+.srdPrimaryColumn .has-medium-font-size {
+font-size: 1.3em !important;
+margin: 1em auto !important;
+}
+
+.srdPrimaryColumn .has-small-font-size {
+font-size: 0.7em !important;
+margin: 1em auto !important;
+}
+
+.srdPrimaryColumn .entry-content ol {
+list-style: decimal;
+}
+
+/* Begin styling additions for repsonsiveness */
+
+/* Hide nav hamburger by default (rest of style is in media queries)*/
+@media (min-width: 981px){
+
+  .srdOpenMenu {
+    display: none;
+  }
+  
+  /* classes for sticky sidebar */
+
+  .srdStickySidebar {
+    height: 100%;
+  }
+
+  .srdStickyViewer {
+    height: calc(100vh - 120px);
+    overflow: visible;
+  }
+
+  .srdStickyViewerAutoHeight {
+    height: auto;
+  }
+
+  .srdStickySquasher {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  .srdStickyViewer, .srdStickySquasher {
+    width: 228px;
+  }
+
+  .srdStickyShifter {
+    position: absolute;
+    top: 0;
+  }
+
+  .srdStickySquasherRelative, .srdStickyShifterRelative {
+    position: relative;
+  }
+
+  .srdStickTop {
+    position: fixed;
+    top:120px;
+  }
+
+  .site-footer, .tp-aftercontent {
+    position: relative;
+    z-index: 5;
+  }
+
+}
+
+.srdDefinitionsCols .srdSecondaryColumn {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1241px){
+  .srdStickyViewer, .srdStickySquasher {
+    width: 283px;
+  }
+}
+
+
+/* Media queries */
+@media (max-width: 1240px){
+
+.srdMiddleSection .wp-block-column.tp-cardshadow:nth-child(2n) {
+  margin-left: 20px;
+}
+
+.srdMiddleSection .wp-block-columns {
+  margin-bottom: 20px;
+}
+
+.srdFaqCols .srdPrimaryColumn {
+  grid-template-columns: repeat( auto-fit, minmax(260px, 0.5fr));
+}
+
+.srdPagination {
+  grid-template-columns: 1fr;
+  grid-template-areas: "first" "second";
+}
+
+.srdPrevLink, .srdNextLink {
+  justify-self: center;
+}
+
+.srdNextLink {
+grid-area: first;
+}
+
+.srdPrevLink {
+  grid-area: second;
+  }
+
+}
+
+@media (max-width: 980px){
+
+.srdMiddleSection .wp-block-column.tp-cardshadow:nth-child(2n) {
+  margin-left: 20px;
+}
+
+.srdMiddleSection .wp-block-columns {
+  margin-bottom: 0;
+}
+
+.srdSecondaryColumn {
+  border: none;
+}
+
+.srdGridColLayout {
+  grid-template-areas:
+    "srdSecondary"
+    "srdPrimary";
+  grid-gap: 0;
+}
+
+.srdTutorialCols, .srdGuideCols, .srdDefinitionsCols, .srdFaqCols, .srdFaqCols_single {
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+}
+
+.srdTaxMenu {
+  margin-bottom: 30px;
+}
+
+ul.srdTaxMenuFlat li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+ul.srdTaxMenuFlat li::before, .srdDefinitionLink::before {
+  width: 20px;
+  margin-left: -20px;
+}
+
+
+/* Use grid to lay out hamburger menu, all guides link, and nested menu */
+
+.srdCollapseMenu {
+  display: grid;
+  grid-template-areas:
+    "srdAll srdHamburger"
+    "srdMenu srdMenu";
+}
+
+/* Put elements into correct grid areas */
+
+/* Show and activate hamburger menu */
+.srdOpenMenu {
+  display: block;
+  grid-area: srdHamburger;
+  justify-self: end; 
+  align-self: center;
+  cursor: pointer;
+}
+
+.srdCollapseMenu_closed .srdOpenMenu {
+  margin-bottom: -105px;
+}
+
+.srdOpenMenu .tg-icon {
+  font-size: 25px !important;
+  background-color: #f7345e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.srdCollapseMenu > a {
+  grid-area: srdAll;
+  margin: 0.5em 0;
+}
+
+/* .srdNestedList { */
+.srdStickyViewer {
+  grid-area: srdMenu;
+}
+
+.srdCollapseMenu_closed #srdNestedList {
+  float: left;
+  opacity: 0;
+  margin: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.srdCollapseMenu_open #srdNestedList {
+  float: none;
+  opacity: 1;
+  height: auto;
+  pointer-events: all;
+  transition: opacity 0.2s linear;
+}
+
+/* move definition terms to inline */
+.srdDefinitionLetter, .srdDefinitionLink {
+  display: inline-block;
+}
+
+.srdDefinitionsCols .srdSecondaryColumn {
+  margin-bottom: 50px;
+}
+
+.srdDefinitionLetter::before {
+  content: " | ";
+  font-weight: normal;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.srdDefinitionLetter:first-of-type::before {
+  content: "";
+  margin-left: 0;
+}
+
+.srdDefinitionLetter:first-of-type {
+  margin-left: 0;
+}
+
+.sr_faq h2 {
+  margin: 30px auto;
+}
+
+.srdFaqCols .srdPrimaryColumn {
+  grid-template-columns: repeat( auto-fit, minmax(260px, 1fr));
+}
+
+}
+
+@media (max-width: 781px){
+
+.srdMiddleSection .wp-block-column.tp-cardshadow:nth-child(2n) {
+  margin-left: 0;
+}
+
+}
+
+@media (max-width: 540px){
+
+.srdTutorialGrid {
+  grid-template-columns: 1fr;
+}
+
+.srdTutorialGrid a {
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 21px auto 21px;
+  grid-template-areas:
+  "srdThumb"
+  "srdStatus"
+  "srdTutInfo"
+  ".";
+}
+
+.srdTutorialGrid img {
+  margin-bottom: 10px;
+}
+
+.srdTutStatus {
+  margin-right: 5px;
+}
+
+.srdTutTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.srdMiddleSection h3 {
+  font-size: 12vw;
+}
+
+}
+
+/* Keyframe animations */
+.srdFadeIn {
+transform-style: preserve-3d;
+backface-visibility: hidden;
+opacity: 0;
+visibility:hidden;
+animation: srdFadeIn 0.3s;
+animation-fill-mode: forwards;
+animation-delay: calc(0.03s * var(--srdPostCount));
+}
+
+@keyframes srdFadeIn {
+from {
+  opacity: 0;
+  visibility:hidden; 
+}
+to {
+  opacity: 1;
+  visibility:visible
+}
+}
+
+.logged-in span.srdManualLink, .logged-in h3 span.srdManualLink, .logged-in h4 span.srdManualLink, .logged-in h5 span.srdManualLink, .logged-in h6 span.srdManualLink {
+	content: "";
+	display:  inline-block;
+	height: 0.5em;
+	width: 0.65em;
+	margin-right: 8px;
+	margin-left: calc((0.65em + 8px) * -1);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='stroke-dashoffset: 0px; stroke-dasharray: 0px, 0px; stroke-width: 0px; stroke: transparent; fill: rgb(28, 9, 80); height: 100%25; width: 100%25;'%3E%3Cpath d='M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z' style='fill: rgb(28, 9, 80);'%3E%3C/path%3E%3C/svg%3E");
+	background-size: cover;
+	background-position: center;
+	transform: rotate(135deg);
+}
+
+.srdGuideCols h3, .srdDefinitionsCols h3 { 
+    margin-top: 70px;
+}
+
+.srdGuideCols h3.srdExcerpt, .srdDefinitionsCols h3.srdExcerpt {
+    margin-top: 0px;
+}
+.srdGuideCols .wp-block-image img, .srdDefinitionsCols .wp-block-image img {
+    /*box-shadow: 0px 5px 10px 0px rgba(28,9,80,0.15);
+    border-radius: 5px;*/
+}
+
+.srdGuideCols .wp-block-image, .srdGuideCols .wp-block-embed, .srdDefinitionsCols .wp-block-image, .srdDefinitionsCols .wp-block-embed {
+    margin-bottom: 70px;
+}
+
+.srdGuideCols .srdPostThumb img, .srdDefinitionsCols .srdPostThumb img {
+    margin-bottom: 0px;
+}
+
+.srdGuideCols .srdHighlightBox, .srdDefinitionsCols .srdHighlightBox {
+    margin: 0 0 70px 0;
+}
+
+.srdGuideCols .wp-block-themepunch-revslider revslider, .srdDefinitionsCols .wp-block-themepunch-revslider revslider {
+    /*box-shadow: 0px 5px 10px 0px rgba(28,9,80,0.15);
+    border-radius: 10px;*/
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.srdGuideCols .entry-content {
+  margin-bottom: 0 !important;
+}
+
+/* Sticky sidebarmenu */
+
+.srdSecondaryColumn {
+    will-change: min-height;
+    position: relative;
+}
+
+.srdSecondaryColumn .inner-wrapper-sticky {
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
+/* Learning path box */
+
+.srd-learning-path {
+	background: #e5faf6;
+	padding: 50px 50px 70px 50px;
+	border-radius: 10px;
+	margin-bottom: 100px;
+}
+.srd-learning-path h3 {
+	margin: 50px 0;
+}
+.srd-learning-path h4 {
+	margin-top: 70px;
+}
+.srd-learning-path .wp-block-button {
+	margin-top: -20px;
+}
+.srd-learning-path a {
+  color: #00806a !important;
+border-bottom: 1px solid;
+}
+.srd-learning-path a:hover {
+    color: #1c0950!important;
+}
+.srd-learning-path .wp-block-button a, .srd-learning-guide .wp-block-button a:visited {
+  background-color: #00ceab !important;
+color: white !important;
+}
+.srd-learning-path .wp-block-button a:hover {
+    background-color: #1c0950!important;
+}

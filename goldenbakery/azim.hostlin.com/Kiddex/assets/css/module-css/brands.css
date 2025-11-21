@@ -1,0 +1,259 @@
+
+/** brands-section **/
+
+.brands-section{
+  position: relative;
+}
+
+.brands-section .brands-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-block-one{
+  position: relative;
+  display: block;
+}
+
+.brands-section .brands-list .brands-block-one{
+  margin: 0px -15px;
+}
+
+.brands-block-two .inner-box .logo-box{
+  overflow: hidden;
+}
+
+.brands-block-two:hover .inner-box .logo-box img{
+  animation: toBottomFromTop .7s forwards;
+}
+
+.brands-block-one a{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 50%;
+  border: dashed;
+  border-width: 1px;
+}
+
+.brands-block-one a img{
+  width: auto;
+  display: inline-block;
+}
+
+.brands-block-one:nth-child(even) a{
+  background: #FFE8EE;
+}
+
+.brands-section .pattern-layer .pattern-1{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 171px;
+  height: 255px;
+  background-repeat: no-repeat;
+}
+
+.brands-section .pattern-layer .pattern-2{
+  position: absolute;
+  top: -30px;
+  right: 35px;
+  width: 123px;
+  height: 131px;
+  background-repeat: no-repeat;
+}
+
+
+/** brands-style-two **/
+
+.brands-style-two{
+  position: relative;
+  background: #F9F8E8;
+}
+
+.brands-style-two .pattern-layer .pattern-1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 11px;
+  background-repeat: repeat-x;
+  transform: rotate(180deg);
+}
+
+.brands-style-two .pattern-layer .pattern-2{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  animation: slide 90s linear infinite;
+  -webkit-animation: slide 90s linear infinite;
+}
+
+.brands-block-two .inner-box{
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  border: dashed;
+  border-width: 1px;
+  border-color: #BEBEBE;
+  margin-bottom: 30px;
+  transition: all 500ms ease;
+}
+
+.brands-block-two .inner-box:hover{
+  box-shadow: 0px 30px 50px 0px rgba(247, 97, 136, 0.08);
+}
+
+.brands-block-two .inner-box .logo-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 94px;
+  border-bottom: 1px dashed #BEBEBE;
+  transition: all 500ms ease;
+}
+
+.brands-block-two .inner-box:hover .logo-box{
+
+}
+
+.brands-block-two .inner-box h6{
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 13px 10px;
+}
+
+.brands-block-two .inner-box h6 a{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.brands-block-two .inner-box h6 a:hover{
+
+}
+
+.brands-section .pattern-layer .pattern-3{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 189px;
+  height: 298px;
+  background-repeat: no-repeat;
+}
+
+.brands-section .pattern-layer .pattern-4{
+  position: absolute;
+  left: 0px;
+  top: -400px;
+  width: 100%;
+  height: 1475px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  background-size: cover;
+}
+
+
+/** rtl-css **/
+
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+  .brands-section .brands-list{
+    display: block;
+    text-align: center;
+  }
+
+  .brands-section .brands-list .brands-block-one{
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .brands-section .pattern-layer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .brands-style-two{
+    padding: 65px 0px 50px 0px;
+  }
+
+  .brands-section.pt_160.pb_120{
+    padding: 70px 0px;
+  }
+
+  .brands-style-two.pt_0.pb_0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
