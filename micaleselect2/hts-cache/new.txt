@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+10:41:43	82431/82431	---M-Z	200	added ('OK')	text/html	etag:%22141ff-642abbf07f2e5-gzip%22	https://clavishtml.websitelayout.net/index.html	D:/httrackdownload/micaleselect2/clavishtml.websitelayout.net/index.html	(from )
+10:41:43	32/32	---M--	200	added ('OK')	text/plain	etag:%2220-642abd45a21fb%22	https://clavishtml.websitelayout.net/robots.txt		(from )

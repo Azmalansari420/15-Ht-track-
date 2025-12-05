@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 03 Dec 2025 10:43:26 at https://modinatheme.com/html/visaland-html/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://modinatheme.com/html/visaland-html/index.html -O1 "D:\httrackdownload\krishna consulti" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:45:06	Error: 	"Not Found" (404) at link https://modinatheme.com/html/visaland-html/%22assets/img/choose/01.jpg (from https://modinatheme.com/html/visaland-html/index-2.html)
+10:45:06	Error: 	"Not Found" (404) at link https://modinatheme.com/html/visaland-html/assets/img/preloader.svg (from https://modinatheme.com/html/visaland-html/news.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 40 seconds : 258 links scanned, 255 files written (17043793 bytes overall) [13161731 bytes received at 131617 bytes/sec], 6199173 bytes transferred using HTTP compression in 68 files, ratio 32%, 64.7 requests per connection
+(2 errors, 0 warnings, 0 messages)

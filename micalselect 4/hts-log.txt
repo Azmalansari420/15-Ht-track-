@@ -1,0 +1,25 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 29 Nov 2025 15:59:15 at http://html.designingmedia.com/redlight/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://html.designingmedia.com/redlight/index.html -O1 "D:\httrackdownload\micalselect 4" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/about-us.html (from https://html.designingmedia.com/redlight/about.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/case-studies.html (from https://html.designingmedia.com/redlight/about.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/css/super-class.css (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/css/owl.carousel.min.css (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/css/owl.theme.default.min.css (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/review2.jpg (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/side_post_img03.jpg (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/side_post_img02.jpg (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/side_post_img01.jpg (from https://html.designingmedia.com/redlight/single-post.html)
+15:59:50	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/horse.ogg (from https://html.designingmedia.com/redlight/infinite-scroll.html)
+15:59:51	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/audio/horse.mp3 (from https://html.designingmedia.com/redlight/infinite-scroll.html)
+15:59:51	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/bg-img.png (from https://html.designingmedia.com/redlight/assets/css/super-classes.css)
+15:59:51	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/left-white-circle.png (from https://html.designingmedia.com/redlight/assets/css/super-classes.css)
+15:59:51	Error: 	"Not Found" (404) at link https://html.designingmedia.com/redlight/assets/image/right-white-circle.png (from https://html.designingmedia.com/redlight/assets/css/super-classes.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 36 seconds : 132 links scanned, 117 files written (5463132 bytes overall) [5173296 bytes received at 143702 bytes/sec], 434104 bytes transferred using HTTP compression in 8 files, ratio 23%, 12.0 requests per connection
+(14 errors, 0 warnings, 0 messages)
