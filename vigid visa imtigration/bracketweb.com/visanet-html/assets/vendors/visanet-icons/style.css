@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon42e0.eot?8zreii');
+  src:  url('fonts/icomoon42e0.eot?8zreii#iefix') format('embedded-opentype'),
+    url('fonts/icomoon42e0.ttf?8zreii') format('truetype'),
+    url('fonts/icomoon42e0.woff?8zreii') format('woff'),
+    url('fonts/icomoon42e0.svg?8zreii#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-visa:before {
+  content: "\e933";
+}
+.icon-quote-2:before {
+  content: "\e932";
+}
+.icon-zoom-in:before {
+  content: "\e92f";
+}
+.icon-play:before {
+  content: "\e928";
+}
+.icon-trolley-cart:before {
+  content: "\e926";
+}
+.icon-quote:before {
+  content: "\e924";
+}
+.icon-checked:before {
+  content: "\e913";
+}
+.icon-brainstorming:before {
+  content: "\e911";
+}
+.icon-passport:before {
+  content: "\e912";
+}
+.icon-comment-2:before {
+  content: "\e930";
+}
+.icon-arrow-bottom-2:before {
+  content: "\e908";
+}
+.icon-location-2:before {
+  content: "\e903";
+}
+.icon-email-2:before {
+  content: "\e904";
+}
+.icon-phone-call:before {
+  content: "\e905";
+}
+.icon-arrow-right-3:before {
+  content: "\e900";
+}
+.icon-arrow-left-2:before {
+  content: "\e934";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-plus:before {
+  content: "\e927";
+}
+.icon-comment:before {
+  content: "\e923";
+}
+.icon-user:before {
+  content: "\e925";
+}
+.icon-search:before {
+  content: "\e916";
+}
+.icon-close:before {
+  content: "\e917";
+}
+.icon-grid:before {
+  content: "\e918";
+}
+.icon-arrow-right-up:before {
+  content: "\e919";
+}
+.icon-arrow-left-up:before {
+  content: "\e93c";
+}
+.icon-arrow-bottom:before {
+  content: "\e91a";
+}
+.icon-location:before {
+  content: "\e91d";
+}
+.icon-email:before {
+  content: "\e91e";
+}
+.icon-calendar:before {
+  content: "\e920";
+}
+.icon-arrow-right-2:before {
+  content: "\e922";
+}
+.icon-eye:before {
+  content: "\e937";
+}
+.icon-loop:before {
+  content: "\e938";
+}
+.icon-heart:before {
+  content: "\e939";
+}
+.icon-down-arrow:before {
+  content: "\e92c";
+}
+.icon-up-arrow:before {
+  content: "\e92d";
+}
+.icon-airplane:before {
+  content: "\e906";
+}
+.icon-airplane-2:before {
+  content: "\e907";
+}
+.icon-travel-visa:before {
+  content: "\e909";
+}
+.icon-students-visa:before {
+  content: "\e90a";
+}
+.icon-family-visa:before {
+  content: "\e90b";
+}
+.icon-business-visa:before {
+  content: "\e90c";
+}
+.icon-visa-processing:before {
+  content: "\e90d";
+}
+.icon-immigration-visa:before {
+  content: "\e90e";
+}
+.icon-download:before {
+  content: "\e90f";
+}
+.icon-pdf:before {
+  content: "\e910";
+}
+.icon-support:before {
+  content: "\e914";
+}
+.icon-luggage:before {
+  content: "\e915";
+}
+.icon-supportive:before {
+  content: "\e91b";
+}
+.icon-immigration:before {
+  content: "\e91c";
+}
+.icon-email-3:before {
+  content: "\e91f";
+}
+.icon-paper-plane:before {
+  content: "\e921";
+}
+.icon-completed-task:before {
+  content: "\e929";
+}
+.icon-immigration-officer:before {
+  content: "\e92a";
+}
+.icon-place:before {
+  content: "\e92b";
+}
+.icon-satisfaction:before {
+  content: "\e92e";
+}
+.icon-check:before {
+  content: "\e931";
+}
