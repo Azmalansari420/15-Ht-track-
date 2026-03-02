@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.google.com	TRUE	/	FALSE	1999999999	__Secure-BUCKET	CKQD
-translate.google.com	TRUE	/	FALSE	1999999999	SameSite	lax
-
