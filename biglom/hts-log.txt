@@ -1,0 +1,37 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 24 Mar 2026 15:21:08 at https://peacefulqode.co.in/themes/textica/html/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://peacefulqode.co.in/themes/textica/html/index.html -O1 "D:\httrackdownload\biglom" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot?d7yf1v (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot? (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf?d7yf1v (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0 (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/css/font-awesome.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/fonts/fontawesome-webfont.eot? (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/css/font-awesome.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0 (from https://peacefulqode.co.in/themes/textica/html/rev/fonts/font-awesome/css/font-awesome.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/revicons/revicons.eot?5510888 (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/fonts/revicons/revicons.ttf?5510888 (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/css/openhand.cur (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/css/closedhand.cur (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/gridtile.png (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/gridtile_white.png (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/gridtile_3x3.png (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/gridtile_3x3_white.png (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/coloredbg.png (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/rev/assets/loader.gif (from https://peacefulqode.co.in/themes/textica/html/rev/css/rs6.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/css/owl.video.play.png (from https://peacefulqode.co.in/themes/textica/html/css/owl.carousel.min.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/webfonts/fa-brands-400.ttf (from https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/css/all.min.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/webfonts/fa-regular-400.ttf (from https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/css/all.min.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/webfonts/fa-solid-900.ttf (from https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/css/all.min.css)
+15:22:41	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/webfonts/fa-v4compatibility.ttf (from https://peacefulqode.co.in/themes/textica/html/fonts/font-awesome/css/all.min.css)
+15:22:42	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify.eot?-fvbane (from https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify-icons.css)
+15:22:42	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify.eot? (from https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify-icons.css)
+15:22:42	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify.ttf?-fvbane (from https://peacefulqode.co.in/themes/textica/html/fonts/themify-icons/themify-icons.css)
+15:22:42	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/pq-price-currency-symbol (from https://peacefulqode.co.in/themes/textica/html/index-3.html)
+15:22:42	Error: 	"Not Found" (404) at link https://peacefulqode.co.in/themes/textica/html/contact-us.html (from https://peacefulqode.co.in/themes/textica/html/fabric-printing.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 34 seconds : 385 links scanned, 358 files written (27005136 bytes overall) [23105009 bytes received at 245797 bytes/sec], 4721664 bytes transferred using HTTP compression in 76 files, ratio 14%, 77.2 requests per connection
+(26 errors, 0 warnings, 0 messages)

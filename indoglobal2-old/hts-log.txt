@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 27 Mar 2026 11:41:24 at https://thememxpro.com/html/hactora/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://thememxpro.com/html/hactora/index.html -O1 "D:\httrackdownload\indoglobal2-old" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:42:02	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/a (from https://thememxpro.com/html/hactora/index.html)
+11:42:10	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/images/blog/ln-1.jpg (from https://thememxpro.com/html/hactora/blog-classic.html)
+11:42:10	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/images/blog/ln-2.jpg (from https://thememxpro.com/html/hactora/blog-classic.html)
+11:42:10	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/images/blog/ln-3.jpg (from https://thememxpro.com/html/hactora/blog-classic.html)
+11:42:16	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/css/owl.video.play.png (from https://thememxpro.com/html/hactora/css/owl.css)
+11:42:16	Error: 	"Not Found" (404) at link https://thememxpro.com/html/hactora/css/mCSB_buttons.html (from https://thememxpro.com/html/hactora/css/jquery.mCustomScrollbar.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 52 seconds : 187 links scanned, 180 files written (18656341 bytes overall) [11411047 bytes received at 219443 bytes/sec], 11620165 bytes transferred using HTTP compression in 61 files, ratio 36%, 46.7 requests per connection
+(6 errors, 0 warnings, 0 messages)
